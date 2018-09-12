@@ -1,3 +1,10 @@
+import React from 'react';
+import { render } from 'react-dom';
+
+import App from './components/App';
+
+render(<App />, document.getElementById('root'));
+
 // const changeColor = document.getElementById('changeColor');
 
 // chrome.storage.sync.get('color', data => {
@@ -15,9 +22,3 @@
 //   });
 // };
 
-const button = document.createElement('button');
-button.innerHTML = 'popoup';
-
-document.body.appendChild(button);
-
-console.log('test');

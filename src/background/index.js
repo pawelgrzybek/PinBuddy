@@ -1,5 +1,6 @@
-// chrome.runtime.onInstalled.addListener(() => {
+console.log('background script yo');
 
+// chrome.runtime.onInstalled.addListener(() => {
 //   chrome.storage.sync.set({ color: '#3aa757' }, () => {
 //     console.log('The color is green.');
 //     console.log(chrome.storage);
@@ -17,8 +18,7 @@
 
 // });
 
-
-chrome.runtime.onInstalled.addListener(() => {
+chrome.runtime.onInstalled.addListener(e => {
   console.log('onInstalled');
 
   chrome.contextMenus.create({
@@ -28,11 +28,20 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
-chrome.commands.onCommand.addListener(command => {
-  if (command === 'save-url') {
-    console.log('booo', 'save-url');
-  }
-  else if (command === 'read-later') {
-    console.log('booo', 'read-later');
-  }
+
+// chrome.commands.onCommand.addListener(command => {
+// console.log(command);
+
+// if (command === 'save-url') {
+//   console.log('🐘 💨', 'save-url');
+// }
+// else if (command === 'read-later') {
+//   console.log('🐘 💨', 'read-later');
+// }
+// });
+
+/* eslint-disable  */
+chrome.commands.onCommand.addListener(function(command) {
+  console.log('Command:', command);
 });
+/* eslint-enable  */

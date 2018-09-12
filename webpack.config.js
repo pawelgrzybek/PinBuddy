@@ -4,9 +4,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    background: './src/background.js',
-    options: './src/options.js',
-    popup: './src/popup.js'
+    'background/background': './src/background/',
+    'options/options': './src/options/',
+    'popup/popup': './src/popup/'
   },
   module: {
     rules: [
@@ -16,6 +16,13 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
       }
     ],
   },
@@ -24,14 +31,14 @@ module.exports = {
       'dist',
     ]),
     new HtmlWebpackPlugin({
-      title: 'Pinboard X — Popup',
-      filename: 'popup.html',
-      chunks: ['popup'],
+      filename: 'popup/popup.html',
+      chunks: ['popup/popup'],
+      template: './src/popup/index.html',
     }),
     new HtmlWebpackPlugin({
-      title: 'Pinboard X — Options',
-      filename: 'options.html',
-      chunks: ['options'],
+      filename: 'options/options.html',
+      chunks: ['options/options'],
+      template: './src/options/index.html',
     }),
     new CopyWebpackPlugin([
       {

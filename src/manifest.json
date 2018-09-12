@@ -20,32 +20,32 @@
       "128": "icons/icon-128.png"
     },
     "default_title": "__MSG_extensionName__",
-    "default_popup": "popup.html"
+    "default_popup": "popup/popup.html"
   },
 
   "author": "Pawel Grzybek (https://pawelgrzybek.com/)",
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["background/background.js"],
     "persistent": false
   },
   "commands": {
     "save-url": {
       "suggested_key": {
-        "default": "Ctrl+Shift+S",
-        "mac": "Command+Shift+S"
+        "default": "Ctrl+S",
+        "mac": "MacCtrl+S"
       },
       "description": "Save URL"
     },
     "read-later": {
       "suggested_key": {
-        "default": "Ctrl+Shift+L",
-        "mac": "Command+Shift+L"
+        "default": "Ctrl+L",
+        "mac": "MacCtrl+L"
       },
       "description": "Read later"
     }
   },
   "offline_enabled": false,
-  "options_page": "options.html",
+  "options_page": "options/options.html",
   "permissions": [
     "contextMenus"
   ]
