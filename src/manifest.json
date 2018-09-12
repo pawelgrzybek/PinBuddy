@@ -47,6 +47,7 @@
   "offline_enabled": false,
   "options_page": "options/options.html",
   "permissions": [
+    "storage",
     "contextMenus"
   ]
 }
