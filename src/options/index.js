@@ -1,9 +1,21 @@
 import React from 'react';
 import { render } from 'react-dom';
-
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import App from './components/App';
+import reducers from './reducers';
 
-render(<App />, document.getElementById('root'));
+const store = createStore(
+  reducers, /* preloadedState, */
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
 
 // const page = document.getElementById('buttonDiv');
 // const kButtonColors = ['#3aa757', '#e8453c', '#f9bb2d', '#4688f1'];

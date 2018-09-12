@@ -1,4 +1,5 @@
-console.log('background script yo');
+
+
 
 // chrome.runtime.onInstalled.addListener(() => {
 //   chrome.storage.sync.set({ color: '#3aa757' }, () => {
@@ -20,6 +21,8 @@ console.log('background script yo');
 
 chrome.runtime.onInstalled.addListener(e => {
   console.log('onInstalled');
+
+  chrome.storage.local.set({ key: 'tesssstttt' });
 
   chrome.contextMenus.create({
     id: 'sampleContextMenu',
