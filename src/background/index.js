@@ -19,17 +19,15 @@
 
 // });
 
-chrome.runtime.onInstalled.addListener(e => {
-  console.log('onInstalled');
+// chrome.runtime.onInstalled.addListener(e => {
+//   console.log('onInstalled');
 
-  chrome.storage.local.set({ key: 'tesssstttt' });
-
-  chrome.contextMenus.create({
-    id: 'sampleContextMenu',
-    title: 'Sample Context Menu',
-    contexts: ['selection']
-  });
-});
+//   chrome.contextMenus.create({
+//     id: 'sampleContextMenu',
+//     title: 'Sample Context Menu',
+//     contexts: ['selection']
+//   });
+// });
 
 
 // chrome.commands.onCommand.addListener(command => {
@@ -44,7 +42,7 @@ chrome.runtime.onInstalled.addListener(e => {
 // });
 
 /* eslint-disable  */
-chrome.commands.onCommand.addListener(function(command) {
-  console.log('Command:', command);
-});
+// chrome.commands.onCommand.addListener(function(command) {
+//   console.log('Command:', command);
+// });
 /* eslint-enable  */

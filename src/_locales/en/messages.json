@@ -13,7 +13,7 @@
     "description": "Options page - title"
   },
   "optionsFooter": {
-    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\">Pawel Grzybek</a>. Issues & feature requests: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek\" target=\"_blank\" title=\"Pawel Grzybek on GitHub\">GitHub</a>.",
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Issues & feature requests: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek\" target=\"_blank\" title=\"Pawel Grzybek on GitHub\">GitHub</a>.",
     "description": "Options page - footer"
   },
   "optionsLoginManual": {
@@ -40,8 +40,23 @@
     "message": "Loading…",
     "description": "Options page - login form submit button text"
   },
+  "optionsOfflineMessage": {
+    "message": "Please check your Internet connection.",
+    "description": "Options page - offline message"
+  },
   "optionsWelcomeMessage": {
-    "message": "Hi. You are logged in as XXX",
-    "description": "Options page - welcome paragraph"
+    "message": "Hi. You are logged in as $name$.",
+    "description": "Options page - welcome paragraph",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Options page - users name"
+      }
+    }
+  },
+  "optionsSignOut": {
+    "message": "Sign out",
+    "description": "Options page - sign out button text"
   }
+
 }

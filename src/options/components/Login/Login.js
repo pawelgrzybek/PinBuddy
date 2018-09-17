@@ -17,7 +17,7 @@ class Login extends Component {
   };
 
   static validateInput(input) {
-    const regex = /^([^:]{1,})(\:)(\S{1,})/;
+    const regex = /^([^:]{1,})(:)(\S{1,})/;
     return input.match(regex);
   }
 
@@ -26,11 +26,7 @@ class Login extends Component {
       <form onSubmit={this.onFormSubmit}>
         <Paragraph innerHTML t={chrome.i18n.getMessage('optionsLoginManual')} />
 
-        {
-          this.state.error ?
-            <Error t={chrome.i18n.getMessage('optionsLoginError')} />
-            : null
-        }
+        { this.state.error && <Error t={chrome.i18n.getMessage('optionsLoginError')} /> }
 
         {
           this.state.loading ? (
@@ -62,21 +58,27 @@ class Login extends Component {
       loading: true,
     });
 
-    fetch(`${API}user/api_token?auth_token=${this.state.token}`)
+    fetch(`${API}user/api_token?format=json&auth_token=${this.state.token}`)
+      .then(dataAuth => dataAuth.json())
       .then(() => {
+        const [username, token] = this.state.token.split(':');
+        chrome.storage.local.set(
+          {
+            username,
+            token,
+          },
+          () => {
+            this.props.authenticateUser(this.state.token);
+          }
+        );
+
         fetch(`${API}posts/all?format=json&auth_token=${this.state.token}`)
-          .then(data => data.json())
+          .then(dataPosts => dataPosts.json())
           .then(posts => {
-            const [username, token] = this.state.token.split(':');
             chrome.storage.local.set(
               {
-                username,
-                token,
                 posts,
                 postsFetched: Date.now(),
-              },
-              () => {
-                this.props.authenticateUser(this.state.token);
               }
             );
           });
@@ -84,14 +86,9 @@ class Login extends Component {
       .catch(() => {
         this.setState({
           error: true,
-        });
-      })
-      .finally(() => {
-        this.setState({
           loading: false,
         });
       });
-
   }
 
   onChangeUserInput = e => {

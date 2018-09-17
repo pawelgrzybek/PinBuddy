@@ -3,10 +3,13 @@ import './App.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Login from '../Login';
-import { updateUserInfo, logOut } from '../../actions/auth';
+import { updateUserInfo } from '../../actions/auth';
 import { checkConnection, wentOffline, wentOnline } from '../../actions/online';
 import Title from '../Title';
 import Footer from '../Footer';
+import Paragraph from '../Paragraph';
+import Button from '../Button';
+import Options from '../Options';
 
 class App extends Component {
   componentDidMount() {
@@ -15,20 +18,9 @@ class App extends Component {
 
     this.props.checkConnection(navigator.onLine);
 
-    chrome.storage.local.get([
-      'username',
-      'token',
-    ], result => {
-      const { username, token } = result;
-      if (username && token) {
-        chrome.storage.local.set(
-          {
-            accountValidated: Date.now(),
-          },
-          () => {
-            this.props.updateUserInfo(result);
-          }
-        );
+    chrome.storage.local.get(['username'], result => {
+      if (result.username) {
+        this.props.updateUserInfo(result);
       }
     });
   }
@@ -39,21 +31,28 @@ class App extends Component {
   }
 
   render() {
-    // console.log('props: ', this.props);
-
     return (
       <div className="app">
+
         <div>
           <Title t={chrome.i18n.getMessage('optionsTitle')} />
-          { !this.props.online ?
-            <p>You have to be connected</p> :
-            this.renderOnline() }
+          {
+            !this.props.online ?
+              <Paragraph t={chrome.i18n.getMessage('optionsOfflineMessage')} /> :
+              this.renderOnline()
+          }
         </div>
+
         <footer>
           <Footer t={chrome.i18n.getMessage('optionsFooter')} />
         </footer>
+
       </div>
     );
+  }
+
+  renderOnline() {
+    return this.props.username ? <Options /> : <Login />;
   }
 
   handleOnlineEvent = () => {
@@ -63,29 +62,12 @@ class App extends Component {
   handleOfflineEvent = () => {
     this.props.wentOffline();
   }
-
-  renderOnline() {
-    const { username } = this.props;
-
-    return username ? (
-      <>
-        <p className="paragraph">Hi {username}</p>
-        <button className="button" onClick={this.onCickLogOutButton}>Log out</button>
-      </>
-    ) : <Login />;
-  }
-
-  onCickLogOutButton = () => {
-    chrome.storage.local.clear(() => this.props.logOut());
-  }
 }
 
 App.propTypes = {
   username: PropTypes.string.isRequired,
-  token: PropTypes.string.isRequired,
   online: PropTypes.bool.isRequired,
   updateUserInfo: PropTypes.func.isRequired,
-  logOut: PropTypes.func.isRequired,
   checkConnection: PropTypes.func.isRequired,
   wentOnline: PropTypes.func.isRequired,
   wentOffline: PropTypes.func.isRequired,
@@ -94,7 +76,6 @@ App.propTypes = {
 const mapStateToProps = (state, ownProps) => {
   return {
     username: state.auth.username,
-    token: state.auth.token,
     online: state.online,
   };
 };
@@ -102,7 +83,6 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => {
   return {
     updateUserInfo: userInfo => dispatch(updateUserInfo(userInfo)),
-    logOut: () => dispatch(logOut()),
     checkConnection: online => dispatch(checkConnection(online)),
     wentOffline: () => dispatch(wentOffline()),
     wentOnline: () => dispatch(wentOnline()),

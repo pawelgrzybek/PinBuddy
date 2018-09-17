@@ -12,7 +12,11 @@ const Paragraph = props => {
 
 Paragraph.propTypes = {
   t: PropTypes.string.isRequired,
-  innerHTML: PropTypes.bool.isRequired,
+  innerHTML: PropTypes.bool,
+};
+
+Paragraph.defaultProps = {
+  innerHTML: false,
 };
 
 export default Paragraph;
