@@ -1,0 +1,14 @@
+.button {
+  margin-bottom: var(--lh);
+  font: inherit;
+  line-height: calc(var(--lh) * 1.5);
+  padding: 0 var(--lh);
+  border: 0;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: var(--border-radius);
+}
+
+.button:disabled {
+  background-color: var(--color-gray);
+}

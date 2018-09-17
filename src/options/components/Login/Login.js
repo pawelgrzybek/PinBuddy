@@ -2,48 +2,70 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { authenticateUser } from '../../actions/auth';
+import Paragraph from '../Paragraph';
+import Error from '../Error';
+import Input from '../Input';
+import Button from '../Button';
+
+const API = 'https://api.pinboard.in/v1/';
 
 class Login extends Component {
   state = {
     token: '',
-    error: '',
+    error: false,
     loading: false,
   };
 
-  renderSubmit() {
+  static validateInput(input) {
     const regex = /^([^:]{1,})(\:)(\S{1,})/;
-    const validInput = this.state.token.match(regex);
-
-    return <button type="submit" disabled={!validInput}>Submit</button>;
+    return input.match(regex);
   }
 
   render() {
     return (
-      <form onSubmit={this.onSubmitForm}>
-        {this.state.error ? <p>{this.state.error}</p> : null}
-        <input
-          type="text"
-          placeholder="username:TOKEN"
-          onChange={this.onChangeUserInput}
-        />
-        <span style={{ fontSize: '2rem' }}>
-          { this.renderSubmit() }
-        </span>
-        {this.state.loading ? <p>Loading…</p> : null}
+      <form onSubmit={this.onFormSubmit}>
+        <Paragraph innerHTML t={chrome.i18n.getMessage('optionsLoginManual')} />
+
+        {
+          this.state.error ?
+            <Error t={chrome.i18n.getMessage('optionsLoginError')} />
+            : null
+        }
+
+        {
+          this.state.loading ? (
+            <Paragraph innerHTML t={chrome.i18n.getMessage('optionsLoginLoading')} />
+          ) : (
+            <>
+              <Input
+                id="token"
+                label={chrome.i18n.getMessage('optionsLoginFormLabel')}
+                placeholder={chrome.i18n.getMessage('optionsLoginFormPlaceholder')}
+                onChange={this.onChangeUserInput}
+              />
+
+              <Button
+                t={chrome.i18n.getMessage('optionsLoginFormSubmit')}
+                type="submit"
+                disabled={!Login.validateInput(this.state.token)}
+              />
+            </>
+          )
+        }
       </form>
     );
   }
 
-  onSubmitForm = e => {
+  onFormSubmit = e => {
     e.preventDefault();
     this.setState({
       loading: true,
     });
-    fetch(`https://api.pinboard.in/v1/user/api_token?format=json&auth_token=${this.state.token}`)
-      .then(authData => authData.json())
+
+    fetch(`${API}user/api_token?auth_token=${this.state.token}`)
       .then(() => {
-        fetch(`https://api.pinboard.in/v1/posts/all?format=json&auth_token=${this.state.token}`)
-          .then(postsData => postsData.json())
+        fetch(`${API}posts/all?format=json&auth_token=${this.state.token}`)
+          .then(data => data.json())
           .then(posts => {
             const [username, token] = this.state.token.split(':');
             chrome.storage.local.set(
@@ -60,10 +82,8 @@ class Login extends Component {
           });
       })
       .catch(() => {
-        this.setState(() => {
-          return {
-            error: 'ERROR! Something went wrong dude...',
-          };
+        this.setState({
+          error: true,
         });
       })
       .finally(() => {

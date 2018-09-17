@@ -1,4 +1,10 @@
-body {
-  width: 300px;
-  height: 300px;
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: var(--lh);
+  min-height: 100vh;
 }

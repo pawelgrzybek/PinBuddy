@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import Login from '../Login';
 import { updateUserInfo, logOut } from '../../actions/auth';
 import { checkConnection, wentOffline, wentOnline } from '../../actions/online';
+import Title from '../Title';
+import Footer from '../Footer';
 
 class App extends Component {
   componentDidMount() {
@@ -39,9 +41,19 @@ class App extends Component {
   render() {
     // console.log('props: ', this.props);
 
-    return !this.props.online ?
-      <p>You have to be connected</p> :
-      this.renderOnline();
+    return (
+      <div className="app">
+        <div>
+          <Title t={chrome.i18n.getMessage('optionsTitle')} />
+          { !this.props.online ?
+            <p>You have to be connected</p> :
+            this.renderOnline() }
+        </div>
+        <footer>
+          <Footer t={chrome.i18n.getMessage('optionsFooter')} />
+        </footer>
+      </div>
+    );
   }
 
   handleOnlineEvent = () => {
@@ -57,8 +69,8 @@ class App extends Component {
 
     return username ? (
       <>
-        <p>Hi {username}</p>
-        <button onClick={this.onCickLogOutButton}>Log out</button>
+        <p className="paragraph">Hi {username}</p>
+        <button className="button" onClick={this.onCickLogOutButton}>Log out</button>
       </>
     ) : <Login />;
   }

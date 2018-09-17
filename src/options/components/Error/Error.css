@@ -1,0 +1,5 @@
+.error {
+  margin-bottom: var(--lh);
+  color: var(--color-error);
+  font-weight: 700;
+}
