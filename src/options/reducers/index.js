@@ -1,9 +1,8 @@
-const initialState = {
-  token: 'thisismyrandomtoken',
-};
+import { combineReducers } from 'redux';
+import auth from './auth';
+import online from './online';
 
-const rootReducer = (state = initialState, action) => {
-  return state;
-};
-
-export default rootReducer;
+export default combineReducers({
+  auth,
+  online,
+});

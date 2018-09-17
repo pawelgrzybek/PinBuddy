@@ -5,6 +5,13 @@ import App from './components/App';
 
 render(<App />, document.getElementById('root'));
 
+// chrome.notifications.create({
+//   type: 'basic',
+//   title: 'title',
+//   message: 'message',
+//   iconUrl: '/icons/icon-16.png',
+// });
+
 // const changeColor = document.getElementById('changeColor');
 
 // chrome.storage.sync.get('color', data => {

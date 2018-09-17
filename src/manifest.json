@@ -48,6 +48,8 @@
   "options_page": "options/options.html",
   "permissions": [
     "storage",
-    "contextMenus"
+    "contextMenus",
+    "https://*/*",
+    "notifications"
   ]
 }
