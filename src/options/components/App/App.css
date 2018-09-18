@@ -24,19 +24,19 @@
 .app__main,
 .app__footer {
   animation-name: slideIn;
-  animation-duration: 300ms;
+  animation-duration: var(--animation-duration);
   animation-fill-mode: backwards;
 }
 
 .app__header {
-  animation-delay: 150ms;
+  animation-delay: 100ms;
 }
 
 .app__main {
-  animation-delay: 200ms;
+  animation-delay: 150ms;
 }
 
 .app__footer {
-  animation-delay: 250ms;
+  animation-delay: 200ms;
   margin-top: auto;
 }

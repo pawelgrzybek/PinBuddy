@@ -11,6 +11,7 @@
   --color-error: #f00;
   --color-gray: #aaa;
   --border-radius: 3px;
+  --animation-duration: 200ms;
 }
 
 html {
@@ -23,8 +24,8 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
   line-height: var(--lh);
 
-  background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
-  background-size: 100% 28px;
+  /* background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
+  background-size: 100% 28px; */
 }
 
 a {
