@@ -4,8 +4,23 @@ import PropTypes from 'prop-types';
 import { logOut } from '../../actions/auth';
 import Paragraph from '../Paragraph';
 import Button from '../Button';
+import Checkbox from '../Checkbox';
 
 class Options extends Component {
+  state ={
+    privateCheckboxByDefault: false,
+    toReadChecboxByDefault: false,
+    useDescriptionMetaTag: false,
+  }
+
+  componentDidMount() {
+    chrome.storage.sync.get(options => {
+      this.setState({
+        ...options,
+      });
+    });
+  }
+
   render() {
     const { username } = this.props;
     return (
@@ -15,12 +30,47 @@ class Options extends Component {
           t={chrome.i18n.getMessage('optionsSignOut')}
           onClick={this.onCickLogOutButton}
         />
+
+        <hr />
+
+        <Checkbox
+          id="privateCheckboxByDefault"
+          label={chrome.i18n.getMessage('optionsPrivateCheckboxByDefault')}
+          onChange={this.handleCheckboxChange}
+          checked={this.state.privateCheckboxByDefault}
+        />
+
+        <Checkbox
+          id="toReadChecboxByDefault"
+          label={chrome.i18n.getMessage('optionsToReadChecboxByDefault')}
+          onChange={this.handleCheckboxChange}
+          checked={this.state.toReadChecboxByDefault}
+        />
+
+        <Checkbox
+          id="useDescriptionMetaTag"
+          label={chrome.i18n.getMessage('optionsUseDescriptionMetaTag')}
+          onChange={this.handleCheckboxChange}
+          checked={this.state.useDescriptionMetaTag}
+        />
+
       </>
     );
   }
 
   onCickLogOutButton = () => {
     chrome.storage.local.clear(() => this.props.logOut());
+  }
+
+  handleCheckboxChange = e => {
+    const { id } = e.target;
+    this.setState(state => {
+      return {
+        [id]: !state[id],
+      };
+    }, () => {
+      chrome.storage.sync.set({ ...this.state });
+    });
   }
 }
 

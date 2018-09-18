@@ -57,6 +57,18 @@
   "optionsSignOut": {
     "message": "Sign out",
     "description": "Options page - sign out button text"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Private\" checkbox by default",
+    "description": "Options page - option 1 label"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"To read\" checkbox by default",
+    "description": "Options page - option 2 label"
+  },
+  "optionsUseDescriptionMetaTag": {
+    "message": "Use description meta tag as a URL description",
+    "description": "Options page - option 3 label"
   }
 
 }

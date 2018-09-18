@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import './Input.css';
 
 const Input = props => {
-  const { id,
+  const {
+    id,
     label,
     onChange,
     placeholder,
