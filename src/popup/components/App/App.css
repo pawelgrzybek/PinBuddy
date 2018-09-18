@@ -1,19 +1,11 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 1rem;
-}
-
-.wrapper {
+.app {
   width: 500px;
   height: 500px;
-  margin: 2rem;
+  padding: var(--lh);
 }
 
-ul {
-  height: auto;
-  overflow: auto;
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--lh);
 }

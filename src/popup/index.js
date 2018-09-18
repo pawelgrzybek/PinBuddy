@@ -1,31 +1,30 @@
 import React from 'react';
 import { render } from 'react-dom';
-
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import App from './components/App';
+import reducers from './reducers';
+import './index.css';
 
-render(<App />, document.getElementById('root'));
+const store = createStore(reducers);
 
-// chrome.notifications.create({
-//   type: 'basic',
-//   title: 'title',
-//   message: 'message',
-//   iconUrl: '/icons/icon-16.png',
-// });
+store.subscribe(() => {
+  console.log('----------------------------------------------');
+  console.log(' ');
+  console.log('Redux state');
+  console.log(store.getState());
+  console.log(' ');
+  console.log('Chrome storage');
+  chrome.storage.local.get(result => {
+    console.log(result);
+    console.log(' ');
+    console.log('----------------------------------------------');
+  });
+});
 
-// const changeColor = document.getElementById('changeColor');
-
-// chrome.storage.sync.get('color', data => {
-//   changeColor.style.backgroundColor = data.color;
-//   changeColor.setAttribute('value', data.color);
-// });
-
-// changeColor.onclick = function onclick(element) {
-//   const color = element.target.value;
-//   chrome.tabs.query({ active: true,
-//     currentWindow: true }, tabs => {
-//     chrome.tabs.executeScript(
-//       tabs[0].id,
-//       { code: `document.body.style.backgroundColor = "${color}";` });
-//   });
-// };
-
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
