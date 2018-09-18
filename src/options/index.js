@@ -6,10 +6,7 @@ import App from './components/App';
 import reducers from './reducers';
 import './index.css';
 
-const store = createStore(
-  reducers, /* preloadedState, */
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+const store = createStore(reducers);
 
 store.subscribe(() => {
   console.log('----------------------------------------------');
