@@ -8,7 +8,6 @@ const Checkbox = props => {
     label,
     onChange,
     checked,
-    // type,
   } = props;
 
   return (
