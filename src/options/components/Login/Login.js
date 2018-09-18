@@ -56,6 +56,7 @@ class Login extends Component {
     e.preventDefault();
     this.setState({
       loading: true,
+      error: false,
     });
 
     fetch(`${API}user/api_token?format=json&auth_token=${this.state.token}`)
