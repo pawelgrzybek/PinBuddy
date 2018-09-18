@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { authenticateUser } from '../../actions/auth';
-import Paragraph from '../Paragraph';
-import Error from '../Error';
-import Input from '../Input';
-import Button from '../Button';
+import { Paragraph, Error, Input, Button } from 'theme';
 
 const API = 'https://api.pinboard.in/v1/';
 

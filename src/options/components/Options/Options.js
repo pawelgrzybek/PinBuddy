@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logOut } from '../../actions/auth';
-import Paragraph from '../Paragraph';
-import Button from '../Button';
-import Checkbox from '../Checkbox';
+import { Paragraph, Button, Checkbox } from 'theme';
 
 class Options extends Component {
   state ={

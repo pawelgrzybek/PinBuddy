@@ -5,11 +5,9 @@ import PropTypes from 'prop-types';
 import Login from '../Login';
 import { updateUserInfo } from '../../actions/auth';
 import { checkConnection, wentOffline, wentOnline } from '../../actions/online';
-import Title from '../Title';
 import Footer from '../Footer';
-import Paragraph from '../Paragraph';
-import Button from '../Button';
 import Options from '../Options';
+import { Title, Paragraph } from 'theme';
 
 class App extends Component {
   componentDidMount() {
