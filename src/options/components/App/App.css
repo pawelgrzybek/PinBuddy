@@ -1,10 +1,42 @@
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(var(--lh) / 4));
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .app {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
   padding: var(--lh);
   min-height: 100vh;
+}
+
+.app__header,
+.app__main,
+.app__footer {
+  animation-name: slideIn;
+  animation-duration: 300ms;
+  animation-fill-mode: backwards;
+}
+
+.app__header {
+  animation-delay: 150ms;
+}
+
+.app__main {
+  animation-delay: 200ms;
+}
+
+.app__footer {
+  animation-delay: 250ms;
+  margin-top: auto;
 }

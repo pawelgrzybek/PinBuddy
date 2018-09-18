@@ -34,16 +34,19 @@ class App extends Component {
     return (
       <div className="app">
 
-        <div>
+        <header className="app__header">
           <Title t={chrome.i18n.getMessage('optionsTitle')} />
+        </header>
+
+        <main className="app__main">
           {
             !this.props.online ?
               <Paragraph t={chrome.i18n.getMessage('optionsOfflineMessage')} /> :
               this.renderOnline()
           }
-        </div>
+        </main>
 
-        <footer>
+        <footer className="app__footer">
           <Footer t={chrome.i18n.getMessage('optionsFooter')} />
         </footer>
 
