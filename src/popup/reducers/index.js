@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux';
-import view from './view';
+import user from './user';
+import online from './online';
+import options from './options';
 
 export default combineReducers({
-  view,
+  user,
+  online,
+  options,
 });

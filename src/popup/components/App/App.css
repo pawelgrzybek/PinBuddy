@@ -1,11 +1,18 @@
 .app {
   width: 500px;
-  height: 500px;
+  height: 492px;
   padding: var(--lh);
 }
 
 .app__header {
   display: flex;
   justify-content: space-between;
-  padding-bottom: var(--lh);
 }
+
+.app__logo {
+  display: flex;
+}
+
+.app__main {
+}
+
