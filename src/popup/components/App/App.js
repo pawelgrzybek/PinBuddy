@@ -12,14 +12,8 @@ class App extends Component {
   componentDidMount() {
     window.addEventListener('online', this.handleOnlineEvent);
     window.addEventListener('offline', this.handleOfflineEvent);
-
     this.props.checkConnection(navigator.onLine);
-
-    chrome.storage.local.get(['username', 'token'], result => {
-      if (result.username && result.token) {
-        this.props.getUserInfo(result);
-      }
-    });
+    this.props.getUserInfo();
   }
 
   componentWillUnmount() {
@@ -64,11 +58,12 @@ App.propTypes = {
 
 const mapDispatchToProps = dispatch => {
   return {
-    getUserInfo: userInfo => dispatch(getUserInfo(userInfo)),
+    getUserInfo: () => dispatch(getUserInfo()),
     checkConnection: online => dispatch(checkConnection(online)),
     wentOnline: () => dispatch(wentOnline()),
     wentOffline: () => dispatch(wentOffline()),
   };
 };
+
 
 export default connect(null, mapDispatchToProps)(App);
