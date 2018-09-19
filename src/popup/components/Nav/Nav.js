@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { updateView } from '../../actions/view';
+import { updateView, getInitialView } from '../../actions/view';
 import './Nav.css';
 
 class Nav extends Component {
   componentDidMount() {
-    chrome.storage.sync.get([
-      'defaultView',
-    ], result => {
-      if (result.defaultView) {
-        this.props.updateView(result.defaultView);
-      }
-    });
+    this.props.getInitialView();
   }
   render() {
     const { username, online, view } = this.props;
@@ -55,6 +49,7 @@ Nav.propTypes = {
   view: PropTypes.string.isRequired,
   online: PropTypes.bool.isRequired,
   updateView: PropTypes.func.isRequired,
+  getInitialView: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state, ownProps) => {
@@ -68,6 +63,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => {
   return {
     updateView: location => dispatch(updateView(location)),
+    getInitialView: () => dispatch(getInitialView()),
   };
 };
 
