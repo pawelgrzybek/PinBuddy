@@ -90,6 +90,10 @@
   "popupAddURLText": {
     "message": "add url",
     "description": "Popup - add URL link text"
+  },
+  "popupOfflineMessage": {
+    "message": "Please check your Internet connection.",
+    "description": "Popup - offline message"
   }
 
 }

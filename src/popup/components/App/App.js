@@ -7,6 +7,7 @@ import { checkConnection, wentOffline, wentOnline } from '../../actions/online';
 import { Paragraph } from 'theme';
 import Logo from '../Logo';
 import Nav from '../Nav';
+import Main from '../Main';
 import './App.css';
 
 class App extends Component {
@@ -72,11 +73,7 @@ class App extends Component {
         <hr />
 
         <main className="app__main">
-          {
-            !this.props.online ?
-              <Paragraph t={chrome.i18n.getMessage('optionsOfflineMessage')} /> :
-              this.renderOnline()
-          }
+          <Main />
         </main>
 
       </div>
