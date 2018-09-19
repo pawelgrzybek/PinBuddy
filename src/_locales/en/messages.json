@@ -69,6 +69,27 @@
   "optionsUseDescriptionMetaTag": {
     "message": "Use description meta tag as a URL description",
     "description": "Options page - option 3 label"
+  },
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Open your Pinboard Profile",
+    "description": "Popup - link to users profile in a header"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Browse all",
+    "description": "Popup - browse all link title"
+  },
+  "popupBrowseAllText": {
+    "message": "all",
+    "description": "Popup - browse all link text"
+  },
+  "popupAddURLTitle": {
+    "message": "Add URL",
+    "description": "Popup - add URL link title"
+  },
+  "popupAddURLText": {
+    "message": "add url",
+    "description": "Popup - add URL link text"
   }
 
 }

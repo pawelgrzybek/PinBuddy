@@ -20,7 +20,7 @@ const Logo = props => {
             <Link
               t={username}
               url={`https://pinboard.in/u:${username}`}
-              title="Visit users page"
+              title={chrome.i18n.getMessage('popupOpenYourPinboardProfile')}
               blank
             />
             )

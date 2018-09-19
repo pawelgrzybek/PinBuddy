@@ -4,8 +4,9 @@ import { connect } from 'react-redux';
 import { updateUserInfo } from '../../actions/user';
 import { updateUserOptions } from '../../actions/options';
 import { checkConnection, wentOffline, wentOnline } from '../../actions/online';
-import { Title, Paragraph } from 'theme';
+import { Paragraph } from 'theme';
 import Logo from '../Logo';
+import Nav from '../Nav';
 import './App.css';
 
 class App extends Component {
@@ -60,19 +61,12 @@ class App extends Component {
       <div className="app">
 
         <header className="app__header">
-
           <div className="app__logo">
             <Logo />
           </div>
-
-          {
-            this.props.username && this.props.token ? (
-              <nav className="app__logo">
-                <a href="#">all items</a> · <a href="#">add url</a>
-              </nav>
-            ) : null
-          }
-
+          <nav className="app__logo">
+            <Nav />
+          </nav>
         </header>
 
         <hr />

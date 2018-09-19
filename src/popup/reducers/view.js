@@ -1,17 +1,9 @@
-const reducerOffline = (state = true, action) => {
-  if (action.type === 'CHECK_ONLINE') {
-    return action.online;
-  }
-
-  else if (action.type === 'WENT_ONLINE') {
-    return true;
-  }
-
-  else if (action.type === 'WENT_OFFLINE') {
-    return false;
+const reducerView = (state = 'all', action) => {
+  if (action.type === 'UPDATE_VEEW') {
+    return action.location;
   }
 
   return state;
 };
 
-export default reducerOffline;
+export default reducerView;

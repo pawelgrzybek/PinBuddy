@@ -1,0 +1,22 @@
+.nav {
+  font: inheit;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  height: var(--lh);
+  line-height: var(--lh);
+  color: var(--color-gray);
+}
+
+.nav:hover {
+  color: var(--color-primary);
+}
+
+.nav--active {
+  color: var(--color-primary);
+}
+
+
+.nav__spacer {
+  margin: 0 calc(var(--lh) / 4);
+}
