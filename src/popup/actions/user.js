@@ -1,19 +1,6 @@
-export const authenticateUser = token => {
+export const getUserInfo = userInfo => {
   return {
-    type: 'ADD_TOKEN',
-    token,
-  };
-};
-
-export const updateUserInfo = userInfo => {
-  return {
-    type: 'UPDATE_USER_INFO',
+    type: 'GET_USER_INFO',
     userInfo,
-  };
-};
-
-export const logOut = () => {
-  return {
-    type: 'LOG_OUT',
   };
 };

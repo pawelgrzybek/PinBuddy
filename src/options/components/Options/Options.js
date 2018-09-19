@@ -2,13 +2,25 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logOut } from '../../actions/auth';
-import { Paragraph, Button, Checkbox } from 'theme';
+import { Paragraph, Button, Checkbox, Select } from 'theme';
+
+const defaultViewOptions = [
+  {
+    value: 'all',
+    text: chrome.i18n.getMessage('optionsDefaultViewAllText'),
+  },
+  {
+    value: 'add',
+    text: chrome.i18n.getMessage('optionsDefaultViewAddText'),
+  },
+];
 
 class Options extends Component {
   state ={
     privateCheckboxByDefault: false,
     toReadChecboxByDefault: false,
     useDescriptionMetaTag: false,
+    defaultView: 'all',
   }
 
   componentDidMount() {
@@ -52,6 +64,14 @@ class Options extends Component {
           checked={this.state.useDescriptionMetaTag}
         />
 
+        <Select
+          id="defaultView"
+          label={chrome.i18n.getMessage('optionsDefaultView')}
+          onChange={this.handleSelectChange}
+          options={defaultViewOptions}
+          selected={this.state.defaultView}
+        />
+
       </>
     );
   }
@@ -70,6 +90,18 @@ class Options extends Component {
       chrome.storage.sync.set({ ...this.state });
     });
   }
+
+  handleSelectChange = e => {
+    const { id, selectedIndex } = e.target;
+    this.setState(state => {
+      return {
+        [id]: defaultViewOptions[selectedIndex].value,
+      };
+    }, () => {
+      chrome.storage.sync.set({ ...this.state });
+    });
+  }
+
 }
 
 Options.propTypes = {

@@ -5,6 +5,15 @@ import { updateView } from '../../actions/view';
 import './Nav.css';
 
 class Nav extends Component {
+  componentDidMount() {
+    chrome.storage.sync.get([
+      'defaultView',
+    ], result => {
+      if (result.defaultView) {
+        this.props.updateView(result.defaultView);
+      }
+    });
+  }
   render() {
     const { username, online, view } = this.props;
 

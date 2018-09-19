@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { updateUserInfo } from '../../actions/user';
-import { updateUserOptions } from '../../actions/options';
+import { getUserInfo } from '../../actions/user';
 import { checkConnection, wentOffline, wentOnline } from '../../actions/online';
-import { Paragraph } from 'theme';
 import Logo from '../Logo';
 import Nav from '../Nav';
 import Main from '../Main';
@@ -19,21 +17,7 @@ class App extends Component {
 
     chrome.storage.local.get(['username', 'token'], result => {
       if (result.username && result.token) {
-        this.props.updateUserInfo(result);
-      }
-    });
-
-    chrome.storage.sync.get([
-      'privateCheckboxByDefault',
-      'toReadChecboxByDefault',
-      'useDescriptionMetaTag'
-    ], result => {
-      if (
-        result.privateCheckboxByDefault &&
-        result.toReadChecboxByDefault &&
-        result.useDescriptionMetaTag
-      ) {
-        this.props.updateUserOptions(result);
+        this.props.getUserInfo(result);
       }
     });
   }
@@ -43,24 +27,9 @@ class App extends Component {
     window.removeEventListener('offline', this.handleOfflineEvent);
   }
 
-  renderOnline() {
-    if (this.props.username && this.props.token) {
-      return (
-        <p>great</p>
-      );
-    }
-
-    return (
-      <p>need to be logged in</p>
-    );
-
-  }
-
   render() {
-
     return (
       <div className="app">
-
         <header className="app__header">
           <div className="app__logo">
             <Logo />
@@ -69,13 +38,10 @@ class App extends Component {
             <Nav />
           </nav>
         </header>
-
         <hr />
-
         <main className="app__main">
           <Main />
         </main>
-
       </div>
     );
   }
@@ -90,32 +56,19 @@ class App extends Component {
 }
 
 App.propTypes = {
-  username: PropTypes.string.isRequired,
-  online: PropTypes.bool.isRequired,
-  updateUserInfo: PropTypes.func.isRequired,
-  updateUserOptions: PropTypes.func.isRequired,
+  getUserInfo: PropTypes.func.isRequired,
   checkConnection: PropTypes.func.isRequired,
   wentOnline: PropTypes.func.isRequired,
   wentOffline: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    username: state.user.username,
-    token: state.user.token,
-    online: state.online,
-  };
-};
-
 const mapDispatchToProps = dispatch => {
   return {
-    updateUserInfo: userInfo => dispatch(updateUserInfo(userInfo)),
-    updateUserOptions: userInfo => dispatch(updateUserOptions(userInfo)),
+    getUserInfo: userInfo => dispatch(getUserInfo(userInfo)),
     checkConnection: online => dispatch(checkConnection(online)),
-    wentOffline: () => dispatch(wentOffline()),
     wentOnline: () => dispatch(wentOnline()),
+    wentOffline: () => dispatch(wentOffline()),
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
-
+export default connect(null, mapDispatchToProps)(App);

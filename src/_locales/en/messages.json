@@ -70,6 +70,18 @@
     "message": "Use description meta tag as a URL description",
     "description": "Options page - option 3 label"
   },
+  "optionsDefaultView": {
+    "message": "Default view",
+    "description": "Options page - option 4 label"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "Browse",
+    "description": "Options page - option 4 all text"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "Add URL",
+    "description": "Options page - option 4 add text"
+  },
 
   "popupOpenYourPinboardProfile": {
     "message": "Open your Pinboard Profile",
