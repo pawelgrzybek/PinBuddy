@@ -1,6 +1,6 @@
 export const updateView = location => {
   return {
-    type: 'UPDATE_VEEW',
+    type: 'UPDATE_VIEW',
     location,
   };
 };
