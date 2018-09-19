@@ -33,7 +33,7 @@ const Input = props => {
 Input.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   onChange: PropTypes.func.isRequired,
 };
 
