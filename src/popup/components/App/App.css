@@ -1,6 +1,7 @@
 .app {
-  width: 500px;
-  height: 492px;
+  width: calc(var(--lh) * 24);
+  height: calc(var(--lh) * 20);
+  overflow: auto;
   padding: var(--lh);
 }
 
