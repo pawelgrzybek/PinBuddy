@@ -27,7 +27,7 @@
 .checkbox__label {
   position: relative;
   display: block;
-  padding-left: calc(var(--lh) * 1.25);
+  padding-left: var(--lh);
 }
 
 .checkbox__label::before,
@@ -37,11 +37,11 @@
 }
 
 .checkbox label::before {
-  height: calc(var(--lh) * .6666 - 2px);
-  width: calc(var(--lh) * .6666 - 2px);
+  height: 16px;
+  width: 16px;
   border: 1px solid var(--color-gray);
-  left: calc(var(--lh) * .166666667);
-  top: calc(var(--lh) * .166666667);
+  left: 0;
+  top: calc(var(--lh) / 2 - 8px);
   border-radius: var(--border-radius);
 }
 
@@ -50,8 +50,8 @@
   width: 6px;
   border-left: 2px solid var(--color-text);
   border-bottom: 2px solid var(--color-text);
-  left: 10px;
-  top: 10px;
+  left: 5px;
+  top: calc(var(--lh) / 2 - 3px);
   animation-name: checkboxPop;
   animation-duration: var(--animation-duration);
   animation-fill-mode: both;
