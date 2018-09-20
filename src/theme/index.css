@@ -5,7 +5,7 @@
 
 :root {
   --fz: 1rem;
-  --lh: 1.75rem;
+  --lh: 1.6rem;
   --color-text: #222;
   --color-primary: #00f;
   --color-error: #f00;
@@ -15,7 +15,7 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 93.75%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -26,7 +26,7 @@ body {
   line-height: var(--lh);
 
   /* background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
-  background-size: 100% 28px; */
+  background-size: 100% 24px; */
 }
 
 a {
@@ -38,4 +38,26 @@ hr {
   height: var(--lh);
   border: 0;
   box-shadow: 0 -1px 0 var(--color-gray);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(var(--lh) / 4));
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
