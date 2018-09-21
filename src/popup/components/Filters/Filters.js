@@ -12,7 +12,7 @@ class Filters extends Component {
     const {
       toRead,
       privatePosts,
-      updateKeyWord,
+      updateKeyword,
       updateToRead,
       updatePrivatePosts,
     } = this.props;
@@ -25,7 +25,7 @@ class Filters extends Component {
               id="filter"
               label="Search"
               placeholder="Search term"
-              onChange={updateKeyWord}
+              onChange={updateKeyword}
             />
           </div>
           <div className="filters__button">
@@ -70,7 +70,7 @@ class Filters extends Component {
 Filters.propTypes = {
   toRead: PropTypes.bool.isRequired,
   privatePosts: PropTypes.bool.isRequired,
-  updateKeyWord: PropTypes.func.isRequired,
+  updateKeyword: PropTypes.func.isRequired,
   updateToRead: PropTypes.func.isRequired,
   updatePrivatePosts: PropTypes.func.isRequired,
 };

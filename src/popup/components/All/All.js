@@ -9,7 +9,7 @@ import { Paragraph } from 'theme';
 
 class All extends Component {
   state = {
-    keyWord: '',
+    keyword: '',
     toRead: false,
     privatePosts: false,
   }
@@ -26,13 +26,13 @@ class All extends Component {
         <Filters
           toRead={this.state.toRead}
           privatePosts={this.state.privatePosts}
-          updateKeyWord={this.updateKeyWord}
+          updateKeyword={this.updateKeyword}
           updateToRead={this.updateToRead}
           updatePrivatePosts={this.updatePrivatePosts}
         />
         <List
           posts={this.props.posts}
-          keyWord={this.state.keyWord}
+          keyword={this.state.keyword}
           toRead={this.state.toRead}
           privatePosts={this.state.privatePosts}
         />
@@ -42,9 +42,9 @@ class All extends Component {
     );
   }
 
-  updateKeyWord = e => {
+  updateKeyword = e => {
     this.setState({
-      keyWord: e.target.value,
+      keyword: e.target.value,
     });
   }
 

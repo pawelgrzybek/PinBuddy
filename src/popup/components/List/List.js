@@ -11,7 +11,7 @@ class List extends Component {
           this.props.posts
             .filter(this.filterToRead)
             .filter(this.filterPublic)
-            .filter(this.filterkeyWord)
+            .filter(this.filterkeyword)
             .map(this.renderFilteredList)
         }
       </ul>
@@ -29,12 +29,12 @@ class List extends Component {
     return this.props.privatePosts ? post.shared !== 'yes' : post;
   }
 
-  filterkeyWord = post => {
-    const { keyWord } = this.props;
+  filterkeyword = post => {
+    const { keyword } = this.props;
     const postsDescription = post.description.toLowerCase();
-    const searchterm = keyWord.toLowerCase();
+    const searchterm = keyword.toLowerCase();
 
-    return keyWord.length ? postsDescription.includes(searchterm) : post;
+    return keyword.length ? postsDescription.includes(searchterm) : post;
   }
 
   renderFilteredList = post => {
@@ -60,7 +60,7 @@ class List extends Component {
 
 List.propTypes = {
   posts: PropTypes.array.isRequired,
-  keyWord: PropTypes.string.isRequired,
+  keyword: PropTypes.string.isRequired,
   toRead: PropTypes.bool.isRequired,
   privatePosts: PropTypes.bool.isRequired,
 };
