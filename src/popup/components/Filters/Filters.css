@@ -1,0 +1,33 @@
+.filters__top {
+  display: flex;
+  align-items: flex-end;
+}
+
+.filters__input {
+  width: 100%;
+}
+
+.filters__button {
+  margin-left: var(--lh);
+}
+
+.filters__bottom {
+  display: none;
+}
+
+.filters__bottom--active {
+  display: flex;
+}
+
+.all__filter {
+  margin-right: var(--lh);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  animation-name: slideIn;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: backwards;
+}
+
+.all__filter:nth-child(2) {
+  animation-delay: 50ms;
+}
