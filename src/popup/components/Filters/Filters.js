@@ -11,10 +11,10 @@ class Filters extends Component {
   render() {
     const {
       toRead,
-      privatePosts,
+      priv,
       updateKeyword,
       updateToRead,
-      updatePrivatePosts,
+      updatePriv,
     } = this.props;
 
     return (
@@ -46,10 +46,10 @@ class Filters extends Component {
           </div>
           <div className="all__filter">
             <Checkbox
-              id="privatePosts"
+              id="priv"
               label="Private"
-              checked={privatePosts}
-              onChange={updatePrivatePosts}
+              checked={priv}
+              onChange={updatePriv}
             />
           </div>
         </div>
@@ -69,10 +69,10 @@ class Filters extends Component {
 
 Filters.propTypes = {
   toRead: PropTypes.bool.isRequired,
-  privatePosts: PropTypes.bool.isRequired,
+  priv: PropTypes.bool.isRequired,
   updateKeyword: PropTypes.func.isRequired,
   updateToRead: PropTypes.func.isRequired,
-  updatePrivatePosts: PropTypes.func.isRequired,
+  updatePriv: PropTypes.func.isRequired,
 };
 
 export default Filters;

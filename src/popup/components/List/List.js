@@ -26,7 +26,7 @@ class List extends Component {
   }
 
   filterPublic = post => {
-    return this.props.privatePosts ? post.shared !== 'yes' : post;
+    return this.props.priv ? post.shared !== 'yes' : post;
   }
 
   filterkeyword = post => {
@@ -38,13 +38,13 @@ class List extends Component {
   }
 
   renderFilteredList = post => {
-    const privatePosts = post.shared === 'no';
+    const priv = post.shared === 'no';
     const toread = post.toread === 'yes';
 
     return (
       <li className="list__item" key={post.hash}>
         <a
-          className={`list__url ${toread ? 'list__url--toread' : ''} ${privatePosts ? 'list__url--private' : ''}`}
+          className={`list__url ${toread ? 'list__url--toread' : ''} ${priv ? 'list__url--private' : ''}`}
           href={post.href}
           rel="noopener noreferrer"
           target="_blank"
@@ -62,7 +62,7 @@ List.propTypes = {
   posts: PropTypes.array.isRequired,
   keyword: PropTypes.string.isRequired,
   toRead: PropTypes.bool.isRequired,
-  privatePosts: PropTypes.bool.isRequired,
+  priv: PropTypes.bool.isRequired,
 };
 
 export default List;

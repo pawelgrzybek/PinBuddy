@@ -11,7 +11,7 @@ class All extends Component {
   state = {
     keyword: '',
     toRead: false,
-    privatePosts: false,
+    priv: false,
   }
 
   componentDidMount() {
@@ -25,16 +25,16 @@ class All extends Component {
       <div className="all">
         <Filters
           toRead={this.state.toRead}
-          privatePosts={this.state.privatePosts}
+          priv={this.state.priv}
           updateKeyword={this.updateKeyword}
           updateToRead={this.updateToRead}
-          updatePrivatePosts={this.updatePrivatePosts}
+          updatePriv={this.updatePriv}
         />
         <List
           posts={this.props.posts}
           keyword={this.state.keyword}
           toRead={this.state.toRead}
-          privatePosts={this.state.privatePosts}
+          priv={this.state.priv}
         />
       </div>
     ) : (
@@ -56,10 +56,10 @@ class All extends Component {
     });
   }
 
-  updatePrivatePosts = e => {
+  updatePriv = e => {
     this.setState(state => {
       return {
-        privatePosts: !state.privatePosts,
+        priv: !state.priv,
       };
     });
   }
