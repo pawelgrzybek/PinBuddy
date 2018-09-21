@@ -8,6 +8,12 @@ class Filters extends Component {
     showFilters: false,
   }
 
+  refInput = React.createRef();
+
+  componentDidMount() {
+    this.refInput.current.focus();
+  }
+
   render() {
     const {
       privatePost,
@@ -30,6 +36,7 @@ class Filters extends Component {
               label="Search"
               placeholder="Search term"
               onChange={updateKeyword}
+              ref={this.refInput}
             />
           </div>
           <div className="filters__button">

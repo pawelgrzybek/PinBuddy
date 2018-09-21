@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Input.css';
 
-const Input = props => {
+const Input = React.forwardRef((props, ref) => {
   const {
     id,
     label,
@@ -25,10 +25,11 @@ const Input = props => {
         type={type}
         placeholder={placeholder}
         onChange={onChange}
+        ref={ref}
       />
     </>
   );
-};
+});
 
 Input.propTypes = {
   id: PropTypes.string.isRequired,
