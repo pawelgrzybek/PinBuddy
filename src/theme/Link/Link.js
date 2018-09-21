@@ -9,6 +9,7 @@ const Link = props => {
       href={url}
       title={title}
       target={blank ? '_blank' : '_self'}
+      rel={blank ? 'noopener noreferrer' : ''}
       className="link"
     >
       {t}
