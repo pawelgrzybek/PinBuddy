@@ -32,7 +32,6 @@ class App extends Component {
             <Nav />
           </nav>
         </header>
-        <hr />
         <main className="app__main">
           <Main />
         </main>
