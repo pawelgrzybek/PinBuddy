@@ -13,7 +13,7 @@
     "description": "Options page - title"
   },
   "optionsFooter": {
-    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Issues & feature requests: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek\" target=\"_blank\" title=\"Pawel Grzybek on GitHub\">GitHub</a>.",
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Issues & feature requests: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinboard-x/issues\" target=\"_blank\" title=\"Pawel Grzybek on GitHub\">GitHub</a>.",
     "description": "Options page - footer"
   },
   "optionsLoginManual": {
