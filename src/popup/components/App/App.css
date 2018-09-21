@@ -1,5 +1,5 @@
 .app {
-  width: calc(var(--lh) * 24);
+  width: calc(var(--lh) * 22);
   height: calc(var(--lh) * 20);
   overflow: auto;
   padding: var(--lh);
