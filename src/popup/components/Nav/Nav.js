@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+
 import { updateView, getInitialView } from '../../actions/view';
 import './Nav.css';
 
@@ -8,10 +9,12 @@ class Nav extends Component {
   componentDidMount() {
     this.props.getInitialView();
   }
+
   render() {
     const { username, online, view } = this.props;
+    const shouldShowNav = username && online;
 
-    return (username && online) ? (
+    return shouldShowNav && (
       <>
         <a
           href="all"
@@ -35,7 +38,7 @@ class Nav extends Component {
           {chrome.i18n.getMessage('popupAddURLText')}
         </a>
       </>
-    ) : null;
+    );
   }
 
   handleNavLinkClick = e => {
@@ -52,13 +55,11 @@ Nav.propTypes = {
   getInitialView: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    username: state.user.username,
-    online: state.online,
-    view: state.view,
-  };
-};
+const mapStateToProps = state => ({
+  username: state.user.username,
+  online: state.online,
+  view: state.view,
+});
 
 const mapDispatchToProps = dispatch => {
   return {
