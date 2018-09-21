@@ -6,4 +6,3 @@ const Offline = props => (
 );
 
 export default Offline;
-
