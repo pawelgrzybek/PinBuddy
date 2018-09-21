@@ -5,18 +5,19 @@
 
 :root {
   --fz: 1rem;
-  --lh: 1.6rem;
+  --lh: 1.733333333rem;
   --color-text: #222;
   --color-primary: #00f;
+  --color-secondary: #b41;
   --color-error: #f00;
   --color-gray: #aaa;
+  --color-gray-light: #ddd;
   --border-radius: 3px;
   --animation-duration: 200ms;
 }
 
 html {
   font-size: 93.75%;
-  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
   line-height: var(--lh);
 
   /* background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
-  background-size: 100% 24px; */
+  background-size: 100% 26px; */
 }
 
 a {
