@@ -1,7 +1,7 @@
 const initialState = [];
 
 const reducerPosts = (state = initialState, action) => {
-  if (action.type === 'GET_POSTS') {
+  if (action.type === 'POSTS_GET') {
     return action.posts;
   }
 

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getPosts } from '../../actions/posts';
+import { postsGet } from '../../actions/posts';
 import Filters from '../Filters';
 import List from '../List';
 import './All.css';
-import { Paragraph } from 'theme';
 
 class All extends Component {
   state = {
@@ -18,12 +17,12 @@ class All extends Component {
 
   componentDidMount() {
     if (!this.props.posts.length) {
-      this.props.getPosts();
+      this.props.postsGet();
     }
   }
 
   render() {
-    return this.props.posts.length ? (
+    return !!this.props.posts.length && (
       <div className="all">
         <Filters
           privatePost={this.state.privatePost}
@@ -45,8 +44,6 @@ class All extends Component {
           keyword={this.state.keyword}
         />
       </div>
-    ) : (
-      <Paragraph t="Loading" />
     );
   }
 
@@ -93,7 +90,7 @@ class All extends Component {
 
 All.propTypes = {
   posts: PropTypes.array.isRequired,
-  getPosts: PropTypes.func.isRequired,
+  postsGet: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state, ownProps) => {
@@ -104,7 +101,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    getPosts: () => dispatch(getPosts()),
+    postsGet: () => dispatch(postsGet()),
   };
 };
 

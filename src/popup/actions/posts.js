@@ -1,4 +1,4 @@
-export const getPosts = ownProps => {
+export const postsGet = () => {
   return (dispatch, getState) => {
     const { username, token } = getState().user;
 
@@ -16,20 +16,20 @@ export const getPosts = ownProps => {
                 posts: newPosts,
                 postsFetched: now,
               },
-              () => dispatch({
-                type: 'GET_POSTS',
-                posts: newPosts,
-              })
-            );
+              () => {
+                dispatch({
+                  type: 'POSTS_GET',
+                  posts: newPosts,
+                });
+              });
           });
       }
       else {
         dispatch({
-          type: 'GET_POSTS',
+          type: 'POSTS_GET',
           posts,
         });
       }
     });
   };
 };
-
