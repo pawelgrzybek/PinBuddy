@@ -1,24 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import All from '../All';
-import Add from '../Add';
+
+import LoggedInView from '../LoggedInView';
+import LoggedOutView from '../LoggedOutView';
 
 const Online = props => {
-  const { view } = props;
+  const { username, token } = props;
+  const userSignedIn = username && token;
 
-  return view === 'all' ? <All /> : <Add />;
+  return userSignedIn ? <LoggedInView /> : <LoggedOutView />;
 };
 
 Online.propTypes = {
-  view: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  token: PropTypes.string.isRequired,
 };
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    view: state.view,
-  };
-};
+const mapStateToProps = state => ({
+  username: state.user.username,
+  token: state.user.token,
+});
 
 export default connect(mapStateToProps)(Online);
 
