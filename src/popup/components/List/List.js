@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+
+import Article from '../Article';
 import './List.css';
 
 class List extends Component {
@@ -9,8 +10,10 @@ class List extends Component {
       <ul className="list">
         {
           this.props.posts
-            .filter(this.filterToRead)
+            .filter(this.filterPrivate)
             .filter(this.filterPublic)
+            .filter(this.filterUnread)
+            .filter(this.filterUntagged)
             .filter(this.filterkeyword)
             .map(this.renderFilteredList)
         }
@@ -18,15 +21,23 @@ class List extends Component {
     );
   }
 
-  filterToRead = post => {
-    if (this.props.toRead) {
+  filterPrivate = post => {
+    return this.props.privatePost ? post.shared === 'no' : post;
+  }
+
+  filterPublic = post => {
+    return this.props.publicPost ? post.shared === 'yes' : post;
+  }
+
+  filterUnread = post => {
+    if (this.props.unread) {
       return post.toread === 'yes';
     }
     return post;
   }
 
-  filterPublic = post => {
-    return this.props.priv ? post.shared !== 'yes' : post;
+  filterUntagged = post => {
+    return this.props.untagged ? post.tags === '' : post;
   }
 
   filterkeyword = post => {
@@ -38,21 +49,19 @@ class List extends Component {
   }
 
   renderFilteredList = post => {
-    const priv = post.shared === 'no';
-    const toread = post.toread === 'yes';
+    const privatePost = post.shared === 'no';
+    const unread = post.toread === 'yes';
 
     return (
       <li className="list__item" key={post.hash}>
-        <a
-          className={`list__url ${toread ? 'list__url--toread' : ''} ${priv ? 'list__url--private' : ''}`}
+        <Article
+          privatePost={privatePost}
+          unread={unread}
           href={post.href}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <div className="list__linkdescription">{post.description}</div>
-          <div className="list__linkmeta">{post.time}</div>
-          {/* <strong>{post.toread === 'yes' ? 'to read' : ''}</strong>  */}
-        </a>
+          description={post.description}
+          time={post.time}
+          tags={post.tags}
+        />
       </li>
     );
   }
@@ -61,8 +70,10 @@ class List extends Component {
 List.propTypes = {
   posts: PropTypes.array.isRequired,
   keyword: PropTypes.string.isRequired,
-  toRead: PropTypes.bool.isRequired,
-  priv: PropTypes.bool.isRequired,
+  unread: PropTypes.bool.isRequired,
+  untagged: PropTypes.bool.isRequired,
+  privatePost: PropTypes.bool.isRequired,
+  publicPost: PropTypes.bool.isRequired,
 };
 
 export default List;

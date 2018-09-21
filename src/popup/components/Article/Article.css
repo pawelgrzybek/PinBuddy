@@ -1,0 +1,25 @@
+.article {
+  display: block;
+  text-decoration: none;
+}
+
+.article:hover {
+  text-decoration: none;
+}
+
+.article:hover .article__description {
+  text-decoration: underline;
+}
+
+.article--unread {
+  color: var(--color-secondary);
+}
+
+.article--private {
+  background-color: var(--color-gray-light);
+}
+
+.article__meta {
+  font-size: .8rem;
+  color: var(--color-gray);
+}

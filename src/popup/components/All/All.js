@@ -10,8 +10,10 @@ import { Paragraph } from 'theme';
 class All extends Component {
   state = {
     keyword: '',
-    toRead: false,
-    priv: false,
+    privatePost: false,
+    publicPost: false,
+    untagged: false,
+    unread: false,
   }
 
   componentDidMount() {
@@ -24,17 +26,23 @@ class All extends Component {
     return this.props.posts.length ? (
       <div className="all">
         <Filters
-          toRead={this.state.toRead}
-          priv={this.state.priv}
+          privatePost={this.state.privatePost}
+          publicPost={this.state.publicPost}
+          unread={this.state.unread}
+          untagged={this.state.untagged}
           updateKeyword={this.updateKeyword}
-          updateToRead={this.updateToRead}
-          updatePriv={this.updatePriv}
+          updatePrivatePost={this.updatePrivatePost}
+          updatePublicPost={this.updatePublicPost}
+          updateUnread={this.updateUnread}
+          updateUntagged={this.updateUntagged}
         />
         <List
           posts={this.props.posts}
+          privatePost={this.state.privatePost}
+          publicPost={this.state.publicPost}
+          unread={this.state.unread}
+          untagged={this.state.untagged}
           keyword={this.state.keyword}
-          toRead={this.state.toRead}
-          priv={this.state.priv}
         />
       </div>
     ) : (
@@ -42,25 +50,43 @@ class All extends Component {
     );
   }
 
+  updatePrivatePost = () => {
+    this.setState(state => {
+      return {
+        privatePost: !state.privatePost,
+        publicPost: false,
+      };
+    });
+  }
+
+  updatePublicPost = () => {
+    this.setState(state => {
+      return {
+        publicPost: !state.publicPost,
+        privatePost: false,
+      };
+    });
+  }
+
+  updateUnread = () => {
+    this.setState(state => {
+      return {
+        unread: !state.unread,
+      };
+    });
+  }
+
+  updateUntagged = () => {
+    this.setState(state => {
+      return {
+        untagged: !state.untagged,
+      };
+    });
+  }
+
   updateKeyword = e => {
     this.setState({
       keyword: e.target.value,
-    });
-  }
-
-  updateToRead = e => {
-    this.setState(state => {
-      return {
-        toRead: !state.toRead,
-      };
-    });
-  }
-
-  updatePriv = e => {
-    this.setState(state => {
-      return {
-        priv: !state.priv,
-      };
     });
   }
 }

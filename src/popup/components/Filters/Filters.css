@@ -31,3 +31,11 @@
 .all__filter:nth-child(2) {
   animation-delay: 50ms;
 }
+
+.all__filter:nth-child(3) {
+  animation-delay: 100ms;
+}
+
+.all__filter:nth-child(4) {
+  animation-delay: 150ms;
+}

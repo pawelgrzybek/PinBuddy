@@ -7,30 +7,3 @@
 .list__item {
   margin-bottom: calc(var(--lh) / 2);
 }
-
-.list__url {
-  position: relative;
-  display: block;
-  text-decoration: none;
-}
-
-.list__url--toread {
-  color: var(--color-secondary);
-}
-
-.list__url--private {
-  background-color: var(--color-gray-light);
-}
-
-.list__url:hover {
-  text-decoration: underline;
-}
-
-.list__linkdescription {
-  /* font-weight: 500; */
-}
-
-.list__linkmeta {
-  font-size: .8rem;
-  color: var(--color-gray);
-}

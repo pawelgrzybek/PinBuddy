@@ -10,11 +10,15 @@ class Filters extends Component {
 
   render() {
     const {
-      toRead,
-      priv,
+      privatePost,
+      publicPost,
+      unread,
+      untagged,
       updateKeyword,
-      updateToRead,
-      updatePriv,
+      updatePrivatePost,
+      updatePublicPost,
+      updateUnread,
+      updateUntagged,
     } = this.props;
 
     return (
@@ -38,18 +42,34 @@ class Filters extends Component {
         <div className={this.state.showFilters ? 'filters__bottom filters__bottom--active' : 'filters__bottom'}>
           <div className="all__filter">
             <Checkbox
-              id="toRead"
-              label="Uread"
-              checked={toRead}
-              onChange={updateToRead}
+              id="privatePost"
+              label="private"
+              checked={privatePost}
+              onChange={updatePrivatePost}
             />
           </div>
           <div className="all__filter">
             <Checkbox
-              id="priv"
-              label="Private"
-              checked={priv}
-              onChange={updatePriv}
+              id="publicPost"
+              label="public"
+              checked={publicPost}
+              onChange={updatePublicPost}
+            />
+          </div>
+          <div className="all__filter">
+            <Checkbox
+              id="unread"
+              label="unread"
+              checked={unread}
+              onChange={updateUnread}
+            />
+          </div>
+          <div className="all__filter">
+            <Checkbox
+              id="untagged"
+              label="untagged"
+              checked={untagged}
+              onChange={updateUntagged}
             />
           </div>
         </div>
@@ -68,11 +88,15 @@ class Filters extends Component {
 }
 
 Filters.propTypes = {
-  toRead: PropTypes.bool.isRequired,
-  priv: PropTypes.bool.isRequired,
+  privatePost: PropTypes.bool.isRequired,
+  publicPost: PropTypes.bool.isRequired,
+  unread: PropTypes.bool.isRequired,
+  untagged: PropTypes.bool.isRequired,
   updateKeyword: PropTypes.func.isRequired,
-  updateToRead: PropTypes.func.isRequired,
-  updatePriv: PropTypes.func.isRequired,
+  updatePrivatePost: PropTypes.func.isRequired,
+  updatePublicPost: PropTypes.func.isRequired,
+  updateUnread: PropTypes.func.isRequired,
+  updateUntagged: PropTypes.func.isRequired,
 };
 
 export default Filters;
