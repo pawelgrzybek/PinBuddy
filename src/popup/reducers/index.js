@@ -3,10 +3,12 @@ import user from './user';
 import online from './online';
 import view from './view';
 import posts from './posts';
+import loading from './loading';
 
 export default combineReducers({
   user,
   online,
   view,
   posts,
+  loading,
 });
