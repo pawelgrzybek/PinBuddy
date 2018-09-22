@@ -114,6 +114,14 @@
   "popupLoadingMessage": {
     "message": "Loading…",
     "description": "Popup - loading message shown accross the pop-up"
+  },
+  "popupErrorMessage": {
+    "message": "Error occured. Please make sure that your token is valid.",
+    "description": "Popup - error message shown accross the pop-up"
+  },
+  "popupErrorButtonMessage": {
+    "message": "Open an option page to validate a token",
+    "description": "Popup - error button message shown accross the pop-up"
   }
 
 }

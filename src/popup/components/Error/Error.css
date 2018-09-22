@@ -1,0 +1,6 @@
+.error {
+  animation-name: fadeIn;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: backwards;
+  color: var(--color-error);
+}

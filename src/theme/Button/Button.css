@@ -8,6 +8,7 @@
   color: #fff;
   border-radius: var(--border-radius);
   cursor: pointer;
+  font-weight: 400;
 }
 
 .button:disabled {

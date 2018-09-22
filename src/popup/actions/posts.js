@@ -1,4 +1,5 @@
 import { loadingShowAction, loadingHideAction } from './loading';
+import { errorShowAction } from './error';
 
 export const postsGet = () => {
   return (dispatch, getState) => {
@@ -21,12 +22,17 @@ export const postsGet = () => {
                 postsFetched: now,
               },
               () => {
-                dispatch(loadingHideAction());
                 dispatch({
                   type: 'POSTS_GET',
                   posts: newPosts,
                 });
               });
+          })
+          .catch(() => {
+            dispatch(errorShowAction());
+          })
+          .finally(() => {
+            dispatch(loadingHideAction());
           });
       }
       else {
