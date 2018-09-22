@@ -39,7 +39,15 @@
   white-space: nowrap;
 }
 
-.article__info--action:hover {
-  color: var(--color-primary);
+.article__info--edit:hover,
+.article__info--delete:hover {
   cursor: pointer;
+}
+
+.article__info--edit:hover {
+  color: var(--color-primary);
+}
+
+.article__info--delete:hover {
+  color: var(--color-error);
 }
