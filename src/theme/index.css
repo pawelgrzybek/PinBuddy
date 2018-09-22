@@ -34,6 +34,13 @@ a {
   color: var(--color-primary);
 }
 
+hr {
+  display: block;
+  height: var(--lh);
+  border: 0;
+  box-shadow: 0 -1px 0 var(--color-gray);
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
