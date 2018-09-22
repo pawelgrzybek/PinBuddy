@@ -1,0 +1,5 @@
+.loading {
+  animation-name: fadeIn;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: backwards;
+}

@@ -110,6 +110,10 @@
   "popupLoggedOutViewMessage": {
     "message": "You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\">settings page under the password tab</a>. It is a short opaque identifier that allows Pinboard-X to make API calls without ever asking for your password.",
     "description": "Popup - legged out user message"
+  },
+  "popupLoadingMessage": {
+    "message": "Loading…",
+    "description": "Popup - loading message shown accross the pop-up"
   }
 
 }
