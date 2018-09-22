@@ -10,7 +10,7 @@ class LoggedOutView extends PureComponent {
           t={chrome.i18n.getMessage('popupLoggedOutViewMessage')}
         />
         <Button
-          t={'Open an option page to log in'}
+          t={chrome.i18n.getMessage('popupLoggedOutViewButtonMessage')}
           onClick={this.handeOpenOptionPageButtonClick}
         />
       </>
