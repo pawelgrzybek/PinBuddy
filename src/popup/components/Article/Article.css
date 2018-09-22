@@ -3,23 +3,43 @@
   text-decoration: none;
 }
 
-.article:hover {
+.article--private {
+  background-color: var(--color-gray-light);
+}
+
+.article__url {
   text-decoration: none;
 }
 
-.article:hover .article__description {
-  text-decoration: underline;
-}
-
-.article--unread {
+.article__url--unread {
   color: var(--color-secondary);
 }
 
-.article--private {
-  background-color: var(--color-gray-light);
+.article__url:hover {
+  text-decoration: underline;
 }
 
 .article__meta {
   font-size: .8rem;
   color: var(--color-gray);
+  display: flex;
+}
+
+.article__info {
+  margin-right: calc(var(--lh) / 3);
+}
+
+.article__info:last-child {
+  margin-right: 0;
+}
+
+.article__info--tags {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.article__info--action:hover {
+  color: var(--color-primary);
+  cursor: pointer;
 }
