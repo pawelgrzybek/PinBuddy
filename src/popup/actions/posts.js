@@ -1,5 +1,9 @@
+import { loadingShowAction, loadingHideAction } from './loading';
+
 export const postsGet = () => {
   return (dispatch, getState) => {
+    dispatch(loadingShowAction());
+
     const { username, token } = getState().user;
 
     chrome.storage.local.get(['posts', 'postsFetched'], result => {
@@ -17,6 +21,7 @@ export const postsGet = () => {
                 postsFetched: now,
               },
               () => {
+                dispatch(loadingHideAction());
                 dispatch({
                   type: 'POSTS_GET',
                   posts: newPosts,
@@ -25,6 +30,7 @@ export const postsGet = () => {
           });
       }
       else {
+        dispatch(loadingHideAction());
         dispatch({
           type: 'POSTS_GET',
           posts,

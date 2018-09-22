@@ -6,7 +6,12 @@ import All from '../All';
 import Add from '../Add';
 
 const LoggedInView = props => {
-  return props.view === 'all' ? <All /> : <Add />;
+  return (
+    <>
+      {props.loading && <p>loading…</p>}
+      {props.view === 'all' ? <All /> : <Add />}
+    </>
+  );
 };
 
 LoggedInView.propTypes = {
@@ -15,6 +20,7 @@ LoggedInView.propTypes = {
 
 const mapStateToProps = state => ({
   view: state.view,
+  loading: state.loading,
 });
 
 export default connect(mapStateToProps)(LoggedInView);
