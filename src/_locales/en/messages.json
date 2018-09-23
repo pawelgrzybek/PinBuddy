@@ -8,6 +8,7 @@
     "description": "Extension description"
   },
 
+
   "optionsTitle": {
     "message": "Pinboard X",
     "description": "Options page - title"
@@ -58,30 +59,31 @@
     "message": "Sign out",
     "description": "Options page - sign out button text"
   },
-  "optionsPrivateCheckboxByDefault": {
-    "message": "\"Private\" checkbox by default",
-    "description": "Options page - option 1 label"
-  },
-  "optionsToReadChecboxByDefault": {
-    "message": "\"To read\" checkbox by default",
-    "description": "Options page - option 2 label"
-  },
-  "optionsUseDescriptionMetaTag": {
-    "message": "Use description meta tag as a URL description",
-    "description": "Options page - option 3 label"
-  },
   "optionsDefaultView": {
     "message": "Default view",
-    "description": "Options page - option 4 label"
+    "description": "Options page - default view label"
   },
   "optionsDefaultViewAllText": {
-    "message": "Browse",
-    "description": "Options page - option 4 all text"
+    "message": "all",
+    "description": "Options page - default view option all"
   },
   "optionsDefaultViewAddText": {
-    "message": "Add URL",
-    "description": "Options page - option 4 add text"
+    "message": "add url",
+    "description": "Options page - default view option add url"
   },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Private\" checkbox by default (add url view)",
+    "description": "Options page - checkbox 1 label"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"To read\" checkbox by default (add url view)",
+    "description": "Options page - checkbox 2 label"
+  },
+  "optionsUseDescriptionMetaTag": {
+    "message": "Use description meta tag as a URL description (add url view)",
+    "description": "Options page - checkbox 3 label"
+  },
+
 
   "popupOpenYourPinboardProfile": {
     "message": "Open your Pinboard Profile",

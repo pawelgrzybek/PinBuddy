@@ -43,6 +43,14 @@ class Options extends Component {
 
         <hr />
 
+        <Select
+          id="defaultView"
+          label={chrome.i18n.getMessage('optionsDefaultView')}
+          onChange={this.handleSelectChange}
+          options={defaultViewOptions}
+          selected={this.state.defaultView}
+        />
+
         <Checkbox
           id="privateCheckboxByDefault"
           label={chrome.i18n.getMessage('optionsPrivateCheckboxByDefault')}
@@ -64,13 +72,7 @@ class Options extends Component {
           checked={this.state.useDescriptionMetaTag}
         />
 
-        <Select
-          id="defaultView"
-          label={chrome.i18n.getMessage('optionsDefaultView')}
-          onChange={this.handleSelectChange}
-          options={defaultViewOptions}
-          selected={this.state.defaultView}
-        />
+
 
       </>
     );

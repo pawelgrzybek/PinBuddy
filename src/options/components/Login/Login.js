@@ -59,6 +59,7 @@ class Login extends Component {
     fetch(`${API}user/api_token?format=json&auth_token=${this.state.token}`)
       .then(dataAuth => dataAuth.json())
       .then(() => {
+        const now = Date.now();
         const [username, token] = this.state.token.split(':');
         chrome.storage.local.set(
           {
@@ -76,10 +77,24 @@ class Login extends Component {
             chrome.storage.local.set(
               {
                 posts,
-                postsFetched: Date.now(),
+                postsFetched: now,
               }
             );
           });
+
+        fetch(`${API}tags/get?format=json&auth_token=${this.state.token}`)
+          .then(dataTags => dataTags.json())
+          .then(tags => {
+            const listOfTags = Object.keys(tags);
+
+            chrome.storage.local.set(
+              {
+                tags: listOfTags,
+                tagsFetched: now,
+              }
+            );
+          });
+
       })
       .catch(() => {
         this.setState({

@@ -8,19 +8,19 @@ import 'theme/index.css';
 
 const store = createStore(reducers);
 
-store.subscribe(() => {
-  console.log('----------------------------------------------');
-  console.log(' ');
-  console.log('Redux state');
-  console.log(store.getState());
-  console.log(' ');
-  console.log('Chrome storage');
-  chrome.storage.local.get(result => {
-    console.log(result);
-    console.log(' ');
-    console.log('----------------------------------------------');
-  });
-});
+// store.subscribe(() => {
+//   console.log('----------------------------------------------');
+//   console.log(' ');
+//   console.log('Redux state');
+//   console.log(store.getState());
+//   console.log(' ');
+//   console.log('Chrome storage');
+//   chrome.storage.local.get(result => {
+//     console.log(result);
+//     console.log(' ');
+//     console.log('----------------------------------------------');
+//   });
+// });
 
 render(
   <Provider store={store}>
