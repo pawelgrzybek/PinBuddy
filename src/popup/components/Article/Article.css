@@ -40,14 +40,21 @@
 }
 
 .article__info--edit:hover,
-.article__info--delete:hover {
+.article__info--delete:hover,
+.article__info--cancel:hover {
   cursor: pointer;
 }
 
-.article__info--edit:hover {
+.article__info--edit:hover,
+.article__info--cancel:hover {
   color: var(--color-primary);
+}
+
+.article__info--separator {
+  margin: calc(var(--lh) / 4);
 }
 
 .article__info--delete:hover {
   color: var(--color-error);
 }
+

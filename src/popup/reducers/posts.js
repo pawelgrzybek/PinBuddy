@@ -5,6 +5,13 @@ const reducerPosts = (state = initialState, action) => {
     return action.posts;
   }
 
+  if (action.type === 'POSTS_DELETE') {
+    const newState = state.filter(post => {
+      return post.href !== action.href;
+    });
+    return newState;
+  }
+
   return state;
 };
 

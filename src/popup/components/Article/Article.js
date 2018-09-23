@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
+import { postsDelete } from '../../actions/posts';
 import './Article.css';
 
 class Article extends Component {
   state={
-
+    deleteActive: false,
   }
 
   render() {
@@ -32,13 +34,41 @@ class Article extends Component {
           {description}
         </a>
         <div className="article__meta">
-          <span className="article__info">{timeFormated}</span>
-          {tags ? <span className="article__info article__info--tags">{tagsFormated}</span> : ''}
-          <span className="article__info article__info--edit">Edit</span>
-          <span className="article__info article__info--delete article__info--mouseover">Delete</span>
+          <div className="article__info">{timeFormated}</div>
+          {tags ? <div className="article__info article__info--tags">{tagsFormated}</div> : ''}
+          <div className="article__info article__info--edit">Edit</div>
+          <div className="article__info">
+            {this.state.deleteActive && (
+              <>
+                <span className="article__info--cancel" onClick={this.handleCancelClick}>Cancel</span>
+                <span className="article__info--separator">/</span>
+              </>
+            )}
+            <span className="article__info--delete" onClick={this.handleDeleteClick}>Delete</span>
+          </div>
         </div>
       </article>
     );
+  }
+
+  handleDeleteClick = () => {
+    if (this.state.deleteActive) {
+      this.props.postsDelete(this.props.href);
+    }
+
+    this.setState(state => {
+      return {
+        deleteActive: !state.deleteActive,
+      };
+    });
+  }
+
+  handleCancelClick = () => {
+    this.setState(state => {
+      return {
+        deleteActive: !state.deleteActive,
+      };
+    });
   }
 }
 
@@ -50,6 +80,13 @@ Article.propTypes = {
   description: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
+  postsDelete: PropTypes.func.isRequired,
 };
 
-export default Article;
+const mapDispatchToProps = dispatch => {
+  return {
+    postsDelete: href => dispatch(postsDelete(href)),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Article);

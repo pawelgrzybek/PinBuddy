@@ -45,3 +45,25 @@ export const postsGet = () => {
     });
   };
 };
+
+export const postsDelete = href => {
+  return (dispatch, getState) => {
+    const { username, token } = getState().user;
+    const { posts } = getState();
+
+    const newState = posts.filter(post => {
+      return post.href !== href;
+    });
+
+    fetch(`https://api.pinboard.in/v1/posts/delete?format=json&url=${href}&auth_token=${username}:${token}`)
+      .then(() => chrome.storage.local.set({ posts: newState }))
+      .catch(() => {
+        dispatch(errorShowAction());
+      });
+
+    dispatch({
+      type: 'POSTS_DELETE',
+      href
+    });
+  };
+};
