@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { authenticateUser } from '../../actions/auth';
-import { Paragraph, Error, Input, Button } from 'theme';
+import { connect } from 'react-redux';
 
-const API = 'https://api.pinboard.in/v1/';
+import { authLogIn } from '../../actions/auth';
+import { Paragraph, Error, Input, Button } from 'theme';
 
 class Login extends Component {
   state = {
     token: '',
-    error: false,
-    loading: false,
   };
 
   static validateInput(input) {
@@ -23,10 +20,10 @@ class Login extends Component {
       <form onSubmit={this.onFormSubmit}>
         <Paragraph innerHTML t={chrome.i18n.getMessage('optionsLoginManual')} />
 
-        { this.state.error && <Error t={chrome.i18n.getMessage('optionsLoginError')} /> }
+        { this.props.error && <Error t={chrome.i18n.getMessage('optionsLoginError')} /> }
 
         {
-          this.state.loading ? (
+          this.props.loading ? (
             <Paragraph innerHTML t={chrome.i18n.getMessage('optionsLoginLoading')} />
           ) : (
             <>
@@ -51,57 +48,7 @@ class Login extends Component {
 
   onFormSubmit = e => {
     e.preventDefault();
-    this.setState({
-      loading: true,
-      error: false,
-    });
-
-    fetch(`${API}user/api_token?format=json&auth_token=${this.state.token}`)
-      .then(dataAuth => dataAuth.json())
-      .then(() => {
-        const now = Date.now();
-        const [username, token] = this.state.token.split(':');
-        chrome.storage.local.set(
-          {
-            username,
-            token,
-          },
-          () => {
-            this.props.authenticateUser(this.state.token);
-          }
-        );
-
-        fetch(`${API}posts/all?format=json&auth_token=${this.state.token}`)
-          .then(dataPosts => dataPosts.json())
-          .then(posts => {
-            chrome.storage.local.set(
-              {
-                posts,
-                postsFetched: now,
-              }
-            );
-          });
-
-        fetch(`${API}tags/get?format=json&auth_token=${this.state.token}`)
-          .then(dataTags => dataTags.json())
-          .then(tags => {
-            const listOfTags = Object.keys(tags);
-
-            chrome.storage.local.set(
-              {
-                tags: listOfTags,
-                tagsFetched: now,
-              }
-            );
-          });
-
-      })
-      .catch(() => {
-        this.setState({
-          error: true,
-          loading: false,
-        });
-      });
+    this.props.authLogIn(this.state.token);
   }
 
   onChangeUserInput = e => {
@@ -115,24 +62,18 @@ class Login extends Component {
 }
 
 Login.propTypes = {
-  token: PropTypes.string.isRequired,
-  username: PropTypes.string.isRequired,
-  authenticateUser: PropTypes.func.isRequired,
+  loading: PropTypes.bool.isRequired,
+  error: PropTypes.bool.isRequired,
+  authLogIn: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    token: state.auth.token,
-    username: state.auth.username,
-  };
-};
+const mapStateToProps = state => ({
+  loading: state.auth.loading,
+  error: state.auth.error,
+});
 
-const mapDispatchToProps = dispatch => {
-  return {
-    authenticateUser: token => {
-      dispatch(authenticateUser(token));
-    }
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  authLogIn: token => dispatch(authLogIn(token))
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
