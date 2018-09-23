@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import Article from '../Article';
 import './List.css';
-import { uptime } from 'os';
 
 class List extends Component {
   componentDidMount() {

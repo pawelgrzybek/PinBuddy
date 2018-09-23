@@ -39,11 +39,11 @@ class Article extends Component {
           <div className="article__info">
             {this.state.deleteActive && (
               <>
-                <span className="article__info--cancel" onClick={this.handleCancelClick}>Cancel</span>
+                <span className="article__info--cancel" onClick={this.handleCancelClick}>{chrome.i18n.getMessage('popupArticleButtonCancel')}</span>
                 <span className="article__info--separator">/</span>
               </>
             )}
-            <span className="article__info--delete" onClick={this.handleDeleteClick}>Delete</span>
+            <span className="article__info--delete" onClick={this.handleDeleteClick}>{chrome.i18n.getMessage('popupArticleButtonDelete')}</span>
           </div>
         </div>
       </article>
@@ -70,7 +70,6 @@ class Article extends Component {
     });
   }
 }
-
 
 Article.propTypes = {
   privatePost: PropTypes.bool.isRequired,

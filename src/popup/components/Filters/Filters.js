@@ -33,15 +33,15 @@ class Filters extends Component {
           <div className="filters__input">
             <Input
               id="filter"
-              label="Search"
-              placeholder="Search term"
+              label={chrome.i18n.getMessage('popupFiltersSearchLabel')}
+              placeholder={chrome.i18n.getMessage('popupFiltersSearchPlaceholder')}
               onChange={updateKeyword}
               ref={this.refInput}
             />
           </div>
           <div className="filters__button">
             <Button
-              t="Filter"
+              t={chrome.i18n.getMessage('popupFiltersFilterButton')}
               onClick={this.toggleFilters}
             />
           </div>
@@ -50,7 +50,7 @@ class Filters extends Component {
           <div className="all__filter">
             <Checkbox
               id="privatePost"
-              label="private"
+              label={chrome.i18n.getMessage('popupFiltersCheckboxPrivate')}
               checked={privatePost}
               onChange={updatePrivatePost}
             />
@@ -58,7 +58,7 @@ class Filters extends Component {
           <div className="all__filter">
             <Checkbox
               id="publicPost"
-              label="public"
+              label={chrome.i18n.getMessage('popupFiltersCheckboxPublic')}
               checked={publicPost}
               onChange={updatePublicPost}
             />
@@ -66,7 +66,7 @@ class Filters extends Component {
           <div className="all__filter">
             <Checkbox
               id="unread"
-              label="unread"
+              label={chrome.i18n.getMessage('popupFiltersCheckboxUnread')}
               checked={unread}
               onChange={updateUnread}
             />
@@ -74,7 +74,7 @@ class Filters extends Component {
           <div className="all__filter">
             <Checkbox
               id="untagged"
-              label="untagged"
+              label={chrome.i18n.getMessage('popupFiltersCheckboxUntagged')}
               checked={untagged}
               onChange={updateUntagged}
             />

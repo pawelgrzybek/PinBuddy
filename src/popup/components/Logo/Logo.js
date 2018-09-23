@@ -7,7 +7,7 @@ import './Logo.css';
 
 const Logo = props => {
   const { username, online } = props;
-  const shouldDisplayLogo = username && online;
+  const shouldDisplayUsername = username && online;
   return (
     <div className="logo">
 
@@ -15,7 +15,7 @@ const Logo = props => {
         <Title t={chrome.i18n.getMessage('extensionName')} />
       </div>
 
-      {shouldDisplayLogo && (
+      {shouldDisplayUsername && (
         <>
           (
           <Link
