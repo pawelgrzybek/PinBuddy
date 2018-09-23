@@ -19,15 +19,40 @@
 
 // });
 
-// chrome.runtime.onInstalled.addListener(e => {
-//   console.log('onInstalled');
 
-//   chrome.contextMenus.create({
-//     id: 'sampleContextMenu',
-//     title: 'Sample Context Menu',
-//     contexts: ['selection']
-//   });
+// chrome.browserAction.setIcon({
+//   path: '/icons/icon-16.png'
 // });
+
+// chrome.browserAction.setIcon({
+//   path: '/icons/icon-active-16.png'
+// });
+
+// chrome.browserAction.setIcon({
+//   path: '/icons/icon-inactive-16.png'
+// });
+
+// chrome.tabs.onHighlighted.addListener(id => console.log(id));
+
+
+chrome.runtime.onInstalled.addListener(e => {
+  chrome.contextMenus.create({
+    id: 'addToPinboard',
+    title: 'Add to Pinboard',
+  });
+
+  chrome.contextMenus.create({
+    id: 'addToPinboardWithDescription',
+    title: 'Add to Pinboard (with description)',
+    contexts: ['selection']
+  });
+
+  chrome.contextMenus.create({
+    id: 'addLinkToPinboard',
+    title: 'Add link to Pinboard',
+    contexts: ['link']
+  });
+});
 
 
 // chrome.commands.onCommand.addListener(command => {
@@ -41,8 +66,7 @@
 // }
 // });
 
-/* eslint-disable  */
-// chrome.commands.onCommand.addListener(function(command) {
-//   console.log('Command:', command);
-// });
-/* eslint-enable  */
+
+chrome.commands.onCommand.addListener(command => {
+  console.log('Command:', command);
+});

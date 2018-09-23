@@ -31,14 +31,14 @@
   "commands": {
     "save-url": {
       "suggested_key": {
-        "default": "Ctrl+S",
-        "mac": "MacCtrl+S"
+        "default": "Ctrl+Shift+P",
+        "mac": "MacCtrl+P"
       },
-      "description": "Save URL"
+      "description": "Add URL"
     },
     "read-later": {
       "suggested_key": {
-        "default": "Ctrl+L",
+        "default": "Ctrl+Shift+L",
         "mac": "MacCtrl+L"
       },
       "description": "Read later"
