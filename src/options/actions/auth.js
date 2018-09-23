@@ -47,6 +47,12 @@ export const authLogIn = userToken => {
           }
         );
 
+        chrome.storage.sync.set({
+          defaultView: 'all',
+          privateCheckboxByDefault: false,
+          toReadChecboxByDefault: false,
+        });
+
         const now = Date.now();
         fetch(`${API}posts/all?format=json&auth_token=${userToken}`)
           .then(dataPosts => dataPosts.json())
@@ -76,7 +82,6 @@ export const authLogIn = userToken => {
           defaultView: 'all',
           privateCheckboxByDefault: false,
           toReadChecboxByDefault: false,
-          useDescriptionMetaTag: false,
         });
 
       })
