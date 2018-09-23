@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import './App.css';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Login from '../Login';
-import { updateUserInfo } from '../../actions/auth';
+import { connect } from 'react-redux';
+
+import { updateUsername } from '../../actions/auth';
 import { checkConnection, wentOffline, wentOnline } from '../../actions/online';
 import Footer from '../Footer';
-import Options from '../Options';
-import { Title, Paragraph } from 'theme';
+import Online from '../Online';
+import Offline from '../Offline';
+import { Title } from 'theme';
+import './App.css';
 
 class App extends Component {
   componentDidMount() {
@@ -15,12 +16,7 @@ class App extends Component {
     window.addEventListener('offline', this.handleOfflineEvent);
 
     this.props.checkConnection(navigator.onLine);
-
-    chrome.storage.local.get(['username'], result => {
-      if (result.username) {
-        this.props.updateUserInfo(result);
-      }
-    });
+    this.props.updateUsername();
   }
 
   componentWillUnmount() {
@@ -37,11 +33,7 @@ class App extends Component {
         </header>
 
         <main className="app__main">
-          {
-            !this.props.online ?
-              <Paragraph t={chrome.i18n.getMessage('optionsOfflineMessage')} /> :
-              this.renderOnline()
-          }
+          { this.props.online ? <Online /> : <Offline /> }
         </main>
 
         <footer className="app__footer">
@@ -50,10 +42,6 @@ class App extends Component {
 
       </div>
     );
-  }
-
-  renderOnline() {
-    return this.props.username ? <Options /> : <Login />;
   }
 
   handleOnlineEvent = () => {
@@ -66,24 +54,20 @@ class App extends Component {
 }
 
 App.propTypes = {
-  username: PropTypes.string.isRequired,
   online: PropTypes.bool.isRequired,
-  updateUserInfo: PropTypes.func.isRequired,
+  updateUsername: PropTypes.func.isRequired,
   checkConnection: PropTypes.func.isRequired,
   wentOnline: PropTypes.func.isRequired,
   wentOffline: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    username: state.auth.username,
-    online: state.online,
-  };
-};
+const mapStateToProps = state => ({
+  online: state.online,
+});
 
 const mapDispatchToProps = dispatch => {
   return {
-    updateUserInfo: userInfo => dispatch(updateUserInfo(userInfo)),
+    updateUsername: userInfo => dispatch(updateUsername(userInfo)),
     checkConnection: online => dispatch(checkConnection(online)),
     wentOffline: () => dispatch(wentOffline()),
     wentOnline: () => dispatch(wentOnline()),

@@ -5,10 +5,16 @@ export const authenticateUser = token => {
   };
 };
 
-export const updateUserInfo = userInfo => {
-  return {
-    type: 'UPDATE_USER_INFO',
-    userInfo,
+export const updateUsername = userInfo => {
+  return dispatch => {
+    chrome.storage.local.get(['username'], username => {
+      if (username.username) {
+        dispatch({
+          type: 'UPDATE_USER_INFO',
+          username,
+        });
+      }
+    });
   };
 };
 

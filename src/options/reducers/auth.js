@@ -16,7 +16,7 @@ const reducerAuth = (state = initialState, action) => {
   else if (action.type === 'UPDATE_USER_INFO') {
     return {
       ...state,
-      ...action.userInfo,
+      ...action.username,
     };
   }
 
