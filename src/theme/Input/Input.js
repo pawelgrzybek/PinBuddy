@@ -7,6 +7,7 @@ const Input = React.forwardRef((props, ref) => {
     id,
     label,
     onChange,
+    value,
     placeholder,
     type,
   } = props;
@@ -24,6 +25,7 @@ const Input = React.forwardRef((props, ref) => {
         id={id}
         type={type}
         placeholder={placeholder}
+        value={value}
         onChange={onChange}
         ref={ref}
       />
