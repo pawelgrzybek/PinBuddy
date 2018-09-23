@@ -71,9 +71,6 @@ class Options extends Component {
           onChange={this.handleCheckboxChange}
           checked={this.state.useDescriptionMetaTag}
         />
-
-
-
       </>
     );
   }
