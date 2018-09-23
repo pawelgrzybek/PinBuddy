@@ -3,8 +3,17 @@ import PropTypes from 'prop-types';
 
 import Article from '../Article';
 import './List.css';
+import { uptime } from 'os';
 
 class List extends Component {
+  componentDidMount() {
+    addEventListener('keydown', this.handleKeyDownEvent);
+  }
+
+  componentWillUnmount() {
+    removeEventListener('keydown', this.handleKeyDownEvent);
+  }
+
   render() {
     return (
       <ul className="list">
@@ -64,6 +73,21 @@ class List extends Component {
         />
       </li>
     );
+  }
+
+  handleKeyDownEvent = e => {
+    const elements = [...document.querySelectorAll('.input, .article__url')];
+    const currentFocus = elements.findIndex(elm => elm === document.activeElement);
+    const isInsideElements = elements.includes(document.activeElement);
+
+    if (e.keyCode === 38 && isInsideElements) {
+      const previousElement = currentFocus === 0 ? elements.length - 1 : currentFocus - 1;
+      elements[previousElement].focus();
+    }
+    else if (e.keyCode === 40 && isInsideElements) {
+      const nextElement = currentFocus === elements.length - 1 ? 0 : currentFocus + 1;
+      elements[nextElement].focus();
+    }
   }
 }
 
