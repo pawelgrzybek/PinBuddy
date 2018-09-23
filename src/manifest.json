@@ -48,6 +48,7 @@
   "options_page": "options/options.html",
   "permissions": [
     "storage",
+    "tabs",
     "contextMenus",
     "https://*/*",
     "notifications"

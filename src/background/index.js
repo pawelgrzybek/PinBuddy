@@ -1,39 +1,31 @@
+// update extensions icon
+const setIcon = postExists => {
+  chrome.browserAction.setIcon({
+    path: postExists ? '/icons/icon-active-16.png' : '/icons/icon-16.png',
+  });
+};
 
+// listen to url updates to check for icons change
+chrome.tabs.onUpdated.addListener(id => {
+  chrome.tabs.get(id, tabInfo => {
+    const { url } = tabInfo;
+    chrome.storage.local.get(['posts'], posts => {
+      const postExists = !!posts.posts.find(post => post.href === url);
+      setIcon(postExists);
+    });
+  });
+});
 
-
-// chrome.runtime.onInstalled.addListener(() => {
-//   chrome.storage.sync.set({ color: '#3aa757' }, () => {
-//     console.log('The color is green.');
-//     console.log(chrome.storage);
-//   });
-
-//   chrome.declarativeContent.onPageChanged.removeRules(undefined, () => {
-//     chrome.declarativeContent.onPageChanged.addRules([{
-//       conditions: [new chrome.declarativeContent.PageStateMatcher({
-//         pageUrl: { hostEquals: 'developer.chrome.com' },
-//       })
-//       ],
-//       actions: [new chrome.declarativeContent.ShowPageAction()]
-//     }]);
-//   });
-
-// });
-
-
-// chrome.browserAction.setIcon({
-//   path: '/icons/icon-16.png'
-// });
-
-// chrome.browserAction.setIcon({
-//   path: '/icons/icon-active-16.png'
-// });
-
-// chrome.browserAction.setIcon({
-//   path: '/icons/icon-inactive-16.png'
-// });
-
-// chrome.tabs.onHighlighted.addListener(id => console.log(id));
-
+// listen to new tabs to check for icons change
+chrome.tabs.onActivated.addListener(tab => {
+  chrome.tabs.get(tab.tabId, tabInfo => {
+    const { url } = tabInfo;
+    chrome.storage.local.get(['posts'], posts => {
+      const postExists = !!posts.posts.find(post => post.href === url);
+      setIcon(postExists);
+    });
+  });
+});
 
 chrome.runtime.onInstalled.addListener(e => {
   chrome.contextMenus.create({
@@ -54,19 +46,6 @@ chrome.runtime.onInstalled.addListener(e => {
   });
 });
 
-
 // chrome.commands.onCommand.addListener(command => {
-// console.log(command);
-
-// if (command === 'save-url') {
-//   console.log('🐘 💨', 'save-url');
-// }
-// else if (command === 'read-later') {
-//   console.log('🐘 💨', 'read-later');
-// }
+//   console.log('Command:', command);
 // });
-
-
-chrome.commands.onCommand.addListener(command => {
-  console.log('Command:', command);
-});
