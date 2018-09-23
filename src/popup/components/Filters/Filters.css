@@ -19,6 +19,6 @@
   display: flex;
 }
 
-.all__filter {
+.filters__option {
   margin-right: var(--lh);
 }

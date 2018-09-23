@@ -47,7 +47,7 @@ class Filters extends Component {
           </div>
         </div>
         <div className={this.state.showFilters ? 'filters__bottom filters__bottom--active' : 'filters__bottom'}>
-          <div className="all__filter">
+          <div className="filters__option">
             <Checkbox
               id="privatePost"
               label={chrome.i18n.getMessage('popupFiltersCheckboxPrivate')}
@@ -55,7 +55,7 @@ class Filters extends Component {
               onChange={updatePrivatePost}
             />
           </div>
-          <div className="all__filter">
+          <div className="filters__option">
             <Checkbox
               id="publicPost"
               label={chrome.i18n.getMessage('popupFiltersCheckboxPublic')}
@@ -63,7 +63,7 @@ class Filters extends Component {
               onChange={updatePublicPost}
             />
           </div>
-          <div className="all__filter">
+          <div className="filters__option">
             <Checkbox
               id="unread"
               label={chrome.i18n.getMessage('popupFiltersCheckboxUnread')}
@@ -71,7 +71,7 @@ class Filters extends Component {
               onChange={updateUnread}
             />
           </div>
-          <div className="all__filter">
+          <div className="filters__option">
             <Checkbox
               id="untagged"
               label={chrome.i18n.getMessage('popupFiltersCheckboxUntagged')}
