@@ -36,7 +36,6 @@ class Article extends Component {
         <div className="article__meta">
           <div className="article__info">{timeFormated}</div>
           {tags ? <div className="article__info article__info--tags">{tagsFormated}</div> : ''}
-          <div className="article__info article__info--edit">Edit</div>
           <div className="article__info">
             {this.state.deleteActive && (
               <>

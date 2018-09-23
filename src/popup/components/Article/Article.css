@@ -39,13 +39,11 @@
   white-space: nowrap;
 }
 
-.article__info--edit:hover,
 .article__info--delete:hover,
 .article__info--cancel:hover {
   cursor: pointer;
 }
 
-.article__info--edit:hover,
 .article__info--cancel:hover {
   color: var(--color-primary);
 }
