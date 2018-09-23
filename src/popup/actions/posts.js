@@ -67,3 +67,40 @@ export const postsDelete = href => {
     });
   };
 };
+
+export const postsAdd = postInfo => {
+  return (dispatch, getState) => {
+    const { username, token } = getState().user;
+    const {
+      title,
+      url,
+      description,
+      tags,
+      privatePost,
+      readLater,
+    } = postInfo;
+
+    dispatch(loadingShowAction());
+
+    fetch(`https://api.pinboard.in/v1/posts/add?format=json&url=${url}&description=${title}&extended=${description}&tags=${tags}&shared=${privatePost ? 'no' : 'yes'}&toread=${readLater ? 'yes' : 'no'}&auth_token=${username}:${token}`)
+      .then(() => {
+        chrome.notifications.create({
+          type: 'basic',
+          iconUrl: '/icons/icon-128.png',
+          title: 'Pinboard X — URL saved successfully',
+          message: title,
+          contextMessage: description,
+        });
+        window.close();
+      })
+      .catch(() => {
+        dispatch(errorShowAction());
+      })
+      .finally(() => {
+        dispatch(loadingHideAction());
+      });
+
+    // build a local object and pop to local posts
+
+  };
+};
