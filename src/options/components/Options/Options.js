@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+
 import { logOut } from '../../actions/auth';
+import { optionsUpdateAction, fetchOptionsAction } from '../../actions/options';
 import { Paragraph, Button, Checkbox, Select } from 'theme';
 
 const defaultViewOptions = [
@@ -16,23 +18,18 @@ const defaultViewOptions = [
 ];
 
 class Options extends Component {
-  state ={
-    privateCheckboxByDefault: false,
-    toReadChecboxByDefault: false,
-    useDescriptionMetaTag: false,
-    defaultView: 'all',
-  }
-
   componentDidMount() {
-    chrome.storage.sync.get(options => {
-      this.setState({
-        ...options,
-      });
-    });
+    this.props.fetchOptions();
   }
 
   render() {
     const { username } = this.props;
+    const {
+      defaultView,
+      privateCheckboxByDefault,
+      toReadChecboxByDefault,
+      useDescriptionMetaTag,
+    } = this.props.options;
     return (
       <>
         <Paragraph innerHTML t={chrome.i18n.getMessage('optionsWelcomeMessage', [username])} />
@@ -48,28 +45,28 @@ class Options extends Component {
           label={chrome.i18n.getMessage('optionsDefaultView')}
           onChange={this.handleSelectChange}
           options={defaultViewOptions}
-          selected={this.state.defaultView}
+          selected={defaultView}
         />
 
         <Checkbox
           id="privateCheckboxByDefault"
           label={chrome.i18n.getMessage('optionsPrivateCheckboxByDefault')}
           onChange={this.handleCheckboxChange}
-          checked={this.state.privateCheckboxByDefault}
+          checked={privateCheckboxByDefault}
         />
 
         <Checkbox
           id="toReadChecboxByDefault"
           label={chrome.i18n.getMessage('optionsToReadChecboxByDefault')}
           onChange={this.handleCheckboxChange}
-          checked={this.state.toReadChecboxByDefault}
+          checked={toReadChecboxByDefault}
         />
 
         <Checkbox
           id="useDescriptionMetaTag"
           label={chrome.i18n.getMessage('optionsUseDescriptionMetaTag')}
           onChange={this.handleCheckboxChange}
-          checked={this.state.useDescriptionMetaTag}
+          checked={useDescriptionMetaTag}
         />
       </>
     );
@@ -79,25 +76,17 @@ class Options extends Component {
     chrome.storage.local.clear(() => this.props.logOut());
   }
 
-  handleCheckboxChange = e => {
-    const { id } = e.target;
-    this.setState(state => {
-      return {
-        [id]: !state[id],
-      };
-    }, () => {
-      chrome.storage.sync.set({ ...this.state });
+  handleSelectChange = e => {
+    const { id, selectedIndex } = e.target;
+    this.props.optionsUpdate({
+      [id]: defaultViewOptions[selectedIndex].value,
     });
   }
 
-  handleSelectChange = e => {
-    const { id, selectedIndex } = e.target;
-    this.setState(state => {
-      return {
-        [id]: defaultViewOptions[selectedIndex].value,
-      };
-    }, () => {
-      chrome.storage.sync.set({ ...this.state });
+  handleCheckboxChange = e => {
+    const { id, checked } = e.target;
+    this.props.optionsUpdate({
+      [id]: checked,
     });
   }
 
@@ -105,18 +94,29 @@ class Options extends Component {
 
 Options.propTypes = {
   username: PropTypes.string.isRequired,
+  options: PropTypes.shape({
+    defaultView: PropTypes.string.isRequired,
+    privateCheckboxByDefault: PropTypes.bool.isRequired,
+    toReadChecboxByDefault: PropTypes.bool.isRequired,
+    useDescriptionMetaTag: PropTypes.bool.isRequired,
+  }).isRequired,
   logOut: PropTypes.func.isRequired,
+  fetchOptions: PropTypes.func.isRequired,
+  optionsUpdate: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state, ownProps) => {
   return {
     username: state.auth.username,
+    options: state.options,
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
     logOut: () => dispatch(logOut()),
+    fetchOptions: () => dispatch(fetchOptionsAction()),
+    optionsUpdate: option => dispatch(optionsUpdateAction(option)),
   };
 };
 
