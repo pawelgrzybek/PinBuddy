@@ -28,7 +28,6 @@ class Options extends Component {
       defaultView,
       privateCheckboxByDefault,
       toReadChecboxByDefault,
-      useDescriptionMetaTag,
     } = this.props.options;
     return (
       <>
@@ -61,13 +60,6 @@ class Options extends Component {
           onChange={this.handleCheckboxChange}
           checked={toReadChecboxByDefault}
         />
-
-        <Checkbox
-          id="useDescriptionMetaTag"
-          label={chrome.i18n.getMessage('optionsUseDescriptionMetaTag')}
-          onChange={this.handleCheckboxChange}
-          checked={useDescriptionMetaTag}
-        />
       </>
     );
   }
@@ -98,7 +90,6 @@ Options.propTypes = {
     defaultView: PropTypes.string.isRequired,
     privateCheckboxByDefault: PropTypes.bool.isRequired,
     toReadChecboxByDefault: PropTypes.bool.isRequired,
-    useDescriptionMetaTag: PropTypes.bool.isRequired,
   }).isRequired,
   logOut: PropTypes.func.isRequired,
   fetchOptions: PropTypes.func.isRequired,

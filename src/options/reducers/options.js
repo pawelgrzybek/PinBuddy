@@ -2,7 +2,6 @@ const initialState = {
   defaultView: 'all',
   privateCheckboxByDefault: false,
   toReadChecboxByDefault: false,
-  useDescriptionMetaTag: false,
 };
 
 const reducerOffline = (state = initialState, action) => {

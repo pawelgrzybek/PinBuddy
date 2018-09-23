@@ -15,7 +15,6 @@ export const fetchOptionsAction = () => {
       'defaultView',
       'privateCheckboxByDefault',
       'toReadChecboxByDefault',
-      'useDescriptionMetaTag'
     ], option => {
       dispatch({
         type: 'UPDATE_OPTION',
