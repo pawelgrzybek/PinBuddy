@@ -3,3 +3,11 @@
   animation-duration: var(--animation-duration);
   animation-fill-mode: backwards;
 }
+
+.add__options {
+  display: flex;
+}
+
+.add__option {
+  margin-right: var(--lh);
+}
