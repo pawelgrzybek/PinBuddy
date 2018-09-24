@@ -56,15 +56,23 @@ export const postsDelete = href => {
     });
 
     fetch(`https://api.pinboard.in/v1/posts/delete?format=json&url=${href}&auth_token=${username}:${token}`)
-      .then(() => chrome.storage.local.set({ posts: newState }))
+      .then(res => res.json())
+      .then(resJSON => {
+        // this is here for a good reason
+        // when url contains `?url=` it fails on api
+        // came accross this bug with sidebar.io links
+        // waiting for a response from pinboard support to find a solution
+        if (resJSON.result_code === 'done') {
+          chrome.storage.local.set({ posts: newState });
+          dispatch({
+            type: 'POSTS_DELETE',
+            href
+          });
+        }
+      })
       .catch(() => {
         dispatch(errorShowAction());
       });
-
-    dispatch({
-      type: 'POSTS_DELETE',
-      href
-    });
   };
 };
 
@@ -83,15 +91,43 @@ export const postsAdd = postInfo => {
     dispatch(loadingShowAction());
 
     fetch(`https://api.pinboard.in/v1/posts/add?format=json&url=${url}&description=${title}&extended=${description}&tags=${tags}&shared=${privatePost ? 'no' : 'yes'}&toread=${readLater ? 'yes' : 'no'}&auth_token=${username}:${token}`)
-      .then(() => {
-        chrome.notifications.create({
-          type: 'basic',
-          iconUrl: '/icons/icon-128.png',
-          title: 'Pinboard X — URL saved successfully',
-          message: title,
-          contextMessage: description,
-        });
-        window.close();
+      .then(res => res.json())
+      .then(resJSON => {
+        if (resJSON.result_code === 'done') {
+          const { posts } = getState();
+          const now = new Date();
+          const yyyy = now.getFullYear();
+          const mm = now.getMonth() + 1;
+          const dd = now.getDate();
+
+          const newPost = {
+            href: url,
+            description: title,
+            extended: description,
+            time: `${yyyy}-${mm}-${dd}`,
+            shared: privatePost ? 'no' : 'yes',
+            toread: readLater ? 'yes' : 'no',
+            tags: tags,
+            hash: Math.random().toString(),
+          };
+
+          const newPosts = [newPost, ...posts];
+
+          chrome.storage.local.set({ posts: newPosts }, () => {
+            chrome.notifications.create(
+              {
+                type: 'basic',
+                iconUrl: '/icons/icon-128.png',
+                title: 'Pinboard X — URL saved successfully',
+                message: title,
+                contextMessage: description,
+              },
+              () => {
+                window.close();
+              }
+            );
+          });
+        }
       })
       .catch(() => {
         dispatch(errorShowAction());
@@ -99,8 +135,5 @@ export const postsAdd = postInfo => {
       .finally(() => {
         dispatch(loadingHideAction());
       });
-
-    // build a local object and pop to local posts
-
   };
 };
