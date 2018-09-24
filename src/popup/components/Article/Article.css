@@ -7,16 +7,30 @@
   background-color: var(--color-gray-light);
 }
 
+.article--deleting {
+  filter: blur(calc(var(--lh) / 6));
+  opacity: .5;
+}
+
 .article__url {
   text-decoration: none;
+}
+
+.article__url:hover {
+  text-decoration: underline;
+}
+
+.article__url:focus {
+  background-color: var(--color-primary);
+  color: #fff;
 }
 
 .article__url--unread {
   color: var(--color-secondary);
 }
 
-.article__url:hover {
-  text-decoration: underline;
+.article__url--unread:focus {
+  background-color: var(--color-secondary);
 }
 
 .article__meta {

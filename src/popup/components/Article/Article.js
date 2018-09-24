@@ -8,6 +8,7 @@ import './Article.css';
 class Article extends Component {
   state={
     deleteActive: false,
+    deleteConfirmed: false,
   }
 
   render() {
@@ -24,7 +25,7 @@ class Article extends Component {
     const tagsFormated = tags.split(' ').map(tag => `#${tag}`).join(' ');
 
     return (
-      <article className={`artile ${privatePost ? 'article--private' : ''}`}>
+      <article className={`article ${privatePost ? 'article--private' : ''} ${this.state.deleteConfirmed ? 'article--deleting' : ''}`}>
         <a
           className={`article__url ${unread ? 'article__url--unread' : ''}`}
           href={href}
@@ -43,7 +44,9 @@ class Article extends Component {
                 <span className="article__info--separator">/</span>
               </>
             )}
-            <span className="article__info--delete" onClick={this.handleDeleteClick}>{chrome.i18n.getMessage('popupArticleButtonDelete')}</span>
+            {!this.state.deleteConfirmed && (
+              <span className="article__info--delete" onClick={this.handleDeleteClick}>{chrome.i18n.getMessage('popupArticleButtonDelete')}</span>
+            )}
           </div>
         </div>
       </article>
@@ -52,6 +55,9 @@ class Article extends Component {
 
   handleDeleteClick = () => {
     if (this.state.deleteActive) {
+      this.setState({
+        deleteConfirmed: true,
+      });
       this.props.postsDelete(this.props.href);
     }
 
