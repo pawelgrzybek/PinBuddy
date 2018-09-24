@@ -14,6 +14,7 @@ class Add extends Component {
     tags: '',
     privatePost: false,
     readLater: false,
+    loading: false,
   };
 
   refInput = React.createRef();
@@ -48,7 +49,7 @@ class Add extends Component {
 
   render() {
     return (
-      <div className="add">
+      <div className={`add ${this.state.loading ? 'add--loading' : ''}`}>
         <Input
           id="title"
           label="Title"
@@ -95,7 +96,7 @@ class Add extends Component {
 
         <Button
           t="Add URL"
-          disabled={!this.state.title}
+          disabled={!this.state.title || this.state.loading}
           onClick={this.handleAddUrlButton}
         />
       </div>
@@ -117,6 +118,9 @@ class Add extends Component {
   }
 
   handleAddUrlButton = () => {
+    this.setState({
+      laoding: true,
+    });
     this.props.postsAdd(this.state);
   }
 }

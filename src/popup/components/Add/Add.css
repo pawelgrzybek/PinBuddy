@@ -4,6 +4,11 @@
   animation-fill-mode: backwards;
 }
 
+.add--loading {
+  filter: blur(calc(var(--lh) / 6));
+  opacity: .5;
+}
+
 .add__options {
   display: flex;
 }
