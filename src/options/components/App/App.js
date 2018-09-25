@@ -7,7 +7,7 @@ import { checkConnection, wentOffline, wentOnline } from 'redux-options/actions/
 import Footer from './components/Footer';
 import Online from './components/Online';
 import Offline from './components/Offline';
-import { Title } from 'theme';
+import Logo from './components/Logo';
 import './App.css';
 
 class App extends Component {
@@ -29,7 +29,7 @@ class App extends Component {
       <div className="app">
 
         <header className="app__header">
-          <Title t={chrome.i18n.getMessage('optionsTitle')} />
+          <Logo />
         </header>
 
         <main className="app__main">
