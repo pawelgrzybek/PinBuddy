@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { updateView, getInitialView } from '../../actions/view';
+import { updateView, getInitialView } from '../../../../actions/view';
 import './Nav.css';
 
 class Nav extends Component {
@@ -49,8 +49,8 @@ class Nav extends Component {
 
 Nav.propTypes = {
   username: PropTypes.string.isRequired,
-  view: PropTypes.string.isRequired,
   online: PropTypes.bool.isRequired,
+  view: PropTypes.string.isRequired,
   updateView: PropTypes.func.isRequired,
   getInitialView: PropTypes.func.isRequired,
 };
