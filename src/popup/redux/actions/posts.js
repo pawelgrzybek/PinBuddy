@@ -85,6 +85,8 @@ export const postsDelete = href => {
 
 export const postsAdd = postInfo => {
   return (dispatch, getState) => {
+    dispatch(loadingShowAction());
+
     const { username, token } = getState().user;
     const {
       title,
@@ -95,13 +97,10 @@ export const postsAdd = postInfo => {
       readLater,
     } = postInfo;
 
-    dispatch(loadingShowAction());
-
     fetch(`https://api.pinboard.in/v1/posts/add?format=json&url=${url}&description=${title}&extended=${description}&tags=${tags}&shared=${privatePost ? 'no' : 'yes'}&toread=${readLater ? 'yes' : 'no'}&auth_token=${username}:${token}`)
       .then(res => res.json())
       .then(resJSON => {
         if (resJSON.result_code === 'done') {
-          const { posts } = getState();
           const now = new Date();
           const yyyy = now.getFullYear();
           const mm = now.getMonth() + 1;
@@ -118,22 +117,25 @@ export const postsAdd = postInfo => {
             hash: Math.random().toString(),
           };
 
-          const newPosts = [newPost, ...posts];
+          chrome.storage.local.get(['posts'], result => {
+            const newPosts = [newPost, ...result.posts];
 
-          chrome.storage.local.set({ posts: newPosts }, () => {
-            chrome.notifications.create(
-              {
-                type: 'basic',
-                iconUrl: '/icons/icon-128.png',
-                title: 'Pinboard X — URL saved successfully',
-                message: title,
-                contextMessage: description,
-              },
-              () => {
-                window.close();
-              }
-            );
+            chrome.storage.local.set({ posts: newPosts }, () => {
+              chrome.notifications.create(
+                {
+                  type: 'basic',
+                  iconUrl: '/icons/icon-128.png',
+                  title: 'URL saved successfully',
+                  message: title,
+                  contextMessage: description,
+                },
+                () => {
+                  window.close();
+                }
+              );
+            });
           });
+
         }
         else {
           // need to handle that somehow
