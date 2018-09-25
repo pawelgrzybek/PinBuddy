@@ -8,16 +8,25 @@ import Loading from './components/Loading';
 import Error from './components/Error';
 
 const LoggedInView = props => {
-  return (
-    <>
-      {props.loading && <Loading />}
-      {props.error && <Error />}
-      {props.view === 'all' ? <All /> : <Add />}
-    </>
-  );
+  const {
+    loading,
+    error,
+    view,
+  } = props;
+
+  if (loading) {
+    return <Loading />;
+  }
+  else if (error) {
+    return <Error />;
+  }
+
+  return view === 'all' ? <All /> : <Add />;
 };
 
 LoggedInView.propTypes = {
+  loading: PropTypes.bool.isRequired,
+  error: PropTypes.bool.isRequired,
   view: PropTypes.string.isRequired,
 };
 
