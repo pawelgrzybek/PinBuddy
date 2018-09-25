@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { authLogIn } from '../../actions/auth';
+import { authLogIn } from 'redux-options/actions/auth';
 import { Paragraph, Error, Input, Button } from 'theme';
 
 class Login extends Component {

@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import Login from '../Login';
-import Options from '../Options';
+import Login from './components/Login';
+import Options from './components/Options';
 
 const Online = ({ username }) => {
   return username ? <Options /> : <Login />;

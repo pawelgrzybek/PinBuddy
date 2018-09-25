@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { logOut } from '../../actions/auth';
-import { optionsUpdateAction, fetchOptionsAction } from '../../actions/options';
+import { logOut } from 'redux-options/actions/auth';
+import { optionsUpdateAction, fetchOptionsAction } from 'redux-options/actions/options';
 import { Paragraph, Button, Checkbox, Select } from 'theme';
 
 const defaultViewOptions = [

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { updateUsername } from '../../actions/auth';
-import { checkConnection, wentOffline, wentOnline } from '../../actions/online';
-import Footer from '../Footer';
-import Online from '../Online';
-import Offline from '../Offline';
+import { updateUsername } from 'redux-options/actions/auth';
+import { checkConnection, wentOffline, wentOnline } from 'redux-options/actions/online';
+import Footer from './components/Footer';
+import Online from './components/Online';
+import Offline from './components/Offline';
 import { Title } from 'theme';
 import './App.css';
 

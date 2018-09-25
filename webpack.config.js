@@ -31,6 +31,7 @@ module.exports = {
     alias: {
       theme: path.resolve(__dirname, 'src/theme/'),
       'redux-popup': path.resolve(__dirname, 'src/popup/redux/'),
+      'redux-options': path.resolve(__dirname, 'src/options/redux/'),
     }
   },
   plugins: [
