@@ -32,6 +32,7 @@ export const postsGet = () => {
               });
           })
           .catch(() => {
+            dispatch(loadingHideAction());
             dispatch(errorShowAction());
           })
           .finally(() => {
@@ -71,6 +72,9 @@ export const postsDelete = href => {
             type: 'POSTS_DELETE',
             href
           });
+        }
+        else {
+          // need to handle that somehow
         }
       })
       .catch(() => {
@@ -130,6 +134,9 @@ export const postsAdd = postInfo => {
               }
             );
           });
+        }
+        else {
+          // need to handle that somehow
         }
       })
       .catch(() => {
