@@ -1,0 +1,11 @@
+.form {
+
+}
+
+.form__options {
+  display: flex;
+}
+
+.form__option {
+  margin-right: var(--lh);
+}
