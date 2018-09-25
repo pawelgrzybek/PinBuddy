@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getUserInfo } from '../../actions/user';
-import { checkConnection, wentOffline, wentOnline } from '../../actions/online';
+import { getUserInfo } from 'redux-popup/actions/user';
+import { checkConnection, wentOffline, wentOnline } from 'redux-popup/actions/online';
 import Logo from './components/Logo';
 import Nav from './components/Nav';
 import Main from './components/Main';

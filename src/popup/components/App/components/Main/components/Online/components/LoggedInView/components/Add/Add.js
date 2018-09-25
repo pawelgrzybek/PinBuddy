@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { postsAdd } from '../../../../../../../../../../actions/posts';
+import { postsAdd } from 'redux-popup/actions/posts';
 import { Input, Button, Checkbox } from 'theme';
 import './Add.css';
 

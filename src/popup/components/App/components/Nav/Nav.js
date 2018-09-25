@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { updateView, getInitialView } from '../../../../actions/view';
+import { updateView, getInitialView } from 'redux-popup/actions/view';
 import './Nav.css';
 
 class Nav extends Component {
