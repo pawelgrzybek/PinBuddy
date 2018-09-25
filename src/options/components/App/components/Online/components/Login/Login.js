@@ -10,6 +10,12 @@ class Login extends Component {
     token: '',
   };
 
+  refInput = React.createRef();
+
+  componentDidMount() {
+    this.refInput.current.focus();
+  }
+
   static validateInput(input) {
     const regex = /^([^:]{1,})(:)(\S{1,})/;
     return input.match(regex);
@@ -32,6 +38,7 @@ class Login extends Component {
                 label={chrome.i18n.getMessage('optionsLoginFormLabel')}
                 placeholder={chrome.i18n.getMessage('optionsLoginFormPlaceholder')}
                 onChange={this.onChangeUserInput}
+                ref={this.refInput}
               />
 
               <Button
