@@ -28,7 +28,7 @@ class App extends Component {
           <div className="app__logo">
             <Logo />
           </div>
-          <nav className="app__logo">
+          <nav>
             <Nav />
           </nav>
         </header>
