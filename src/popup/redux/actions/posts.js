@@ -9,8 +9,11 @@ export const postsGet = () => {
 
     chrome.storage.local.get(['posts', 'postsFetched'], result => {
       const { posts, postsFetched } = result;
+
+      // Don't fetch new posts more often than 5 minutes
+      // https://pinboard.in/api/#limits
       const now = Date.now();
-      const outdatedPosts = now - postsFetched > 3600000;
+      const outdatedPosts = now - postsFetched > 300000;
 
       if (outdatedPosts) {
         fetch(`https://api.pinboard.in/v1/posts/all?format=json&auth_token=${username}:${token}`)
