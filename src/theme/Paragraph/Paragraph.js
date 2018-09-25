@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import './Paragraph.css';
 
-const Paragraph = props => {
-  const { innerHTML, t } = props;
-
+const Paragraph = ({ innerHTML, t }) => {
   return innerHTML ?
     <p className="paragraph" dangerouslySetInnerHTML={{ __html: t }} /> :
     <p className="paragraph">{t}</p>;

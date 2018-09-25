@@ -1,21 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import './Link.css';
 
-const Link = props => {
-  const { t, url, title, blank } = props;
-  return (
-    <a
-      href={url}
-      title={title}
-      target={blank ? '_blank' : '_self'}
-      rel={blank ? 'noopener noreferrer' : ''}
-      className="link"
-    >
-      {t}
-    </a>
-  );
-};
+const Link = ({ t, url, title, blank }) => (
+  <a
+    href={url}
+    title={title}
+    target={blank ? '_blank' : '_self'}
+    rel={blank ? 'noopener noreferrer' : ''}
+    className="link"
+  >
+    {t}
+  </a>
+);
 
 Link.propTypes = {
   t: PropTypes.string.isRequired,

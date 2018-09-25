@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import './Error.css';
 
-const Error = props => {
-  const { innerHTML, t } = props;
+const Error = ({ innerHTML, t }) => {
 
   return innerHTML ?
     <p className="error" dangerouslySetInnerHTML={{ __html: t }} /> :
