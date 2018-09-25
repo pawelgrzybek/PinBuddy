@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import All from '../All';
-import Add from '../Add';
-import Loading from '../Loading';
-import Error from '../Error';
+import All from './components/All';
+import Add from './components/Add';
+import Loading from './components/Loading';
+import Error from './components/Error';
 
 const LoggedInView = props => {
   return (

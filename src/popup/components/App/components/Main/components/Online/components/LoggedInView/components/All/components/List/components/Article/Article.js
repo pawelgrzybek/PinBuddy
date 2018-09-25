@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { postsDelete } from '../../actions/posts';
+import { postsDelete } from '../../../../../../../../../../../../../../actions/posts';
 import './Article.css';
 
 class Article extends Component {

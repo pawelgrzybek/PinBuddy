@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import LoggedInView from '../LoggedInView';
-import LoggedOutView from '../LoggedOutView';
+import LoggedInView from './components/LoggedInView';
+import LoggedOutView from './components/LoggedOutView';
 
 const Online = props => {
   const { username, token } = props;

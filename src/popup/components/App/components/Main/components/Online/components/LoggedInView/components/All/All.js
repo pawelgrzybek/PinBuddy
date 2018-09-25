@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { postsGet } from '../../actions/posts';
-import Filters from '../Filters';
-import List from '../List';
+
+import { postsGet } from '../../../../../../../../../../actions/posts';
+import Filters from './components/Filters';
+import List from './components/List';
 import './All.css';
 
 class All extends Component {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Article from '../Article';
+import Article from './components/Article';
 import './List.css';
 
 class List extends Component {
