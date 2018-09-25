@@ -4,7 +4,7 @@ import './Loading.css';
 
 const Loading = props => (
   <div className="loading">
-    <Paragraph t={chrome.i18n.getMessage('popupLoadingMessage')} />
+    <div className="loading__icon" />
   </div>
 );
 

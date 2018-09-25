@@ -105,10 +105,6 @@
     "message": "add url",
     "description": "Popup - add URL link text"
   },
-  "popupLoadingMessage": {
-    "message": "Loading…",
-    "description": "Popup - loading message shown accross the pop-up"
-  },
   "popupErrorMessage": {
     "message": "Error occured. Please make sure that your token is valid.",
     "description": "Popup - error message shown accross the pop-up"
