@@ -15,24 +15,33 @@ class Add extends Component {
     privatePost: false,
     readLater: false,
     loading: false,
+    invalidProtocol: false,
   };
 
   refInput = React.createRef();
 
   componentDidMount() {
-    chrome.tabs.query({ active: true }, tab => {
-      const { title, url } = tab[0];
+    chrome.tabs.query({ active: true }, result => {
+      const { title, url } = result[0];
+      const invalidUrl = !url.startsWith('http');
 
-      this.setState({
-        title,
-        url,
-      });
-    });
-
-    chrome.tabs.executeScript({ code: 'window.getSelection().toString()' }, selection => {
-      if (selection) {
+      if (invalidUrl) {
         this.setState({
-          description: selection[0],
+          invalidProtocol: true,
+        });
+      }
+      else {
+        this.setState({
+          title,
+          url,
+        });
+
+        chrome.tabs.executeScript({ code: 'window.getSelection().toString()' }, selection => {
+          if (selection) {
+            this.setState({
+              description: selection[0],
+            });
+          }
         });
       }
     });
@@ -48,7 +57,7 @@ class Add extends Component {
   }
 
   render() {
-    return (
+    return this.state.invalidProtocol ? <p>Invalid url</p> : (
       <div className={`add ${this.state.loading ? 'add--loading' : ''}`}>
         <Input
           id="title"
