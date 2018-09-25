@@ -41,6 +41,12 @@ hr {
   box-shadow: 0 -1px 0 var(--color-gray);
 }
 
+code {
+  color: var(--color-secondary);
+  font: inherit;
+  font-family: SFMono-Regular,Consolas,liberation mono,Menlo,Courier,monospace;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

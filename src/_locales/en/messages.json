@@ -160,5 +160,13 @@
   "popupOfflineMessage": {
     "message": "Please check your Internet connection.",
     "description": "Popup - offline message"
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Allowed protocoles are <code>http</code> and <code>https</code>. Unfortunatelly you cannot save this URL.",
+    "description": "Popup - invalid protocol paragraph"
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Find out more in Pinboard API documentation",
+    "description": "Popup - invalid protocol button text"
   }
 }
