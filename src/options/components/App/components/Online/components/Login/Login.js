@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import { authLogIn } from 'redux-options/actions/auth';
 import { Paragraph, Error, Input, Button } from 'theme';
+import Loading from './components/Loading';
 
 class Login extends Component {
   state = {
@@ -29,9 +30,7 @@ class Login extends Component {
         { this.props.error && <Error t={chrome.i18n.getMessage('optionsLoginError')} /> }
 
         {
-          this.props.loading ? (
-            <Paragraph innerHTML t={chrome.i18n.getMessage('optionsLoginLoading')} />
-          ) : (
+          this.props.loading ? <Loading /> : (
             <>
               <Input
                 id="token"

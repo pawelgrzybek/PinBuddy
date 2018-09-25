@@ -37,10 +37,6 @@
     "message": "Submit",
     "description": "Options page - login form submit button text"
   },
-  "optionsLoginLoading": {
-    "message": "Loading…",
-    "description": "Options page - login form submit button text"
-  },
   "optionsOfflineMessage": {
     "message": "Please check your Internet connection.",
     "description": "Options page - offline message"
