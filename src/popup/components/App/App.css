@@ -14,6 +14,9 @@
   display: flex;
 }
 
-.app__main {
+.app__main > * {
+  animation-name: fadeIn;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: backwards;
 }
 
