@@ -1,15 +1,3 @@
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(calc(var(--lh) / 4));
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 .app {
   display: flex;
   flex-direction: column;
@@ -20,23 +8,21 @@
   min-height: 100vh;
 }
 
-.app__header,
-.app__main,
-.app__footer {
-  animation-name: slideIn;
+.app__header {
+  animation-name: fadeIn;
   animation-duration: var(--animation-duration);
   animation-fill-mode: backwards;
 }
 
-.app__header {
-  animation-delay: 100ms;
-}
-
-.app__main {
-  animation-delay: 150ms;
+.app__main > * {
+  animation-name: fadeIn;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: backwards;
 }
 
 .app__footer {
-  animation-delay: 200ms;
   margin-top: auto;
+  animation-name: fadeIn;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: backwards;
 }
