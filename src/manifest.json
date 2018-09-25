@@ -50,8 +50,7 @@
     "storage",
     "tabs",
     "contextMenus",
-    "http://*/*",
-    "https://*/*",
+    "<all_urls>",
     "notifications"
   ]
 }

@@ -162,7 +162,7 @@
     "description": "Popup - offline message"
   },
   "popupInvalidProtocolParagraph": {
-    "message": "Allowed protocoles are <code>http</code> and <code>https</code>. Unfortunatelly you cannot save this URL.",
+    "message": "Allowed protocoles are <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> and <code>file</code>. Unfortunatelly you cannot save this URL.",
     "description": "Popup - invalid protocol paragraph"
   },
   "popupInvalidProtocolButton": {
