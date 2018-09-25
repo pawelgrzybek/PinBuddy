@@ -23,10 +23,19 @@ class Article extends Component {
 
     const timeFormated = time.substring(0, 10).replace(/-/g, '.');
     const tagsFormated = tags.split(' ').map(tag => `#${tag}`).join(' ');
+    const { deleteActive, deleteConfirmed } = this.state;
 
     return (
-      <article className={`article ${privatePost ? 'article--private' : ''} ${this.state.deleteConfirmed ? 'article--deleting' : ''}`}>
+      <article className={`article ${privatePost ? 'article--private' : ''}`}>
+        {
+          deleteConfirmed && (
+            <div className="article__loading">
+              <div className="article__loading-icon" />
+            </div>
+          )
+        }
         <a
+          tabIndex={deleteConfirmed ? '-1' : '0'}
           className={`article__url ${unread ? 'article__url--unread' : ''}`}
           href={href}
           rel="noopener noreferrer"
@@ -38,13 +47,13 @@ class Article extends Component {
           <div className="article__info">{timeFormated}</div>
           {tags ? <div className="article__info article__info--tags">{tagsFormated}</div> : ''}
           <div className="article__info">
-            {this.state.deleteActive && (
+            {deleteActive && (
               <>
                 <span className="article__info--cancel" onClick={this.handleCancelClick}>{chrome.i18n.getMessage('popupArticleButtonCancel')}</span>
                 <span className="article__info--separator">/</span>
               </>
             )}
-            {!this.state.deleteConfirmed && (
+            {!deleteConfirmed && (
               <span className="article__info--delete" onClick={this.handleDeleteClick}>{chrome.i18n.getMessage('popupArticleButtonDelete')}</span>
             )}
           </div>
@@ -87,10 +96,8 @@ Article.propTypes = {
   postsDelete: PropTypes.func.isRequired,
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    postsDelete: href => dispatch(postsDelete(href)),
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  postsDelete: href => dispatch(postsDelete(href)),
+});
 
 export default connect(null, mapDispatchToProps)(Article);

@@ -75,7 +75,7 @@ class List extends Component {
   }
 
   handleKeyDownEvent = e => {
-    const elements = [...document.querySelectorAll('.input, .article__url')];
+    const elements = [...document.querySelectorAll('.input, .article__url:not([tabindex="-1"]')];
     const currentFocus = elements.findIndex(elm => elm === document.activeElement);
     const isInsideElements = elements.includes(document.activeElement);
 
