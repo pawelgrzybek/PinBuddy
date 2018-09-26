@@ -102,7 +102,7 @@
     "description": "Popup - add URL link text"
   },
   "popupErrorMessage": {
-    "message": "Error occured. Please make sure that your token is valid and the <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API status</a> is stable.",
+    "message": "Error occured. Please make sure that your token is valid, internet connection and the <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API status</a> is stable.",
     "description": "Popup - error message shown accross the pop-up"
   },
   "popupErrorButtonMessage": {
