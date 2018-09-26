@@ -22,7 +22,7 @@
     "description": "Options page - login manual"
   },
   "optionsLoginError": {
-    "message": "ERROR! Incorrect token!",
+    "message": "Error! Please makes sure that you use a correct token and have stable internat connection.",
     "description": "Options page - login error"
   },
   "optionsLoginFormLabel": {
