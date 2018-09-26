@@ -65,7 +65,7 @@ class Options extends Component {
   }
 
   onCickLogOutButton = () => {
-    chrome.storage.local.clear(() => this.props.logOut());
+    this.props.logOut();
   }
 
   handleSelectChange = e => {

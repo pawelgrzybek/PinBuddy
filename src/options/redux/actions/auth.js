@@ -106,7 +106,7 @@ export const updateUsername = () => {
 };
 
 export const logOut = () => {
-  return {
-    type: 'LOG_OUT',
+  return dispatch => {
+    chrome.storage.local.clear(() => dispatch({ type: 'LOG_OUT' }));
   };
 };
