@@ -6,7 +6,7 @@ class Error extends Component {
   render() {
     return (
       <div className="error">
-        <Paragraph t={chrome.i18n.getMessage('popupErrorMessage')} />
+        <Paragraph innerHTML t={chrome.i18n.getMessage('popupErrorMessage')} />
         <Button
           t={chrome.i18n.getMessage('popupErrorButtonMessage')}
           onClick={this.handeOpenOptionPageButtonClick}
