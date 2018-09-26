@@ -23,7 +23,6 @@ export const userLogInAction = userToken => {
     dispatch(userErrorHideAction());
 
     fetch(`${API}user/api_token?format=json&auth_token=${userToken}`)
-      .then(dataAuth => dataAuth.json())
       .then(() => {
 
         const [username, token] = userToken.split(':');
