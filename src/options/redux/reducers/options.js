@@ -4,7 +4,7 @@ const initialState = {
   toReadChecboxByDefault: false,
 };
 
-const reducerOffline = (state = initialState, action) => {
+const reducerOptions = (state = initialState, action) => {
   if (action.type === 'UPDATE_OPTION') {
     return {
       ...state,
@@ -15,4 +15,4 @@ const reducerOffline = (state = initialState, action) => {
   return state;
 };
 
-export default reducerOffline;
+export default reducerOptions;
