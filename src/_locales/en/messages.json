@@ -14,11 +14,11 @@
     "description": "Options page - title"
   },
   "optionsFooter": {
-    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Issues & feature requests: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinboard-x/issues\" target=\"_blank\" title=\"Pawel Grzybek on GitHub\">GitHub</a>.",
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Issues & feature requests: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinboard-x/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on GitHub\">GitHub</a>.",
     "description": "Options page - footer"
   },
   "optionsLoginManual": {
-    "message": "You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\">settings page under the password tab</a>. It is a short opaque identifier that allows Pinboard-X to make API calls without ever asking for your password.",
+    "message": "You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">settings page under the password tab</a>. It is a short opaque identifier that allows Pinboard-X to make API calls without ever asking for your password.",
     "description": "Options page - login manual"
   },
   "optionsLoginError": {
@@ -102,7 +102,7 @@
     "description": "Popup - add URL link text"
   },
   "popupErrorMessage": {
-    "message": "Error occured. Please make sure that your token is valid.",
+    "message": "Error occured. Please make sure that your token is valid and the <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API status</a> is stable.",
     "description": "Popup - error message shown accross the pop-up"
   },
   "popupErrorButtonMessage": {
@@ -182,7 +182,7 @@
     "description": "Popup - add bookmark submit button"
   },
   "popupLoggedOutViewMessage": {
-    "message": "You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\">settings page under the password tab</a>. It is a short opaque identifier that allows Pinboard-X to make API calls without ever asking for your password.",
+    "message": "You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">settings page under the password tab</a>. It is a short opaque identifier that allows Pinboard-X to make API calls without ever asking for your password.",
     "description": "Popup - legged out user message"
   },
   "popupLoggedOutViewButtonMessage": {
