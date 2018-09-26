@@ -111,7 +111,6 @@ class Form extends Component {
 
         <Button
           t={chrome.i18n.getMessage('popupAddBookmarkButton')}
-          type="submit"
           disabled={formInvalid}
           onClick={this.handleButtonClick}
         />
