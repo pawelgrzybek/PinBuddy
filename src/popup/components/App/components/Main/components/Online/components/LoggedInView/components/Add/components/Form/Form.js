@@ -53,7 +53,7 @@ class Form extends Component {
       this.state.tags.length > 255;
 
     return (
-      <form className="form">
+      <div className="form">
 
         <Input
           id="title"
@@ -116,7 +116,7 @@ class Form extends Component {
           onClick={this.handleButtonClick}
         />
 
-      </form>
+      </div>
     );
   }
 
