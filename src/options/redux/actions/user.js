@@ -18,8 +18,10 @@ export const userErrorHideAction = () => ({
 
 export const userLogInAction = userToken => {
   return dispatch => {
+
     dispatch(userLoadingShowAction());
     dispatch(userErrorHideAction());
+
     fetch(`${API}user/api_token?format=json&auth_token=${userToken}`)
       .then(dataAuth => dataAuth.json())
       .then(() => {
@@ -39,13 +41,8 @@ export const userLogInAction = userToken => {
           }
         );
 
-        chrome.storage.sync.set({
-          defaultView: 'all',
-          privateCheckboxByDefault: false,
-          toReadChecboxByDefault: false,
-        });
-
         const now = Date.now();
+
         fetch(`${API}posts/all?format=json&auth_token=${userToken}`)
           .then(dataPosts => dataPosts.json())
           .then(posts => {
@@ -69,12 +66,6 @@ export const userLogInAction = userToken => {
               }
             );
           });
-
-        chrome.storage.sync.set({
-          defaultView: 'all',
-          privateCheckboxByDefault: false,
-          toReadChecboxByDefault: false,
-        });
 
       })
       .catch(() => {
