@@ -38,6 +38,10 @@ class Login extends Component {
                 placeholder={chrome.i18n.getMessage('optionsLoginFormPlaceholder')}
                 onChange={this.onChangeUserInput}
                 ref={this.refInput}
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="off"
+                spellCheck="false"
               />
 
               <Button

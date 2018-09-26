@@ -10,6 +10,10 @@ const Input = React.forwardRef(({
   value,
   placeholder,
   type,
+  autoComplete,
+  autoCorrect,
+  autoCapitalize,
+  spellCheck,
 }, ref) => (
   <>
     <label
@@ -26,6 +30,10 @@ const Input = React.forwardRef(({
       value={value}
       onChange={onChange}
       ref={ref}
+      autoComplete={autoComplete}
+      autoCorrect={autoCorrect}
+      autoCapitalize={autoCapitalize}
+      spellCheck={spellCheck}
     />
   </>
 ));
@@ -35,10 +43,18 @@ Input.propTypes = {
   label: PropTypes.string.isRequired,
   type: PropTypes.string,
   onChange: PropTypes.func.isRequired,
+  autoComplete: PropTypes.string,
+  autoCorrect: PropTypes.string,
+  autoCapitalize: PropTypes.string,
+  spellCheck: PropTypes.string,
 };
 
 Input.defaultProps = {
   type: 'text',
+  autoComplete: 'on',
+  autoCorrect: 'on',
+  autoCapitalize: 'on',
+  spellCheck: 'on',
 };
 
 export default Input;
