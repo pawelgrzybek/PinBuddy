@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import auth from './auth';
+import user from './user';
 import online from './online';
 import options from './options';
 
 export default combineReducers({
-  auth,
+  user,
   online,
   options,
 });

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { authLogIn } from 'redux-options/actions/auth';
+import { userLogInAction } from 'redux-options/actions/user';
 import { Paragraph, Error, Input, Button } from 'theme';
 import Loading from './components/Loading';
 
@@ -58,7 +58,7 @@ class Login extends Component {
 
   onFormSubmit = e => {
     e.preventDefault();
-    this.props.authLogIn(this.state.token);
+    this.props.userLogIn(this.state.token);
   }
 
   onChangeUserInput = e => {
@@ -74,16 +74,16 @@ class Login extends Component {
 Login.propTypes = {
   loading: PropTypes.bool.isRequired,
   error: PropTypes.bool.isRequired,
-  authLogIn: PropTypes.func.isRequired,
+  userLogIn: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
-  loading: state.auth.loading,
-  error: state.auth.error,
+  loading: state.user.loading,
+  error: state.user.error,
 });
 
 const mapDispatchToProps = dispatch => ({
-  authLogIn: token => dispatch(authLogIn(token))
+  userLogIn: token => dispatch(userLogInAction(token))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);

@@ -38,7 +38,7 @@ Logo.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  username: state.auth.username,
+  username: state.user.username,
   online: state.online,
 });
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { logOut } from 'redux-options/actions/auth';
+import { userLogOutAction } from 'redux-options/actions/user';
 import { optionsUpdateAction, fetchOptionsAction } from 'redux-options/actions/options';
 import { Paragraph, Button, Checkbox, Select } from 'theme';
 
@@ -65,7 +65,7 @@ class Options extends Component {
   }
 
   onCickLogOutButton = () => {
-    this.props.logOut();
+    this.props.userLogOut();
   }
 
   handleSelectChange = e => {
@@ -91,21 +91,21 @@ Options.propTypes = {
     privateCheckboxByDefault: PropTypes.bool.isRequired,
     toReadChecboxByDefault: PropTypes.bool.isRequired,
   }).isRequired,
-  logOut: PropTypes.func.isRequired,
+  userLogOut: PropTypes.func.isRequired,
   fetchOptions: PropTypes.func.isRequired,
   optionsUpdate: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    username: state.auth.username,
+    username: state.user.username,
     options: state.options,
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    logOut: () => dispatch(logOut()),
+    userLogOut: () => dispatch(userLogOutAction()),
     fetchOptions: () => dispatch(fetchOptionsAction()),
     optionsUpdate: option => dispatch(optionsUpdateAction(option)),
   };

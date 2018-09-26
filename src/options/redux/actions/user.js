@@ -1,33 +1,25 @@
 const API = 'https://api.pinboard.in/v1/';
 
-export const loadingShow = () => {
-  return {
-    type: 'LOADING_SHOW',
-  };
-};
+export const userLoadingShowAction = () => ({
+  type: 'LOADING_SHOW',
+});
 
-export const loadingHide = () => {
-  return {
-    type: 'LOADING_HIDE',
-  };
-};
+export const userLoadingHideAction = () => ({
+  type: 'LOADING_HIDE',
+});
 
-export const errorShow = () => {
-  return {
-    type: 'ERROR_SHOW',
-  };
-};
+export const userErrorShowAction = () => ({
+  type: 'ERROR_SHOW',
+});
 
-export const errorHide = () => {
-  return {
-    type: 'ERROR_HIDE',
-  };
-};
+export const userErrorHideAction = () => ({
+  type: 'ERROR_HIDE',
+});
 
-export const authLogIn = userToken => {
+export const userLogInAction = userToken => {
   return dispatch => {
-    dispatch(loadingShow());
-    dispatch(errorHide());
+    dispatch(userLoadingShowAction());
+    dispatch(userErrorHideAction());
     fetch(`${API}user/api_token?format=json&auth_token=${userToken}`)
       .then(dataAuth => dataAuth.json())
       .then(() => {
@@ -39,7 +31,7 @@ export const authLogIn = userToken => {
             token,
           },
           () => {
-            dispatch(loadingHide());
+            dispatch(userLoadingHideAction());
             dispatch({
               type: 'ADD_USERNAME',
               username
@@ -86,13 +78,13 @@ export const authLogIn = userToken => {
 
       })
       .catch(() => {
-        dispatch(loadingHide());
-        dispatch(errorShow());
+        dispatch(userLoadingHideAction());
+        dispatch(userErrorShowAction());
       });
   };
 };
 
-export const updateUsername = () => {
+export const userFetchFromChromeStorageAction = () => {
   return dispatch => {
     chrome.storage.local.get(['username'], username => {
       if (username.username) {
@@ -105,7 +97,7 @@ export const updateUsername = () => {
   };
 };
 
-export const logOut = () => {
+export const userLogOutAction = () => {
   return dispatch => {
     chrome.storage.local.clear(() => dispatch({ type: 'LOG_OUT' }));
   };

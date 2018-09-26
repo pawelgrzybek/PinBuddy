@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { updateUsername } from 'redux-options/actions/auth';
+import { userFetchFromChromeStorageAction } from 'redux-options/actions/user';
 import { checkConnection, wentOffline, wentOnline } from 'redux-options/actions/online';
 import Footer from './components/Footer';
 import Online from './components/Online';
@@ -16,7 +16,7 @@ class App extends Component {
     window.addEventListener('offline', this.handleOfflineEvent);
 
     this.props.checkConnection(navigator.onLine);
-    this.props.updateUsername();
+    this.props.userFetchFromChromeStorage();
   }
 
   componentWillUnmount() {
@@ -55,7 +55,7 @@ class App extends Component {
 
 App.propTypes = {
   online: PropTypes.bool.isRequired,
-  updateUsername: PropTypes.func.isRequired,
+  userFetchFromChromeStorage: PropTypes.func.isRequired,
   checkConnection: PropTypes.func.isRequired,
   wentOnline: PropTypes.func.isRequired,
   wentOffline: PropTypes.func.isRequired,
@@ -67,7 +67,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => {
   return {
-    updateUsername: userInfo => dispatch(updateUsername(userInfo)),
+    userFetchFromChromeStorage: userInfo => dispatch(userFetchFromChromeStorageAction(userInfo)),
     checkConnection: online => dispatch(checkConnection(online)),
     wentOffline: () => dispatch(wentOffline()),
     wentOnline: () => dispatch(wentOnline()),

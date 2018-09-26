@@ -14,7 +14,7 @@ Online.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  username: state.auth.username,
+  username: state.user.username,
 });
 
 export default connect(mapStateToProps)(Online);
