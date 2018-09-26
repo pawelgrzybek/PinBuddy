@@ -14,16 +14,18 @@ const Input = React.forwardRef(({
   autoCorrect,
   autoCapitalize,
   spellCheck,
+  pattern,
+  invalidMessage,
 }, ref) => (
-  <>
+  <div className="input">
     <label
-      className="label"
+      className="input__label"
       htmlFor={id}
     >
       {label}
     </label>
     <input
-      className="input"
+      className="input__input"
       id={id}
       type={type}
       placeholder={placeholder}
@@ -34,8 +36,10 @@ const Input = React.forwardRef(({
       autoCorrect={autoCorrect}
       autoCapitalize={autoCapitalize}
       spellCheck={spellCheck}
+      pattern={pattern}
     />
-  </>
+    <p className="input__message">{invalidMessage}</p>
+  </div>
 ));
 
 Input.propTypes = {
@@ -47,6 +51,8 @@ Input.propTypes = {
   autoCorrect: PropTypes.string,
   autoCapitalize: PropTypes.string,
   spellCheck: PropTypes.string,
+  pattern: PropTypes.string,
+  invalidMessage: PropTypes.string,
 };
 
 Input.defaultProps = {
@@ -55,6 +61,8 @@ Input.defaultProps = {
   autoCorrect: 'on',
   autoCapitalize: 'on',
   spellCheck: 'on',
+  pattern: '',
+  invalidMessage: '',
 };
 
 export default Input;

@@ -47,32 +47,43 @@ class Form extends Component {
   }
 
   render() {
+    const formInvalid =
+      this.state.title.length > 255 ||
+      this.state.description.length > 65536 ||
+      this.state.tags.length > 255;
+
     return (
-      <div className="form">
+      <form className="form">
 
         <Input
           id="title"
-          label="Title"
-          placeholder="Title"
+          label={chrome.i18n.getMessage('popupAddTitleLabel')}
+          placeholder={chrome.i18n.getMessage('popupAddTitleLabel')}
           value={this.state.title}
           onChange={this.handleInputChange}
+          pattern=".{1,255}"
+          invalidMessage={chrome.i18n.getMessage('popupAddTitleInvalidMessage')}
         />
 
         <Input
           id="description"
-          label="Description"
-          placeholder="Description"
+          label={chrome.i18n.getMessage('popupAddDescriptionLabel')}
+          placeholder={chrome.i18n.getMessage('popupAddDescriptionLabel')}
           value={this.state.description}
           onChange={this.handleInputChange}
+          pattern=".{1,65536}"
+          invalidMessage={chrome.i18n.getMessage('popupAddDescriptionInvalidMessage')}
         />
 
         <Input
           id="tags"
-          label="Tags"
-          placeholder="Tags"
+          label={chrome.i18n.getMessage('popupAddTagsLabel')}
+          placeholder={chrome.i18n.getMessage('popupAddTagsLabel')}
           value={this.state.tags}
           onChange={this.handleInputChange}
           ref={this.refInput}
+          pattern=".{1,255}"
+          invalidMessage={chrome.i18n.getMessage('popupAddTagsInvalidMessage')}
         />
 
         <div className="form__options">
@@ -80,7 +91,7 @@ class Form extends Component {
 
             <Checkbox
               id="privatePost"
-              label="private"
+              label={chrome.i18n.getMessage('popupAddPrivateCheckboxLabel')}
               checked={this.state.privatePost}
               onChange={this.handleCheckboxChange}
             />
@@ -90,7 +101,7 @@ class Form extends Component {
 
             <Checkbox
               id="readLater"
-              label="read later"
+              label={chrome.i18n.getMessage('popupAddReadLaterCheckboxLabel')}
               checked={this.state.readLater}
               onChange={this.handleCheckboxChange}
             />
@@ -99,12 +110,13 @@ class Form extends Component {
         </div>
 
         <Button
-          t="Add URL"
-          disabled={!this.state.title || this.state.loading}
+          t={chrome.i18n.getMessage('popupAddBookmarkButton')}
+          type="submit"
+          disabled={formInvalid}
           onClick={this.handleButtonClick}
         />
 
-      </div>
+      </form>
     );
   }
 
