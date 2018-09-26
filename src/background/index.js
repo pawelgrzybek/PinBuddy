@@ -12,13 +12,13 @@ const listenForIconChange = tab => {
 };
 
 // listen to url updates
-chrome.tabs.onUpdated.addListener(id => {
-  chrome.tabs.get(id, listenForIconChange);
+chrome.tabs.onUpdated.addListener(result => {
+  chrome.tabs.get(result, listenForIconChange);
 });
 
 // listen to new tabs
-chrome.tabs.onActivated.addListener(tab => {
-  chrome.tabs.get(tab.tabId, listenForIconChange);
+chrome.tabs.onActivated.addListener(result => {
+  chrome.tabs.get(result.tabId, listenForIconChange);
 });
 
 // chrome.runtime.onInstalled.addListener(e => {
@@ -43,3 +43,14 @@ chrome.tabs.onActivated.addListener(tab => {
 // chrome.commands.onCommand.addListener(command => {
 //   console.log('Command:', command);
 // });
+
+// listen for some mesages from other parts of an app
+chrome.runtime.onMessage.addListener(request => {
+
+  if (request === 'check current') {
+    chrome.tabs.query({ active: true }, result => {
+      chrome.tabs.get(result[0].id, listenForIconChange);
+    });
+  }
+
+});

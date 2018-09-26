@@ -68,6 +68,7 @@ export const postsDelete = href => {
         // waiting for a response from pinboard support to find a solution
         if (resJSON.result_code === 'done') {
           chrome.storage.local.set({ posts: newState });
+          chrome.runtime.sendMessage('check current');
           dispatch({
             type: 'POSTS_DELETE',
             href
@@ -130,6 +131,7 @@ export const postsAdd = postInfo => {
                   contextMessage: description,
                 },
                 () => {
+                  chrome.runtime.sendMessage('check current');
                   window.close();
                 }
               );
