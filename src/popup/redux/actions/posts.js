@@ -16,7 +16,7 @@ export const postsGet = () => {
       const outdatedPosts = now - postsFetched > 300000;
 
       if (outdatedPosts) {
-        fetch(`https://api.pinboard.in/v1/posts/all?format=json&auth_token=${username}:${token}`)
+        fetch(`https://api.pinboard.in/v1/posts/all?auth_token=${username}:${token}&format=json`)
           .then(newPostsData => newPostsData.json())
           .then(newPosts => {
             chrome.storage.local.set(
@@ -59,7 +59,7 @@ export const postsDelete = href => {
       return post.href !== href;
     });
 
-    fetch(`https://api.pinboard.in/v1/posts/delete?format=json&url=${href}&auth_token=${username}:${token}`)
+    fetch(`https://api.pinboard.in/v1/posts/delete?auth_token=${username}:${token}&format=json&url=${href}`)
       .then(res => res.json())
       .then(resJSON => {
         // this is here for a good reason
@@ -97,7 +97,7 @@ export const postsAdd = postInfo => {
       readLater,
     } = postInfo;
 
-    fetch(`https://api.pinboard.in/v1/posts/add?format=json&url=${url}&description=${title}&extended=${description}&tags=${tags}&shared=${privatePost ? 'no' : 'yes'}&toread=${readLater ? 'yes' : 'no'}&auth_token=${username}:${token}`)
+    fetch(`https://api.pinboard.in/v1/posts/add?auth_token=${username}:${token}&format=json&url=${url}&description=${title}&extended=${description}&tags=${tags}&shared=${privatePost ? 'no' : 'yes'}&toread=${readLater ? 'yes' : 'no'}`)
       .then(res => res.json())
       .then(resJSON => {
         if (resJSON.result_code === 'done') {
