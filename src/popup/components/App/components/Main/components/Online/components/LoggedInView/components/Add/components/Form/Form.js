@@ -117,6 +117,7 @@ class Form extends Component {
 
         <Button
           t={chrome.i18n.getMessage('popupAddBookmarkButton')}
+          title={`${chrome.i18n.getMessage('popupAddBookmarkButton')} ${navigator.platform === 'MacIntel' ? '(⌘ + Enter)' : '(Ctrl + Enter)'}`}
           disabled={formInvalid}
           onClick={this.handleButtonClick}
         />

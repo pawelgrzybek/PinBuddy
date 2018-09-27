@@ -8,6 +8,11 @@ import './Nav.css';
 class Nav extends Component {
   componentDidMount() {
     this.props.getInitialView();
+    window.addEventListener('keydown', this.handleKeydown);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.handleKeydown);
   }
 
   render() {
@@ -19,7 +24,7 @@ class Nav extends Component {
         <a
           href="all"
           data-location="all"
-          title={chrome.i18n.getMessage('popupBrowseAllTitle')}
+          title={`${chrome.i18n.getMessage('popupBrowseAllTitle')} ${navigator.platform === 'MacIntel' ? '(⌥ + 1)' : '(alt + 1)'}`}
           className={view === 'all' ? 'nav nav--active' : 'nav'}
           onClick={this.handleNavLinkClick}
         >
@@ -31,7 +36,7 @@ class Nav extends Component {
         <a
           href="add"
           data-location="add"
-          title={chrome.i18n.getMessage('popupAddURLTitle')}
+          title={`${chrome.i18n.getMessage('popupAddURLTitle')} ${navigator.platform === 'MacIntel' ? '(⌥ + 2)' : '(alt + 2)'}`}
           className={view === 'add' ? 'nav nav--active' : 'nav'}
           onClick={this.handleNavLinkClick}
         >
@@ -44,6 +49,19 @@ class Nav extends Component {
   handleNavLinkClick = e => {
     e.preventDefault();
     this.props.updateView(e.target.dataset.location);
+  }
+
+  handleKeydown = e => {
+    //  ⌥ + 1
+    if (e.keyCode === 49 && e.altKey) {
+      e.preventDefault();
+      this.props.updateView('all');
+    }
+    //  ⌥ + 2
+    else if (e.keyCode === 50 && e.altKey) {
+      e.preventDefault();
+      this.props.updateView('add');
+    }
   }
 }
 

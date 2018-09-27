@@ -6,11 +6,13 @@ const Button = ({
   type,
   disabled,
   t,
+  title,
   onClick,
 }) => (
   <button
     className="button"
     type={type}
+    title={title}
     disabled={disabled}
     onClick={onClick}
   >
@@ -21,12 +23,14 @@ const Button = ({
 Button.propTypes = {
   t: PropTypes.string.isRequired,
   type: PropTypes.string,
+  title: PropTypes.string,
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
   type: 'button',
+  title: null,
   disabled: false,
   onClick: null,
 };
