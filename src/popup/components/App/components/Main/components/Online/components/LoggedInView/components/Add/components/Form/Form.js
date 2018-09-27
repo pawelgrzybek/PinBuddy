@@ -43,7 +43,13 @@ class Form extends Component {
       });
     });
 
+    window.addEventListener('keydown', this.handleKeydown);
+
     this.refInput.current.focus();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.handleKeydown);
   }
 
   render() {
@@ -138,6 +144,14 @@ class Form extends Component {
       laoding: true,
     });
     this.props.postsAdd(this.state);
+  }
+
+  handleKeydown = e => {
+    // ⌘ + Enter
+    // TODO: Check if this is working on Windows
+    if (e.keyCode === 13 && (e.ctrlKey || e.metaKey)) {
+      this.props.postsAdd(this.state);
+    }
   }
 }
 
