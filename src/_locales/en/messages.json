@@ -178,7 +178,7 @@
     "description": "Popup - read later checkbox label"
   },
   "popupAddBookmarkButton": {
-    "message": "add bookmark (⌘ + Enter)",
+    "message": "add bookmark",
     "description": "Popup - add bookmark submit button"
   },
   "popupLoggedOutViewMessage": {
