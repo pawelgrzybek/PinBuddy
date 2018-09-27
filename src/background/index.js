@@ -21,30 +21,7 @@ chrome.tabs.onActivated.addListener(result => {
   chrome.tabs.get(result.tabId, listenForIconChange);
 });
 
-// chrome.runtime.onInstalled.addListener(e => {
-//   chrome.contextMenus.create({
-//     id: 'addToPinboard',
-//     title: 'Add to Pinboard',
-//   });
-
-//   chrome.contextMenus.create({
-//     id: 'addToPinboardWithDescription',
-//     title: 'Add to Pinboard (with description)',
-//     contexts: ['selection']
-//   });
-
-//   chrome.contextMenus.create({
-//     id: 'addLinkToPinboard',
-//     title: 'Add link to Pinboard',
-//     contexts: ['link']
-//   });
-// });
-
-// chrome.commands.onCommand.addListener(command => {
-//   console.log('Command:', command);
-// });
-
-// listen for some mesages from other parts of an app
+// listen to messages from other parts of an extension
 chrome.runtime.onMessage.addListener(request => {
 
   if (request === 'check current') {

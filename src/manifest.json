@@ -29,19 +29,11 @@
     "persistent": false
   },
   "commands": {
-    "save-url": {
+    "_execute_browser_action": {
       "suggested_key": {
-        "default": "Ctrl+Shift+P",
-        "mac": "MacCtrl+P"
-      },
-      "description": "Add URL"
-    },
-    "read-later": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+L",
-        "mac": "MacCtrl+L"
-      },
-      "description": "Read later"
+        "default": "Alt+P",
+        "mac": "Alt+P"
+      }
     }
   },
   "offline_enabled": false,
@@ -49,7 +41,6 @@
   "permissions": [
     "storage",
     "tabs",
-    "contextMenus",
     "<all_urls>",
     "notifications"
   ]
