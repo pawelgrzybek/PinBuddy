@@ -78,7 +78,7 @@ export const postsDelete = (href, message, contextMessage) => {
                 {
                   type: 'basic',
                   iconUrl: '/icons/icon-128.png',
-                  title: 'URL deleted',
+                  title: chrome.i18n.getMessage('notificationDeleteSucessful'),
                   message,
                   contextMessage,
                 },
@@ -144,7 +144,7 @@ export const postsAdd = postInfo => {
                     {
                       type: 'basic',
                       iconUrl: '/icons/icon-128.png',
-                      title: 'URL saved successfully',
+                      title: chrome.i18n.getMessage('notificationSaveSucessful'),
                       message: title,
                       contextMessage: description,
                     },

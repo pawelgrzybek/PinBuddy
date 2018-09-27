@@ -204,5 +204,14 @@
   "popupInvalidProtocolButton": {
     "message": "Find out more in Pinboard API documentation",
     "description": "Popup - invalid protocol button text"
+  },
+
+  "notificationSaveSucessful": {
+    "message": "URL saved successfully",
+    "description": "Notification - when link saved sucesfully"
+  },
+  "notificationDeleteSucessful": {
+    "message": "URL deleted successfully",
+    "description": "Notification - when link saved sucesfully"
   }
 }
