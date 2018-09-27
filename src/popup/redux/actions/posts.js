@@ -59,7 +59,7 @@ export const postsDelete = href => {
       return post.href !== href;
     });
 
-    fetch(`https://api.pinboard.in/v1/posts/delete?auth_token=${username}:${token}&format=json&url=${href}`)
+    fetch(`https://api.pinboard.in/v1/posts/delete?auth_token=${username}:${token}&format=json&url=${encodeURIComponent(href)}`)
       .then(res => res.json())
       .then(resJSON => {
         // this is here for a good reason
@@ -98,7 +98,7 @@ export const postsAdd = postInfo => {
       readLater,
     } = postInfo;
 
-    fetch(`https://api.pinboard.in/v1/posts/add?auth_token=${username}:${token}&format=json&url=${url}&description=${title}&extended=${description}&tags=${tags}&shared=${privatePost ? 'no' : 'yes'}&toread=${readLater ? 'yes' : 'no'}`)
+    fetch(`https://api.pinboard.in/v1/posts/add?auth_token=${username}:${token}&format=json&url=${encodeURIComponent(url)}&description=${title}&extended=${description}&tags=${tags}&shared=${privatePost ? 'no' : 'yes'}&toread=${readLater ? 'yes' : 'no'}`)
       .then(res => res.json())
       .then(resJSON => {
         if (resJSON.result_code === 'done') {

@@ -37,7 +37,7 @@ class Article extends Component {
         <a
           tabIndex={deleteConfirmed ? '-1' : '0'}
           className={`article__url ${unread ? 'article__url--unread' : ''}`}
-          href={href}
+          href={decodeURIComponent(href)}
           rel="noopener noreferrer"
           target="_blank"
         >
