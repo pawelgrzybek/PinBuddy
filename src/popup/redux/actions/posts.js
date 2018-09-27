@@ -50,7 +50,7 @@ export const postsGet = () => {
   };
 };
 
-export const postsDelete = href => {
+export const postsDelete = (href, message, contextMessage) => {
   return (dispatch, getState) => {
     const { username, token } = getState().user;
     const { posts } = getState();
@@ -62,17 +62,30 @@ export const postsDelete = href => {
     fetch(`https://api.pinboard.in/v1/posts/delete?auth_token=${username}:${token}&format=json&url=${encodeURIComponent(href)}`)
       .then(res => res.json())
       .then(resJSON => {
-        // this is here for a good reason
-        // when url contains `?url=` it fails on api
-        // came accross this bug with sidebar.io links
-        // waiting for a response from pinboard support to find a solution
         if (resJSON.result_code === 'done') {
-          chrome.storage.local.set({ posts: newState });
-          chrome.runtime.sendMessage('check current');
-          dispatch({
-            type: 'POSTS_DELETE',
-            href
+
+          chrome.storage.local.set({ posts: newState }, () => {
+            chrome.runtime.sendMessage('check current');
+            dispatch({
+              type: 'POSTS_DELETE',
+              href
+            });
           });
+
+          chrome.storage.sync.get(['enableSystemNotifications'], result => {
+            if (result.enableSystemNotifications) {
+              chrome.notifications.create(
+                {
+                  type: 'basic',
+                  iconUrl: '/icons/icon-128.png',
+                  title: 'URL deleted',
+                  message,
+                  contextMessage,
+                },
+              );
+            }
+          });
+
         }
         else {
           // need to handle that somehow
@@ -122,19 +135,29 @@ export const postsAdd = postInfo => {
             const newPosts = [newPost, ...result.posts];
 
             chrome.storage.local.set({ posts: newPosts }, () => {
-              chrome.notifications.create(
-                {
-                  type: 'basic',
-                  iconUrl: '/icons/icon-128.png',
-                  title: 'URL saved successfully',
-                  message: title,
-                  contextMessage: description,
-                },
-                () => {
-                  chrome.runtime.sendMessage('check current');
+
+              chrome.runtime.sendMessage('check current');
+
+              chrome.storage.sync.get(['enableSystemNotifications'], result => {
+                if (result.enableSystemNotifications) {
+                  chrome.notifications.create(
+                    {
+                      type: 'basic',
+                      iconUrl: '/icons/icon-128.png',
+                      title: 'URL saved successfully',
+                      message: title,
+                      contextMessage: description,
+                    },
+                    () => {
+                      window.close();
+                    }
+                  );
+                }
+                else {
                   window.close();
                 }
-              );
+              });
+
             });
           });
 

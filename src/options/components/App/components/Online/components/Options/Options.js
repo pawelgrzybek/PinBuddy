@@ -28,6 +28,7 @@ class Options extends Component {
       defaultView,
       privateCheckboxByDefault,
       toReadChecboxByDefault,
+      enableSystemNotifications,
     } = this.props.options;
     return (
       <>
@@ -60,6 +61,13 @@ class Options extends Component {
           onChange={this.handleCheckboxChange}
           checked={toReadChecboxByDefault}
         />
+
+        <Checkbox
+          id="enableSystemNotifications"
+          label={chrome.i18n.getMessage('optionsEnableSystemNotifications')}
+          onChange={this.handleCheckboxChange}
+          checked={enableSystemNotifications}
+        />
       </>
     );
   }
@@ -90,6 +98,7 @@ Options.propTypes = {
     defaultView: PropTypes.string.isRequired,
     privateCheckboxByDefault: PropTypes.bool.isRequired,
     toReadChecboxByDefault: PropTypes.bool.isRequired,
+    enableSystemNotifications: PropTypes.bool.isRequired,
   }).isRequired,
   userLogOut: PropTypes.func.isRequired,
   fetchOptions: PropTypes.func.isRequired,

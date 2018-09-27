@@ -67,6 +67,7 @@ class List extends Component {
           unread={unread}
           href={post.href}
           description={post.description}
+          extended={post.extended}
           time={post.time}
           tags={post.tags}
         />

@@ -75,6 +75,10 @@
     "message": "\"To read\" checkbox by default (add url view)",
     "description": "Options page - checkbox 2 label"
   },
+  "optionsEnableSystemNotifications": {
+    "message": "Enable system notifications",
+    "description": "Options page - checkbox 3 label"
+  },
   "optionsUseDescriptionMetaTag": {
     "message": "Use description meta tag as a URL description (add url view)",
     "description": "Options page - checkbox 3 label"

@@ -15,11 +15,13 @@ export const fetchOptionsAction = () => {
       'defaultView',
       'privateCheckboxByDefault',
       'toReadChecboxByDefault',
+      'enableSystemNotifications',
     ], option => {
       const settingsExist =
         Object.prototype.hasOwnProperty.call(option, 'defaultView') &&
         Object.prototype.hasOwnProperty.call(option, 'privateCheckboxByDefault') &&
-        Object.prototype.hasOwnProperty.call(option, 'toReadChecboxByDefault');
+        Object.prototype.hasOwnProperty.call(option, 'toReadChecboxByDefault') &&
+        Object.prototype.hasOwnProperty.call(option, 'enableSystemNotifications');
 
       if (settingsExist) {
         dispatch({
@@ -32,6 +34,7 @@ export const fetchOptionsAction = () => {
           defaultView: 'all',
           privateCheckboxByDefault: false,
           toReadChecboxByDefault: false,
+          enableSystemNotifications: false,
         });
       }
     });

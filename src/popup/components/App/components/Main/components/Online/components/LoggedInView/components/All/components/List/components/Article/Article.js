@@ -17,6 +17,7 @@ class Article extends Component {
       unread,
       href,
       description,
+      extended,
       time,
       tags,
     } = this.props;
@@ -63,11 +64,12 @@ class Article extends Component {
   }
 
   handleDeleteClick = () => {
+    const { href, description, extended, postsDelete } = this.props;
     if (this.state.deleteActive) {
       this.setState({
         deleteConfirmed: true,
       });
-      this.props.postsDelete(this.props.href);
+      postsDelete(href, description, extended);
     }
 
     this.setState(state => {
@@ -91,13 +93,14 @@ Article.propTypes = {
   unread: PropTypes.bool.isRequired,
   href: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  extended: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
   postsDelete: PropTypes.func.isRequired,
 };
 
 const mapDispatchToProps = dispatch => ({
-  postsDelete: href => dispatch(postsDelete(href)),
+  postsDelete: (href, title, description) => dispatch(postsDelete(href, title, description)),
 });
 
 export default connect(null, mapDispatchToProps)(Article);

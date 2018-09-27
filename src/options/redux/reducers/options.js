@@ -2,6 +2,7 @@ const initialState = {
   defaultView: 'all',
   privateCheckboxByDefault: false,
   toReadChecboxByDefault: false,
+  enableSystemNotifications: false,
 };
 
 const reducerOptions = (state = initialState, action) => {
