@@ -18,12 +18,14 @@ const Input = React.forwardRef(({
   invalidMessage,
 }, ref) => (
   <div className="input">
+
     <label
       className="input__label"
       htmlFor={id}
     >
       {label}
     </label>
+
     <input
       className="input__input"
       id={id}
@@ -38,7 +40,9 @@ const Input = React.forwardRef(({
       spellCheck={spellCheck}
       pattern={pattern}
     />
-    <p className="input__message">{invalidMessage}</p>
+
+    {invalidMessage && <p className="input__message">{invalidMessage}</p>}
+
   </div>
 ));
 
@@ -57,12 +61,12 @@ Input.propTypes = {
 
 Input.defaultProps = {
   type: 'text',
-  autoComplete: 'on',
-  autoCorrect: 'on',
-  autoCapitalize: 'on',
-  spellCheck: 'on',
-  pattern: '',
-  invalidMessage: '',
+  autoComplete: null,
+  autoCorrect: null,
+  autoCapitalize: null,
+  spellCheck: null,
+  pattern: null,
+  invalidMessage: null,
 };
 
 export default Input;
