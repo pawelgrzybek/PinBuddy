@@ -68,6 +68,15 @@ class Options extends Component {
           onChange={this.handleCheckboxChange}
           checked={enableSystemNotifications}
         />
+
+        <hr />
+
+        <ul>
+          <li><code>{navigator.platform === 'MacIntel' ? '⌥ + p' : 'Alt + p'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionToggle') }</li>
+          <li><code>{navigator.platform === 'MacIntel' ? '⌥ + 1' : 'Alt + 1'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionGoToAll') }</li>
+          <li><code>{navigator.platform === 'MacIntel' ? '⌥ + 2' : 'Alt + 2'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionGoToAdd') }</li>
+          <li><code>{navigator.platform === 'MacIntel' ? '⌘ + Enter' : 'Ctrl + Enter'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionAddBookmark') }</li>
+        </ul>
       </>
     );
   }

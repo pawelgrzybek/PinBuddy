@@ -79,6 +79,22 @@
     "message": "Enable system notifications",
     "description": "Options page - checkbox 3 label"
   },
+  "optionsShortcutDescriptionToggle": {
+    "message": "show / hide Pinboard X",
+    "description": "Options page - shortcut description 1"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "go to all view",
+    "description": "Options page - shortcut description 1"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "go to add view",
+    "description": "Options page - shortcut description 1"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "add bookmark (add view)",
+    "description": "Options page - shortcut description 1"
+  },
 
 
   "popupOpenYourPinboardProfile": {
@@ -201,6 +217,7 @@
     "message": "Find out more in Pinboard API documentation",
     "description": "Popup - invalid protocol button text"
   },
+
 
   "notificationSaveSucessful": {
     "message": "URL saved successfully",

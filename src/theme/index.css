@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
 }
 
 :root {
@@ -39,6 +40,11 @@ hr {
   height: var(--lh);
   border: 0;
   box-shadow: 0 -1px 0 var(--color-gray);
+}
+
+ul {
+  margin-bottom: var(--lh);
+  list-style: none;
 }
 
 code {
