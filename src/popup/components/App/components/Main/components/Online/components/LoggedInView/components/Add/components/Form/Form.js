@@ -149,7 +149,6 @@ class Form extends Component {
 
   handleKeydown = e => {
     // ⌘ + Enter
-    // TODO: Check if this is working on Windows
     if (e.keyCode === 13 && (e.ctrlKey || e.metaKey)) {
       this.props.postsAdd(this.state);
     }
