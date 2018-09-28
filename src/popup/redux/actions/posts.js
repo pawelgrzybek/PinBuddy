@@ -88,7 +88,7 @@ export const postsDelete = (href, message, contextMessage) => {
 
         }
         else {
-          // need to handle that somehow
+          dispatch(errorShowAction());
         }
       })
       .catch(() => {
@@ -163,7 +163,7 @@ export const postsAdd = postInfo => {
 
         }
         else {
-          // need to handle that somehow
+          dispatch(errorShowAction());
         }
       })
       .catch(() => {
