@@ -16,8 +16,8 @@ class Nav extends Component {
   }
 
   render() {
-    const { username, online, view } = this.props;
-    const shouldShowNav = username && online;
+    const { username, online, view, error } = this.props;
+    const shouldShowNav = username && online && !error;
 
     return shouldShowNav && (
       <>
@@ -69,6 +69,7 @@ Nav.propTypes = {
   username: PropTypes.string.isRequired,
   online: PropTypes.bool.isRequired,
   view: PropTypes.string.isRequired,
+  error: PropTypes.bool.isRequired,
   updateView: PropTypes.func.isRequired,
   getInitialView: PropTypes.func.isRequired,
 };
@@ -77,6 +78,7 @@ const mapStateToProps = state => ({
   username: state.user.username,
   online: state.online,
   view: state.view,
+  error: state.error,
 });
 
 const mapDispatchToProps = dispatch => {
