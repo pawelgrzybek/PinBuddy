@@ -1,14 +1,16 @@
 // icon change when url exists
 const listenForIconChange = tab => {
-  const { url } = tab;
-  chrome.storage.local.get(['posts'], posts => {
-    if (posts.posts) {
-      const postExists = !!posts.posts.find(post => post.href === url);
-      chrome.browserAction.setIcon({
-        path: postExists ? '/icons/icon-active-16.png' : '/icons/icon-16.png',
-      });
-    }
-  });
+  if (tab) {
+    const { url } = tab;
+    chrome.storage.local.get(['posts'], posts => {
+      if (posts.posts) {
+        const postExists = !!posts.posts.find(post => post.href === url);
+        chrome.browserAction.setIcon({
+          path: postExists ? '/icons/icon-active-16.png' : '/icons/icon-16.png',
+        });
+      }
+    });
+  }
 };
 
 // listen to url updates
