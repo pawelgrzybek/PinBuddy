@@ -38,11 +38,7 @@ class All extends Component {
         />
         <List
           posts={this.props.posts}
-          privatePost={this.state.privatePost}
-          publicPost={this.state.publicPost}
-          unread={this.state.unread}
-          untagged={this.state.untagged}
-          keyword={this.state.keyword}
+          filters={this.state}
         />
       </div>
     );

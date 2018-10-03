@@ -30,26 +30,26 @@ class List extends Component {
   }
 
   filterPrivate = post => {
-    return this.props.privatePost ? post.shared === 'no' : post;
+    return this.props.filters.privatePost ? post.shared === 'no' : post;
   }
 
   filterPublic = post => {
-    return this.props.publicPost ? post.shared === 'yes' : post;
+    return this.props.filters.publicPost ? post.shared === 'yes' : post;
   }
 
   filterUnread = post => {
-    if (this.props.unread) {
+    if (this.props.filters.unread) {
       return post.toread === 'yes';
     }
     return post;
   }
 
   filterUntagged = post => {
-    return this.props.untagged ? post.tags === '' : post;
+    return this.props.filters.untagged ? post.tags === '' : post;
   }
 
   filterkeyword = post => {
-    const { keyword } = this.props;
+    const { keyword } = this.props.filters;
     const postsDescription = post.description.toLowerCase();
     const searchterm = keyword.toLowerCase();
 
@@ -93,11 +93,13 @@ class List extends Component {
 
 List.propTypes = {
   posts: PropTypes.array.isRequired,
-  keyword: PropTypes.string.isRequired,
-  unread: PropTypes.bool.isRequired,
-  untagged: PropTypes.bool.isRequired,
-  privatePost: PropTypes.bool.isRequired,
-  publicPost: PropTypes.bool.isRequired,
+  filters: PropTypes.shape({
+    keyword: PropTypes.string.isRequired,
+    unread: PropTypes.bool.isRequired,
+    untagged: PropTypes.bool.isRequired,
+    privatePost: PropTypes.bool.isRequired,
+    publicPost: PropTypes.bool.isRequired,
+  }).isRequired,
 };
 
 export default List;
