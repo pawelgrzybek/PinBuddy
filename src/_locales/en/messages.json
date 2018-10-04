@@ -1,49 +1,38 @@
 {
   "extensionName": {
-    "message": "Pinboard X",
-    "description": "Extension name"
+    "message": "Pinboard X"
   },
   "extensionDescription": {
-    "message": "Save, edit and browse your Pinboard links and notes.",
-    "description": "Extension description"
+    "message": "Browse your Pinboard bookmarks and add new ones with ease."
   },
 
 
   "optionsTitle": {
-    "message": "Pinboard X",
-    "description": "Options page - title"
+    "message": "Pinboard X"
   },
   "optionsFooter": {
-    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Issues & feature requests: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinboard-x/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on GitHub\">GitHub</a>.",
-    "description": "Options page - footer"
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Issues & feature requests: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinboard-x/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on GitHub\">GitHub</a>."
   },
   "optionsLoginManual": {
-    "message": "You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">settings page under the password tab</a>. It is a short opaque identifier that allows Pinboard-X to make API calls without ever asking for your password.",
-    "description": "Options page - login manual"
+    "message": "You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">settings page under the password tab</a>. It is a short opaque identifier that allows Pinboard-X to make API calls without ever asking for your password."
   },
   "optionsLoginError": {
-    "message": "Error! Please makes sure that you use a correct token and have stable internat connection.",
-    "description": "Options page - login error"
+    "message": "Error! Please makes sure that you use a correct token and have stable internat connection."
   },
   "optionsLoginFormLabel": {
-    "message": "API Token",
-    "description": "Options page - login form input label"
+    "message": "API Token"
   },
   "optionsLoginFormPlaceholder": {
-    "message": "username:TOKEN",
-    "description": "Options page - login form input placeholder"
+    "message": "username:TOKEN"
   },
   "optionsLoginFormSubmit": {
-    "message": "Submit",
-    "description": "Options page - login form submit button text"
+    "message": "Submit"
   },
   "optionsOfflineMessage": {
-    "message": "Please check your Internet connection.",
-    "description": "Options page - offline message"
+    "message": "Please check your Internet connection."
   },
   "optionsWelcomeMessage": {
     "message": "Hi. You are logged in as $name$.",
-    "description": "Options page - welcome paragraph",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -52,179 +41,136 @@
     }
   },
   "optionsSignOut": {
-    "message": "Sign out",
-    "description": "Options page - sign out button text"
+    "message": "Sign out"
   },
   "optionsDefaultView": {
-    "message": "Default view",
-    "description": "Options page - default view label"
+    "message": "Default view"
   },
   "optionsDefaultViewAllText": {
-    "message": "all",
-    "description": "Options page - default view option all"
+    "message": "all"
   },
   "optionsDefaultViewAddText": {
-    "message": "add url",
-    "description": "Options page - default view option add url"
+    "message": "add url"
   },
   "optionsPrivateCheckboxByDefault": {
-    "message": "\"Private\" checkbox by default (add url view)",
-    "description": "Options page - checkbox 1 label"
+    "message": "\"Private\" checkbox by default (add url view)"
   },
   "optionsToReadChecboxByDefault": {
-    "message": "\"To read\" checkbox by default (add url view)",
-    "description": "Options page - checkbox 2 label"
+    "message": "\"To read\" checkbox by default (add url view)"
   },
   "optionsEnableSystemNotifications": {
-    "message": "Enable system notifications",
-    "description": "Options page - checkbox 3 label"
+    "message": "Enable system notifications"
   },
   "optionsShortcutDescriptionToggle": {
-    "message": "show / hide Pinboard X",
-    "description": "Options page - shortcut description 1"
+    "message": "show / hide Pinboard X"
   },
   "optionsShortcutDescriptionGoToAll": {
-    "message": "go to all view",
-    "description": "Options page - shortcut description 1"
+    "message": "go to all view"
   },
   "optionsShortcutDescriptionGoToAdd": {
-    "message": "go to add view",
-    "description": "Options page - shortcut description 1"
+    "message": "go to add view"
   },
   "optionsShortcutDescriptionAddBookmark": {
-    "message": "add bookmark (add view)",
-    "description": "Options page - shortcut description 1"
+    "message": "add bookmark (add view)"
   },
 
 
   "popupOpenYourPinboardProfile": {
-    "message": "Open your Pinboard Profile",
-    "description": "Popup - link to users profile in a header"
+    "message": "Open your Pinboard Profile"
   },
   "popupBrowseAllTitle": {
-    "message": "Browse all",
-    "description": "Popup - browse all link title"
+    "message": "Browse all"
   },
   "popupBrowseAllText": {
-    "message": "all",
-    "description": "Popup - browse all link text"
+    "message": "all"
   },
   "popupAddURLTitle": {
-    "message": "Add URL",
-    "description": "Popup - add URL link title"
+    "message": "Add URL"
   },
   "popupAddURLText": {
-    "message": "add url",
-    "description": "Popup - add URL link text"
+    "message": "add url"
   },
   "popupErrorMessage": {
-    "message": "Error occured. Please make sure that your token is valid, internet connection and the <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API status</a> is stable.",
-    "description": "Popup - error message shown accross the pop-up"
+    "message": "Error occured. Please make sure that your token is valid, internet connection and the <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API status</a> is stable."
   },
   "popupErrorButtonMessage": {
-    "message": "Go to option page",
-    "description": "Popup - error button message shown accross the pop-up"
+    "message": "Go to option page"
   },
   "popupFiltersSearchLabel": {
-    "message": "Search",
-    "description": "Popup - search input label"
+    "message": "Search"
   },
   "popupFiltersSearchPlaceholder": {
-    "message": "Search term",
-    "description": "Popup - search input placeholder"
+    "message": "Search term"
   },
   "popupFiltersFilterButton": {
-    "message": "Filters",
-    "description": "Popup - filters button text"
+    "message": "Filters"
   },
   "popupFiltersCheckboxPrivate": {
-    "message": "Private",
-    "description": "Popup - filters private checkbox"
+    "message": "Private"
   },
   "popupFiltersCheckboxPublic": {
-    "message": "Public",
-    "description": "Popup - filters public checkbox"
+    "message": "Public"
   },
   "popupFiltersCheckboxUnread": {
-    "message": "Unread",
-    "description": "Popup - filters unread checkbox"
+    "message": "Unread"
   },
   "popupFiltersCheckboxUntagged": {
-    "message": "Untagged",
-    "description": "Popup - filters untagged checkbox"
+    "message": "Untagged"
   },
   "popupArticleButtonCancel": {
-    "message": "cancel",
-    "description": "Popup - article button cancel"
+    "message": "cancel"
   },
   "popupArticleButtonDelete": {
-    "message": "delete",
-    "description": "Popup - article button delete"
+    "message": "delete"
   },
   "popupAddTitleLabel": {
-    "message": "Title",
-    "description": "Popup - title label on add add url form"
+    "message": "Title"
   },
   "popupAddTitleInvalidMessage": {
-    "message": "Max 255 characters",
-    "description": "Popup - title label on add add url form"
+    "message": "Max 255 characters"
   },
   "popupAddDescriptionLabel": {
-    "message": "Description",
-    "description": "Popup - description label on add add url form"
+    "message": "Description"
   },
   "popupAddDescriptionInvalidMessage": {
-    "message": "Max 65536 characters",
-    "description": "Popup - description label on add add url form"
+    "message": "Max 65536 characters"
   },
   "popupAddTagsLabel": {
-    "message": "Tags",
-    "description": "Popup - tags label on add add url form"
+    "message": "Tags"
   },
   "popupAddTagsInvalidMessage": {
-    "message": "Max 255 characters",
-    "description": "Popup - tags label on add add url form"
+    "message": "Max 255 characters"
   },
   "popupAddPrivateCheckboxLabel": {
-    "message": "private",
-    "description": "Popup - private checkbox label"
+    "message": "private"
   },
   "popupAddReadLaterCheckboxLabel": {
-    "message": "read later",
-    "description": "Popup - read later checkbox label"
+    "message": "read later"
   },
   "popupAddBookmarkButton": {
-    "message": "add bookmark",
-    "description": "Popup - add bookmark submit button"
+    "message": "add bookmark"
   },
   "popupLoggedOutViewMessage": {
-    "message": "You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">settings page under the password tab</a>. It is a short opaque identifier that allows Pinboard-X to make API calls without ever asking for your password.",
-    "description": "Popup - legged out user message"
+    "message": "You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">settings page under the password tab</a>. It is a short opaque identifier that allows Pinboard-X to make API calls without ever asking for your password."
   },
   "popupLoggedOutViewButtonMessage": {
-    "message": "Go to option page to log in",
-    "description": "Popup - legged out user button message"
+    "message": "Go to option page to log in"
   },
   "popupOfflineMessage": {
-    "message": "Please check your Internet connection.",
-    "description": "Popup - offline message"
+    "message": "Please check your Internet connection."
   },
   "popupInvalidProtocolParagraph": {
-    "message": "Allowed protocoles are <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> and <code>file</code>. Unfortunatelly you cannot save this URL.",
-    "description": "Popup - invalid protocol paragraph"
+    "message": "Allowed protocoles are <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> and <code>file</code>. Unfortunatelly you cannot save this URL."
   },
   "popupInvalidProtocolButton": {
-    "message": "Find out more in Pinboard API documentation",
-    "description": "Popup - invalid protocol button text"
+    "message": "Find out more in Pinboard API documentation"
   },
 
 
   "notificationSaveSucessful": {
-    "message": "URL saved successfully",
-    "description": "Notification - when link saved sucesfully"
+    "message": "URL saved successfully"
   },
   "notificationDeleteSucessful": {
-    "message": "URL deleted successfully",
-    "description": "Notification - when link saved sucesfully"
+    "message": "URL deleted successfully"
   }
 }
