@@ -157,7 +157,6 @@
     "message": "add bookmark"
   },
   "popupLoggedOutViewMessage": {
-
     "message": "An authentication token is a short opaque identifier in the form \"username:TOKEN\" that allows PinBuddy to make API calls without ever asking for your password. You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">settings page under the password tab</a>."
   },
   "popupLoggedOutViewButtonMessage": {
