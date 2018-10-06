@@ -4,5 +4,6 @@ export { default as Error } from './Error';
 export { default as Input } from './Input';
 export { default as Link } from './Link';
 export { default as Paragraph } from './Paragraph';
+export { default as Quote } from './Quote';
 export { default as Select } from './Select';
 export { default as Title } from './Title';

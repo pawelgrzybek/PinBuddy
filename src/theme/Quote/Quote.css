@@ -1,0 +1,11 @@
+.quote {
+  margin-bottom: var(--lh);
+  border: 1px solid var(--color-gray-light);
+  padding: calc(var(--lh) - 1px);
+  font-style: italic;
+}
+
+.quote::before,
+.quote::after {
+  content: '"';
+}
