@@ -34,7 +34,7 @@ class Options extends Component {
       <>
         <Paragraph innerHTML t={chrome.i18n.getMessage('optionsWelcomeMessage', [username])} />
         <Button
-          t={chrome.i18n.getMessage('optionsSignOut')}
+          t={chrome.i18n.getMessage('optionsLogOut')}
           onClick={this.onCickLogOutButton}
         />
 
