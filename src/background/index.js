@@ -20,12 +20,16 @@ const listenForIconChange = tab => {
 
 // listen to url updates
 chrome.tabs.onUpdated.addListener(result => {
-  chrome.tabs.get(result, listenForIconChange);
+  if (result) {
+    chrome.tabs.get(result, listenForIconChange);
+  }
 });
 
 // listen to new tabs
 chrome.tabs.onActivated.addListener(result => {
-  chrome.tabs.get(result.tabId, listenForIconChange);
+  if (result) {
+    chrome.tabs.get(result.tabId, listenForIconChange);
+  }
 });
 
 // listen to messages from other parts of an extension
@@ -33,7 +37,9 @@ chrome.runtime.onMessage.addListener(request => {
 
   if (request === 'check current') {
     chrome.tabs.query({ active: true }, result => {
-      chrome.tabs.get(result[0].id, listenForIconChange);
+      if (result) {
+        chrome.tabs.get(result[0].id, listenForIconChange);
+      }
     });
   }
 
