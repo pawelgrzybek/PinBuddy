@@ -23,49 +23,54 @@ export const userLogInAction = userToken => {
     dispatch(userErrorHideAction());
 
     fetch(`${API}user/api_token?format=json&auth_token=${userToken}`)
-      .then(() => {
+      .then(data => data.json())
+      .then(dataJSON => {
+        if (dataJSON.result) {
+          const [username, token] = userToken.split(':');
+          chrome.storage.local.set(
+            {
+              username,
+              token,
+            },
+            () => {
+              dispatch(userLoadingHideAction());
+              dispatch({
+                type: 'ADD_USERNAME',
+                username
+              });
+            }
+          );
 
-        const [username, token] = userToken.split(':');
-        chrome.storage.local.set(
-          {
-            username,
-            token,
-          },
-          () => {
-            dispatch(userLoadingHideAction());
-            dispatch({
-              type: 'ADD_USERNAME',
-              username
+          const now = Date.now();
+
+          fetch(`${API}posts/all?format=json&auth_token=${userToken}`)
+            .then(dataPosts => dataPosts.json())
+            .then(posts => {
+              chrome.storage.local.set(
+                {
+                  posts,
+                  postsFetched: now,
+                }
+              );
             });
-          }
-        );
 
-        const now = Date.now();
+          fetch(`${API}tags/get?format=json&auth_token=${userToken}`)
+            .then(dataTags => dataTags.json())
+            .then(tags => {
+              const listOfTags = Object.keys(tags);
 
-        fetch(`${API}posts/all?format=json&auth_token=${userToken}`)
-          .then(dataPosts => dataPosts.json())
-          .then(posts => {
-            chrome.storage.local.set(
-              {
-                posts,
-                postsFetched: now,
-              }
-            );
-          });
-
-        fetch(`${API}tags/get?format=json&auth_token=${userToken}`)
-          .then(dataTags => dataTags.json())
-          .then(tags => {
-            const listOfTags = Object.keys(tags);
-
-            chrome.storage.local.set(
-              {
-                tags: listOfTags,
-                tagsFetched: now,
-              }
-            );
-          });
-
+              chrome.storage.local.set(
+                {
+                  tags: listOfTags,
+                  tagsFetched: now,
+                }
+              );
+            });
+        }
+        else {
+          dispatch(userLoadingHideAction());
+          dispatch(userErrorShowAction());
+        }
       })
       .catch(() => {
         dispatch(userLoadingHideAction());
