@@ -17,6 +17,12 @@ class Login extends Component {
     this.refInput.current.focus();
   }
 
+  componentDidUpdate() {
+    if (this.props.error) {
+      this.refInput.current.focus();
+    }
+  }
+
   static validateInput(input) {
     const regex = /^([^:]{1,})(:)(\S{1,})/;
     return input.match(regex);
