@@ -156,6 +156,9 @@
   "popupAddBookmarkButton": {
     "message": "dodaj zakładkę"
   },
+  "popupReAddBookmarkButton": {
+    "message": "nadpisz zakładkę"
+  },
   "popupLoggedOutViewMessage": {
     "message": "Token autoryzacyjny w formie \"username:TOKEN\" pozwala PinBuddy na wykonywanie zapytań do serwerów bez pytania o twoje hasło. Swój token możesz odnaleźć na <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">stronie ustawień w zakładce hasło</a>."
   },

@@ -14,6 +14,7 @@ class Form extends Component {
     tags: '',
     privatePost: false,
     readLater: false,
+    previouslySaved: false,
   };
 
   refInput = React.createRef();
@@ -21,26 +22,54 @@ class Form extends Component {
   componentDidMount() {
 
     chrome.tabs.query({ active: true }, result => {
+
       const { title, url } = result[0];
-      this.setState({
-        title,
-        url,
-      });
-    });
 
-    chrome.tabs.executeScript({ code: 'window.getSelection().toString()' }, selection => {
-      if (selection) {
-        this.setState({
-          description: selection[0],
-        });
-      }
-    });
+      chrome.storage.local.get(['posts'], result => {
+        const postExists = result.posts.find(post => post.href === url);
+        if (postExists) {
+          const {
+            description: title,
+            extended: description,
+            tags,
+            shared,
+            toread
+          } = postExists;
+          this.setState({
+            title,
+            url,
+            description,
+            tags,
+            privatePost: shared === 'no',
+            readLater: toread === 'yes',
+            previouslySaved: true,
+          });
 
-    chrome.storage.sync.get(['privateCheckboxByDefault', 'toReadChecboxByDefault'], result => {
-      this.setState({
-        privatePost: result.privateCheckboxByDefault,
-        readLater: result.toReadChecboxByDefault,
+        }
+        else {
+          this.setState({
+            title,
+            url,
+          });
+
+          chrome.tabs.executeScript({ code: 'window.getSelection().toString()' }, selection => {
+            if (selection) {
+              this.setState({
+                description: selection[0],
+              });
+            }
+          });
+
+          chrome.storage.sync.get(['privateCheckboxByDefault', 'toReadChecboxByDefault'], result => {
+            this.setState({
+              privatePost: result.privateCheckboxByDefault,
+              readLater: result.toReadChecboxByDefault,
+            });
+          });
+
+        }
       });
+
     });
 
     window.addEventListener('keydown', this.handleKeydown);
@@ -116,10 +145,11 @@ class Form extends Component {
         </div>
 
         <Button
-          t={chrome.i18n.getMessage('popupAddBookmarkButton')}
+          t={this.state.previouslySaved ? chrome.i18n.getMessage('popupReAddBookmarkButton') : chrome.i18n.getMessage('popupAddBookmarkButton')}
           title={`${chrome.i18n.getMessage('popupAddBookmarkButton')} ${navigator.platform === 'MacIntel' ? '(⌘ + Enter)' : '(Ctrl + Enter)'}`}
           disabled={formInvalid}
           onClick={this.handleButtonClick}
+          secondary={this.state.previouslySaved}
         />
 
       </div>
