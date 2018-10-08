@@ -8,9 +8,10 @@ const Button = ({
   t,
   title,
   onClick,
+  secondary,
 }) => (
   <button
-    className="button"
+    className={secondary ? 'button button--secondary' : 'button'}
     type={type}
     title={title}
     disabled={disabled}
@@ -26,6 +27,7 @@ Button.propTypes = {
   title: PropTypes.string,
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
+  secondary: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -33,6 +35,7 @@ Button.defaultProps = {
   title: null,
   disabled: false,
   onClick: null,
+  secondary: false,
 };
 
 export default Button;

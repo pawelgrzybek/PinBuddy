@@ -11,6 +11,10 @@
   font-weight: 400;
 }
 
+.button--secondary {
+  background-color: var(--color-secondary);
+}
+
 .button:disabled {
   background-color: var(--color-gray);
   cursor: not-allowed;
