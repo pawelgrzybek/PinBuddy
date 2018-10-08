@@ -55,9 +55,7 @@ export const postsDelete = (href, message, contextMessage) => {
     const { username, token } = getState().user;
     const { posts } = getState();
 
-    const newState = posts.filter(post => {
-      return post.href !== href;
-    });
+    const newState = posts.filter(post => post.href !== href);
 
     fetch(`https://api.pinboard.in/v1/posts/delete?auth_token=${username}:${token}&format=json&url=${encodeURIComponent(href)}`)
       .then(res => res.json())
@@ -132,9 +130,10 @@ export const postsAdd = postInfo => {
           };
 
           chrome.storage.local.get(['posts'], result => {
-            const newPosts = [newPost, ...result.posts];
+            const currentPosts = result.posts.filter(post => post.href !== url);
+            const newState = [newPost, ...currentPosts];
 
-            chrome.storage.local.set({ posts: newPosts }, () => {
+            chrome.storage.local.set({ posts: newState }, () => {
 
               chrome.runtime.sendMessage('check current');
 
