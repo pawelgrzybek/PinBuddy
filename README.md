@@ -1,4 +1,4 @@
-<img width="64" height="64" src="dist/icons/icon-128.png">
+<img width="64" height="64" src="src/icons/icon-128.png">
 
 # PinBuddy
 
