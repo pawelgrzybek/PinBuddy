@@ -9,6 +9,15 @@ class Article extends Component {
   state={
     deleteActive: false,
     deleteConfirmed: false,
+    focused: false,
+  }
+
+  componentDidMount() {
+    addEventListener('keydown', this.handleKeyDownEvent);
+  }
+
+  componentWillUnmount() {
+    removeEventListener('keydown', this.handleKeyDownEvent);
   }
 
   render() {
@@ -17,7 +26,6 @@ class Article extends Component {
       unread,
       href,
       description,
-      extended,
       time,
       tags,
     } = this.props;
@@ -41,6 +49,8 @@ class Article extends Component {
           href={decodeURIComponent(href)}
           rel="noopener noreferrer"
           target="_blank"
+          onFocus={this.handleOnFocusLink}
+          onBlur={this.handleOnBlursLink}
         >
           {description}
         </a>
@@ -86,6 +96,30 @@ class Article extends Component {
       };
     });
   }
+
+  handleOnFocusLink = () => {
+    this.setState({
+      focused: true,
+    });
+  }
+
+  handleOnBlursLink = () => {
+    this.setState({
+      focused: false,
+    });
+  }
+
+  handleKeyDownEvent = e => {
+    const { href, description, extended, postsDelete } = this.props;
+
+    if ((e.ctrlKey || e.metaKey) && e.keyCode === 8 && this.state.focused) {
+      this.setState(state => ({
+        deleteActive: true,
+        deleteConfirmed: true,
+      }), () => postsDelete(href, description, extended));
+    }
+  }
+
 }
 
 Article.propTypes = {

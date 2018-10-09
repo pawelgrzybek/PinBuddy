@@ -79,6 +79,9 @@
   "optionsShortcutDescriptionAddBookmark": {
     "message": "dodaj URL (zakładka dodaj URL)"
   },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "usuń URL (zakładka wszystkie)"
+  },
 
 
   "popupOpenYourPinboardProfile": {

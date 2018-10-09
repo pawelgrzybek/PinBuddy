@@ -79,6 +79,9 @@
   "optionsShortcutDescriptionAddBookmark": {
     "message": "add bookmark (add view)"
   },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "delete bookmark (all view)"
+  },
 
 
   "popupOpenYourPinboardProfile": {
