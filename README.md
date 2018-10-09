@@ -1,4 +1,4 @@
-# Pinboard X
+# PinBoard
 
 Few words about it…
 
