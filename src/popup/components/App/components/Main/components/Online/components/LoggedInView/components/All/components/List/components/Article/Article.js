@@ -47,6 +47,7 @@ class Article extends Component {
           tabIndex={deleteConfirmed ? '-1' : '0'}
           className={`article__url ${unread ? 'article__url--unread' : ''}`}
           href={decodeURIComponent(href)}
+          title={description}
           rel="noopener noreferrer"
           target="_blank"
           onFocus={this.handleOnFocusLink}
