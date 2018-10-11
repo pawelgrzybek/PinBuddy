@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Login from './components/Login';
 import Options from './components/Options';
 
-const Online = ({ username }) => {
+export const Online = ({ username }) => {
   return username ? <Options /> : <Login />;
 };
 
