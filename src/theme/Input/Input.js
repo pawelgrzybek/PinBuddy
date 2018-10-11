@@ -14,6 +14,7 @@ const Input = React.forwardRef(({
   autoCorrect,
   autoCapitalize,
   spellCheck,
+  autoFocus,
   pattern,
   invalidMessage,
 }, ref) => (
@@ -38,6 +39,7 @@ const Input = React.forwardRef(({
       autoCorrect={autoCorrect}
       autoCapitalize={autoCapitalize}
       spellCheck={spellCheck}
+      autoFocus={autoFocus}
       pattern={pattern}
     />
 
@@ -55,6 +57,7 @@ Input.propTypes = {
   autoCorrect: PropTypes.string,
   autoCapitalize: PropTypes.string,
   spellCheck: PropTypes.string,
+  autoFocus: PropTypes.bool,
   pattern: PropTypes.string,
   invalidMessage: PropTypes.string,
 };
@@ -65,6 +68,7 @@ Input.defaultProps = {
   autoCorrect: null,
   autoCapitalize: null,
   spellCheck: null,
+  autoFocus: null,
   pattern: null,
   invalidMessage: null,
 };
