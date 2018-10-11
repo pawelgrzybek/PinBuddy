@@ -79,6 +79,9 @@
   "optionsShortcutDescriptionAddBookmark": {
     "message": "dodaj URL (zakładka dodaj URL)"
   },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "otwórz URL w tle (zakładka wszystkie)"
+  },
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "usuń URL (zakładka wszystkie)"
   },

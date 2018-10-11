@@ -79,6 +79,9 @@
   "optionsShortcutDescriptionAddBookmark": {
     "message": "add bookmark (add view)"
   },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "open bookmark in background (all view)"
+  },
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "delete bookmark (all view)"
   },

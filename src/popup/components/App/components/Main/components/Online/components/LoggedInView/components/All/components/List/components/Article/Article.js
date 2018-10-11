@@ -124,6 +124,13 @@ class Article extends Component {
         deleteConfirmed: true,
       }), () => postsDelete(href, description, extended));
     }
+    else if (e.keyCode === 13 && (e.ctrlKey || e.metaKey) && this.state.focused) {
+      e.preventDefault();
+      chrome.tabs.create({
+        url: this.props.href,
+        active: false,
+      });
+    }
   }
 
 }

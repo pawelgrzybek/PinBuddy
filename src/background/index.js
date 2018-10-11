@@ -1,7 +1,7 @@
 // icon change when url exists
 const listenForIconChange = tab => {
-  if (tab) {
-    const { url } = tab;
+  const { url, active } = tab;
+  if (url && active) {
     chrome.storage.local.get(['posts'], posts => {
       if (posts.posts) {
         const postExists = !!posts.posts.find(post => post.href === url);

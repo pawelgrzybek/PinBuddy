@@ -76,6 +76,7 @@ class Options extends Component {
           <li><code>{navigator.platform === 'MacIntel' ? '⌥ + 1' : 'Alt + 1'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionGoToAll') }</li>
           <li><code>{navigator.platform === 'MacIntel' ? '⌥ + 2' : 'Alt + 2'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionGoToAdd') }</li>
           <li><code>{navigator.platform === 'MacIntel' ? '⌘ + Enter' : 'Ctrl + Enter'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionAddBookmark') }</li>
+          <li><code>{navigator.platform === 'MacIntel' ? '⌘ + Enter' : 'Ctrl + Enter'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionOpenInBackground') }</li>
           <li><code>{navigator.platform === 'MacIntel' ? '⌘ + Backspace' : 'Ctrl + Backspace'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionDeleteBookmark') }</li>
         </ul>
       </>
