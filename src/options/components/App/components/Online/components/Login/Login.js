@@ -6,7 +6,7 @@ import { userLogInAction } from 'redux-options/actions/user';
 import { Paragraph, Error, Input, Button } from 'theme';
 import Loading from './components/Loading';
 
-class Login extends Component {
+export class Login extends Component {
   state = {
     token: '',
   };

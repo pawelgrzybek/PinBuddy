@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Login
+    error={false}
+    loading={false}
+    userLogIn={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Paragraph
+          innerHTML={true}
+          t="optionsLoginManual"
+        />,
+        false,
+        <React.Fragment>
+          <ForwardRef
+            autoCapitalize="off"
+            autoComplete="off"
+            autoCorrect="off"
+            autoFocus={true}
+            id="token"
+            invalidMessage={null}
+            label="optionsLoginFormLabel"
+            onChange={[Function]}
+            pattern={null}
+            placeholder="optionsLoginFormPlaceholder"
+            spellCheck="false"
+            type="text"
+          />
+          <Button
+            disabled={true}
+            onClick={null}
+            secondary={false}
+            t="optionsLoginFormSubmit"
+            title={null}
+            type="submit"
+          />
+        </React.Fragment>,
+      ],
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "innerHTML": true,
+          "t": "optionsLoginManual",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef
+              autoCapitalize="off"
+              autoComplete="off"
+              autoCorrect="off"
+              autoFocus={true}
+              id="token"
+              invalidMessage={null}
+              label="optionsLoginFormLabel"
+              onChange={[Function]}
+              pattern={null}
+              placeholder="optionsLoginFormPlaceholder"
+              spellCheck="false"
+              type="text"
+            />,
+            <Button
+              disabled={true}
+              onClick={null}
+              secondary={false}
+              t="optionsLoginFormSubmit"
+              title={null}
+              type="submit"
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "autoCapitalize": "off",
+              "autoComplete": "off",
+              "autoCorrect": "off",
+              "autoFocus": true,
+              "id": "token",
+              "invalidMessage": null,
+              "label": "optionsLoginFormLabel",
+              "onChange": [Function],
+              "pattern": null,
+              "placeholder": "optionsLoginFormPlaceholder",
+              "spellCheck": "false",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "autoCapitalize": null,
+                "autoComplete": null,
+                "autoCorrect": null,
+                "autoFocus": null,
+                "invalidMessage": null,
+                "pattern": null,
+                "spellCheck": null,
+                "type": "text",
+              },
+              "propTypes": Object {
+                "autoCapitalize": [Function],
+                "autoComplete": [Function],
+                "autoCorrect": [Function],
+                "autoFocus": [Function],
+                "id": [Function],
+                "invalidMessage": [Function],
+                "label": [Function],
+                "onChange": [Function],
+                "pattern": [Function],
+                "spellCheck": [Function],
+                "type": [Function],
+              },
+              "render": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "disabled": true,
+              "onClick": null,
+              "secondary": false,
+              "t": "optionsLoginFormSubmit",
+              "title": null,
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Symbol(react.fragment),
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Paragraph
+            innerHTML={true}
+            t="optionsLoginManual"
+          />,
+          false,
+          <React.Fragment>
+            <ForwardRef
+              autoCapitalize="off"
+              autoComplete="off"
+              autoCorrect="off"
+              autoFocus={true}
+              id="token"
+              invalidMessage={null}
+              label="optionsLoginFormLabel"
+              onChange={[Function]}
+              pattern={null}
+              placeholder="optionsLoginFormPlaceholder"
+              spellCheck="false"
+              type="text"
+            />
+            <Button
+              disabled={true}
+              onClick={null}
+              secondary={false}
+              t="optionsLoginFormSubmit"
+              title={null}
+              type="submit"
+            />
+          </React.Fragment>,
+        ],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "innerHTML": true,
+            "t": "optionsLoginManual",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <ForwardRef
+                autoCapitalize="off"
+                autoComplete="off"
+                autoCorrect="off"
+                autoFocus={true}
+                id="token"
+                invalidMessage={null}
+                label="optionsLoginFormLabel"
+                onChange={[Function]}
+                pattern={null}
+                placeholder="optionsLoginFormPlaceholder"
+                spellCheck="false"
+                type="text"
+              />,
+              <Button
+                disabled={true}
+                onClick={null}
+                secondary={false}
+                t="optionsLoginFormSubmit"
+                title={null}
+                type="submit"
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "autoCapitalize": "off",
+                "autoComplete": "off",
+                "autoCorrect": "off",
+                "autoFocus": true,
+                "id": "token",
+                "invalidMessage": null,
+                "label": "optionsLoginFormLabel",
+                "onChange": [Function],
+                "pattern": null,
+                "placeholder": "optionsLoginFormPlaceholder",
+                "spellCheck": "false",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "autoCapitalize": null,
+                  "autoComplete": null,
+                  "autoCorrect": null,
+                  "autoFocus": null,
+                  "invalidMessage": null,
+                  "pattern": null,
+                  "spellCheck": null,
+                  "type": "text",
+                },
+                "propTypes": Object {
+                  "autoCapitalize": [Function],
+                  "autoComplete": [Function],
+                  "autoCorrect": [Function],
+                  "autoFocus": [Function],
+                  "id": [Function],
+                  "invalidMessage": [Function],
+                  "label": [Function],
+                  "onChange": [Function],
+                  "pattern": [Function],
+                  "spellCheck": [Function],
+                  "type": [Function],
+                },
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "disabled": true,
+                "onClick": null,
+                "secondary": false,
+                "t": "optionsLoginFormSubmit",
+                "title": null,
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": Symbol(react.fragment),
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
