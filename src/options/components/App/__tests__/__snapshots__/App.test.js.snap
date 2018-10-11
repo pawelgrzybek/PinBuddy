@@ -63,9 +63,7 @@ ShallowWrapper {
         <footer
           className="app__footer"
         >
-          <Footer
-            t="optionsFooter"
-          />
+          <Footer />
         </footer>,
       ],
       "className": "app",
@@ -117,9 +115,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <Footer
-            t="optionsFooter"
-          />,
+          "children": <Footer />,
           "className": "app__footer",
         },
         "ref": null,
@@ -127,9 +123,7 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {
-            "t": "optionsFooter",
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -159,9 +153,7 @@ ShallowWrapper {
           <footer
             className="app__footer"
           >
-            <Footer
-              t="optionsFooter"
-            />
+            <Footer />
           </footer>,
         ],
         "className": "app",
@@ -213,9 +205,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <Footer
-              t="optionsFooter"
-            />,
+            "children": <Footer />,
             "className": "app__footer",
           },
           "ref": null,
@@ -223,9 +213,7 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
-            "props": Object {
-              "t": "optionsFooter",
-            },
+            "props": Object {},
             "ref": null,
             "rendered": null,
             "type": [Function],

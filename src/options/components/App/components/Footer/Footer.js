@@ -3,14 +3,6 @@ import PropTypes from 'prop-types';
 
 import './Footer.css';
 
-const Footer = props => {
-  const { t } = props;
-
-  return <p className="footer" dangerouslySetInnerHTML={{ __html: t }} />;
-};
-
-Footer.propTypes = {
-  t: PropTypes.string.isRequired,
-};
+const Footer = () => (<p className="footer" dangerouslySetInnerHTML={{ __html: chrome.i18n.getMessage('optionsFooter') }} />);
 
 export default Footer;

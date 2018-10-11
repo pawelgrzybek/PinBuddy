@@ -37,7 +37,7 @@ export class App extends Component {
         </main>
 
         <footer className="app__footer">
-          <Footer t={chrome.i18n.getMessage('optionsFooter')} />
+          <Footer />
         </footer>
 
       </div>
