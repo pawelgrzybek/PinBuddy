@@ -10,14 +10,21 @@
     "test:watch": "jest --watch"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>/scripts/jest/setup.js"
+    "setupTestFrameworkScriptFile": "<rootDir>/config/jest.js",
+    "moduleNameMapper": {
+      "^theme(.*)$": "<rootDir>/src/theme$1",
+      "^redux-popup(.*)$": "<rootDir>/src/popup/redux$1",
+      "^redux-options(.*)$": "<rootDir>/src/options/redux$1",
+      "\\.css$": "<rootDir>/config/jest-style-mock.js"
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "babel-core": "^6.26.3",
+    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
