@@ -145,7 +145,7 @@
     "message": "Max 65536 characters"
   },
   "popupAddTagsLabel": {
-    "message": "Tags"
+    "message": "Tags (space separated)"
   },
   "popupAddTagsInvalidMessage": {
     "message": "Max 255 characters"

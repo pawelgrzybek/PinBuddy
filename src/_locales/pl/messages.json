@@ -145,7 +145,7 @@
     "message": "Maksymalnie 65536 znaków"
   },
   "popupAddTagsLabel": {
-    "message": "Tagi"
+    "message": "Tagi (oddzielone spacją)"
   },
   "popupAddTagsInvalidMessage": {
     "message": "Maksymalnie 255 znaków"
