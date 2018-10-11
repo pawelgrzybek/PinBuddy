@@ -12,6 +12,9 @@ class Article extends Component {
     focused: false,
   }
 
+  linkRef = React.createRef();
+
+
   componentDidMount() {
     addEventListener('keydown', this.handleKeyDownEvent);
   }
@@ -52,6 +55,7 @@ class Article extends Component {
           target="_blank"
           onFocus={this.handleOnFocusLink}
           onBlur={this.handleOnBlursLink}
+          ref={this.linkRef}
         >
           {description}
         </a>
@@ -114,6 +118,7 @@ class Article extends Component {
     const { href, description, extended, postsDelete } = this.props;
 
     if ((e.ctrlKey || e.metaKey) && e.keyCode === 8 && this.state.focused) {
+      this.linkRef.current.blur();
       this.setState(state => ({
         deleteActive: true,
         deleteConfirmed: true,
