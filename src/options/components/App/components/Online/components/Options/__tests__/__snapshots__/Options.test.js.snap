@@ -1,0 +1,980 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Options /> should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Options
+    fetchOptions={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    options={
+      Object {
+        "defaultView": "all",
+        "enableSystemNotifications": false,
+        "privateCheckboxByDefault": false,
+        "toReadChecboxByDefault": false,
+      }
+    }
+    optionsUpdate={[MockFunction]}
+    userLogOut={[MockFunction]}
+    username="pinbuddy"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Paragraph
+          innerHTML={true}
+          t="optionsWelcomeMessage"
+        />,
+        <Button
+          disabled={false}
+          onClick={[Function]}
+          secondary={false}
+          t="optionsLogOut"
+          title={null}
+          type="button"
+        />,
+        <hr />,
+        <Select
+          id="defaultView"
+          label="optionsDefaultView"
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "text": "optionsDefaultViewAllText",
+                "value": "all",
+              },
+              Object {
+                "text": "optionsDefaultViewAddText",
+                "value": "add",
+              },
+            ]
+          }
+          selected="all"
+        />,
+        <Checkbox
+          checked={false}
+          id="privateCheckboxByDefault"
+          label="optionsPrivateCheckboxByDefault"
+          onChange={[Function]}
+        />,
+        <Checkbox
+          checked={false}
+          id="toReadChecboxByDefault"
+          label="optionsToReadChecboxByDefault"
+          onChange={[Function]}
+        />,
+        <Checkbox
+          checked={false}
+          id="enableSystemNotifications"
+          label="optionsEnableSystemNotifications"
+          onChange={[Function]}
+        />,
+        <hr />,
+        <ul>
+          <li>
+            <code>
+              Alt + p
+            </code>
+             - 
+            optionsShortcutDescriptionToggle
+          </li>
+          <li>
+            <code>
+              Alt + 1
+            </code>
+             - 
+            optionsShortcutDescriptionGoToAll
+          </li>
+          <li>
+            <code>
+              Alt + 2
+            </code>
+             - 
+            optionsShortcutDescriptionGoToAdd
+          </li>
+          <li>
+            <code>
+              Ctrl + Enter
+            </code>
+             - 
+            optionsShortcutDescriptionAddBookmark
+          </li>
+          <li>
+            <code>
+              Ctrl + Enter
+            </code>
+             - 
+            optionsShortcutDescriptionOpenInBackground
+          </li>
+          <li>
+            <code>
+              Ctrl + Backspace
+            </code>
+             - 
+            optionsShortcutDescriptionDeleteBookmark
+          </li>
+        </ul>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "innerHTML": true,
+          "t": "optionsWelcomeMessage",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "disabled": false,
+          "onClick": [Function],
+          "secondary": false,
+          "t": "optionsLogOut",
+          "title": null,
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "id": "defaultView",
+          "label": "optionsDefaultView",
+          "onChange": [Function],
+          "options": Array [
+            Object {
+              "text": "optionsDefaultViewAllText",
+              "value": "all",
+            },
+            Object {
+              "text": "optionsDefaultViewAddText",
+              "value": "add",
+            },
+          ],
+          "selected": "all",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "checked": false,
+          "id": "privateCheckboxByDefault",
+          "label": "optionsPrivateCheckboxByDefault",
+          "onChange": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "checked": false,
+          "id": "toReadChecboxByDefault",
+          "label": "optionsToReadChecboxByDefault",
+          "onChange": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "checked": false,
+          "id": "enableSystemNotifications",
+          "label": "optionsEnableSystemNotifications",
+          "onChange": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              <code>
+                Alt + p
+              </code>
+               - 
+              optionsShortcutDescriptionToggle
+            </li>,
+            <li>
+              <code>
+                Alt + 1
+              </code>
+               - 
+              optionsShortcutDescriptionGoToAll
+            </li>,
+            <li>
+              <code>
+                Alt + 2
+              </code>
+               - 
+              optionsShortcutDescriptionGoToAdd
+            </li>,
+            <li>
+              <code>
+                Ctrl + Enter
+              </code>
+               - 
+              optionsShortcutDescriptionAddBookmark
+            </li>,
+            <li>
+              <code>
+                Ctrl + Enter
+              </code>
+               - 
+              optionsShortcutDescriptionOpenInBackground
+            </li>,
+            <li>
+              <code>
+                Ctrl + Backspace
+              </code>
+               - 
+              optionsShortcutDescriptionDeleteBookmark
+            </li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <code>
+                  Alt + p
+                </code>,
+                " - ",
+                "optionsShortcutDescriptionToggle",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Alt + p",
+                },
+                "ref": null,
+                "rendered": "Alt + p",
+                "type": "code",
+              },
+              " - ",
+              "optionsShortcutDescriptionToggle",
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <code>
+                  Alt + 1
+                </code>,
+                " - ",
+                "optionsShortcutDescriptionGoToAll",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Alt + 1",
+                },
+                "ref": null,
+                "rendered": "Alt + 1",
+                "type": "code",
+              },
+              " - ",
+              "optionsShortcutDescriptionGoToAll",
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <code>
+                  Alt + 2
+                </code>,
+                " - ",
+                "optionsShortcutDescriptionGoToAdd",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Alt + 2",
+                },
+                "ref": null,
+                "rendered": "Alt + 2",
+                "type": "code",
+              },
+              " - ",
+              "optionsShortcutDescriptionGoToAdd",
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <code>
+                  Ctrl + Enter
+                </code>,
+                " - ",
+                "optionsShortcutDescriptionAddBookmark",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Ctrl + Enter",
+                },
+                "ref": null,
+                "rendered": "Ctrl + Enter",
+                "type": "code",
+              },
+              " - ",
+              "optionsShortcutDescriptionAddBookmark",
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <code>
+                  Ctrl + Enter
+                </code>,
+                " - ",
+                "optionsShortcutDescriptionOpenInBackground",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Ctrl + Enter",
+                },
+                "ref": null,
+                "rendered": "Ctrl + Enter",
+                "type": "code",
+              },
+              " - ",
+              "optionsShortcutDescriptionOpenInBackground",
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <code>
+                  Ctrl + Backspace
+                </code>,
+                " - ",
+                "optionsShortcutDescriptionDeleteBookmark",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Ctrl + Backspace",
+                },
+                "ref": null,
+                "rendered": "Ctrl + Backspace",
+                "type": "code",
+              },
+              " - ",
+              "optionsShortcutDescriptionDeleteBookmark",
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Paragraph
+            innerHTML={true}
+            t="optionsWelcomeMessage"
+          />,
+          <Button
+            disabled={false}
+            onClick={[Function]}
+            secondary={false}
+            t="optionsLogOut"
+            title={null}
+            type="button"
+          />,
+          <hr />,
+          <Select
+            id="defaultView"
+            label="optionsDefaultView"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "text": "optionsDefaultViewAllText",
+                  "value": "all",
+                },
+                Object {
+                  "text": "optionsDefaultViewAddText",
+                  "value": "add",
+                },
+              ]
+            }
+            selected="all"
+          />,
+          <Checkbox
+            checked={false}
+            id="privateCheckboxByDefault"
+            label="optionsPrivateCheckboxByDefault"
+            onChange={[Function]}
+          />,
+          <Checkbox
+            checked={false}
+            id="toReadChecboxByDefault"
+            label="optionsToReadChecboxByDefault"
+            onChange={[Function]}
+          />,
+          <Checkbox
+            checked={false}
+            id="enableSystemNotifications"
+            label="optionsEnableSystemNotifications"
+            onChange={[Function]}
+          />,
+          <hr />,
+          <ul>
+            <li>
+              <code>
+                Alt + p
+              </code>
+               - 
+              optionsShortcutDescriptionToggle
+            </li>
+            <li>
+              <code>
+                Alt + 1
+              </code>
+               - 
+              optionsShortcutDescriptionGoToAll
+            </li>
+            <li>
+              <code>
+                Alt + 2
+              </code>
+               - 
+              optionsShortcutDescriptionGoToAdd
+            </li>
+            <li>
+              <code>
+                Ctrl + Enter
+              </code>
+               - 
+              optionsShortcutDescriptionAddBookmark
+            </li>
+            <li>
+              <code>
+                Ctrl + Enter
+              </code>
+               - 
+              optionsShortcutDescriptionOpenInBackground
+            </li>
+            <li>
+              <code>
+                Ctrl + Backspace
+              </code>
+               - 
+              optionsShortcutDescriptionDeleteBookmark
+            </li>
+          </ul>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "innerHTML": true,
+            "t": "optionsWelcomeMessage",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "disabled": false,
+            "onClick": [Function],
+            "secondary": false,
+            "t": "optionsLogOut",
+            "title": null,
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "id": "defaultView",
+            "label": "optionsDefaultView",
+            "onChange": [Function],
+            "options": Array [
+              Object {
+                "text": "optionsDefaultViewAllText",
+                "value": "all",
+              },
+              Object {
+                "text": "optionsDefaultViewAddText",
+                "value": "add",
+              },
+            ],
+            "selected": "all",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "checked": false,
+            "id": "privateCheckboxByDefault",
+            "label": "optionsPrivateCheckboxByDefault",
+            "onChange": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "checked": false,
+            "id": "toReadChecboxByDefault",
+            "label": "optionsToReadChecboxByDefault",
+            "onChange": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "checked": false,
+            "id": "enableSystemNotifications",
+            "label": "optionsEnableSystemNotifications",
+            "onChange": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                <code>
+                  Alt + p
+                </code>
+                 - 
+                optionsShortcutDescriptionToggle
+              </li>,
+              <li>
+                <code>
+                  Alt + 1
+                </code>
+                 - 
+                optionsShortcutDescriptionGoToAll
+              </li>,
+              <li>
+                <code>
+                  Alt + 2
+                </code>
+                 - 
+                optionsShortcutDescriptionGoToAdd
+              </li>,
+              <li>
+                <code>
+                  Ctrl + Enter
+                </code>
+                 - 
+                optionsShortcutDescriptionAddBookmark
+              </li>,
+              <li>
+                <code>
+                  Ctrl + Enter
+                </code>
+                 - 
+                optionsShortcutDescriptionOpenInBackground
+              </li>,
+              <li>
+                <code>
+                  Ctrl + Backspace
+                </code>
+                 - 
+                optionsShortcutDescriptionDeleteBookmark
+              </li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <code>
+                    Alt + p
+                  </code>,
+                  " - ",
+                  "optionsShortcutDescriptionToggle",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Alt + p",
+                  },
+                  "ref": null,
+                  "rendered": "Alt + p",
+                  "type": "code",
+                },
+                " - ",
+                "optionsShortcutDescriptionToggle",
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <code>
+                    Alt + 1
+                  </code>,
+                  " - ",
+                  "optionsShortcutDescriptionGoToAll",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Alt + 1",
+                  },
+                  "ref": null,
+                  "rendered": "Alt + 1",
+                  "type": "code",
+                },
+                " - ",
+                "optionsShortcutDescriptionGoToAll",
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <code>
+                    Alt + 2
+                  </code>,
+                  " - ",
+                  "optionsShortcutDescriptionGoToAdd",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Alt + 2",
+                  },
+                  "ref": null,
+                  "rendered": "Alt + 2",
+                  "type": "code",
+                },
+                " - ",
+                "optionsShortcutDescriptionGoToAdd",
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <code>
+                    Ctrl + Enter
+                  </code>,
+                  " - ",
+                  "optionsShortcutDescriptionAddBookmark",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Ctrl + Enter",
+                  },
+                  "ref": null,
+                  "rendered": "Ctrl + Enter",
+                  "type": "code",
+                },
+                " - ",
+                "optionsShortcutDescriptionAddBookmark",
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <code>
+                    Ctrl + Enter
+                  </code>,
+                  " - ",
+                  "optionsShortcutDescriptionOpenInBackground",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Ctrl + Enter",
+                  },
+                  "ref": null,
+                  "rendered": "Ctrl + Enter",
+                  "type": "code",
+                },
+                " - ",
+                "optionsShortcutDescriptionOpenInBackground",
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <code>
+                    Ctrl + Backspace
+                  </code>,
+                  " - ",
+                  "optionsShortcutDescriptionDeleteBookmark",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Ctrl + Backspace",
+                  },
+                  "ref": null,
+                  "rendered": "Ctrl + Backspace",
+                  "type": "code",
+                },
+                " - ",
+                "optionsShortcutDescriptionDeleteBookmark",
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

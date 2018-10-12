@@ -17,7 +17,7 @@ const defaultViewOptions = [
   },
 ];
 
-class Options extends Component {
+export class Options extends Component {
   componentDidMount() {
     this.props.fetchOptions();
   }
