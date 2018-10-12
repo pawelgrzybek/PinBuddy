@@ -6,7 +6,7 @@ import { postsAdd } from 'redux-popup/actions/posts';
 import { Input, Button, Checkbox } from 'theme';
 import './Form.css';
 
-class Form extends Component {
+export class Form extends Component {
   state ={
     title: '',
     url: '',
@@ -17,7 +17,6 @@ class Form extends Component {
     previouslySaved: false,
   };
 
-  refInput = React.createRef();
 
   componentDidMount() {
 
@@ -74,7 +73,6 @@ class Form extends Component {
 
     window.addEventListener('keydown', this.handleKeydown);
 
-    this.refInput.current.focus();
   }
 
   componentWillUnmount() {
@@ -116,9 +114,9 @@ class Form extends Component {
           placeholder={chrome.i18n.getMessage('popupAddTagsLabel')}
           value={this.state.tags}
           onChange={this.handleInputChange}
-          ref={this.refInput}
           pattern=".{1,255}"
           invalidMessage={chrome.i18n.getMessage('popupAddTagsInvalidMessage')}
+          autoFocus
         />
 
         <div className="form__options">
