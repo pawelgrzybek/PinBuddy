@@ -1,0 +1,338 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Article /> should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Article
+    description=""
+    extended=""
+    href=""
+    postsDelete={[MockFunction]}
+    privatePost={true}
+    tags=""
+    time=""
+    unread={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        false,
+        <a
+          className="article__url article__url--unread"
+          href=""
+          onBlur={[Function]}
+          onFocus={[Function]}
+          rel="noopener noreferrer"
+          tabIndex="0"
+          target="_blank"
+          title=""
+        >
+          
+        </a>,
+        <div
+          className="article__meta"
+        >
+          <div
+            className="article__info"
+          >
+            
+          </div>
+          
+          <div
+            className="article__info"
+          >
+            <span
+              className="article__info--delete"
+              onClick={[Function]}
+            >
+              popupArticleButtonDelete
+            </span>
+          </div>
+        </div>,
+      ],
+      "className": "article article--private",
+    },
+    "ref": null,
+    "rendered": Array [
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "",
+          "className": "article__url article__url--unread",
+          "href": "",
+          "onBlur": [Function],
+          "onFocus": [Function],
+          "rel": "noopener noreferrer",
+          "tabIndex": "0",
+          "target": "_blank",
+          "title": "",
+        },
+        "ref": Object {
+          "current": null,
+        },
+        "rendered": "",
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="article__info"
+            >
+              
+            </div>,
+            "",
+            <div
+              className="article__info"
+            >
+              <span
+                className="article__info--delete"
+                onClick={[Function]}
+              >
+                popupArticleButtonDelete
+              </span>
+            </div>,
+          ],
+          "className": "article__meta",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+              "className": "article__info",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "div",
+          },
+          "",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                false,
+                <span
+                  className="article__info--delete"
+                  onClick={[Function]}
+                >
+                  popupArticleButtonDelete
+                </span>,
+              ],
+              "className": "article__info",
+            },
+            "ref": null,
+            "rendered": Array [
+              false,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "popupArticleButtonDelete",
+                  "className": "article__info--delete",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "popupArticleButtonDelete",
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          false,
+          <a
+            className="article__url article__url--unread"
+            href=""
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener noreferrer"
+            tabIndex="0"
+            target="_blank"
+            title=""
+          >
+            
+          </a>,
+          <div
+            className="article__meta"
+          >
+            <div
+              className="article__info"
+            >
+              
+            </div>
+            
+            <div
+              className="article__info"
+            >
+              <span
+                className="article__info--delete"
+                onClick={[Function]}
+              >
+                popupArticleButtonDelete
+              </span>
+            </div>
+          </div>,
+        ],
+        "className": "article article--private",
+      },
+      "ref": null,
+      "rendered": Array [
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+            "className": "article__url article__url--unread",
+            "href": "",
+            "onBlur": [Function],
+            "onFocus": [Function],
+            "rel": "noopener noreferrer",
+            "tabIndex": "0",
+            "target": "_blank",
+            "title": "",
+          },
+          "ref": Object {
+            "current": null,
+          },
+          "rendered": "",
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="article__info"
+              >
+                
+              </div>,
+              "",
+              <div
+                className="article__info"
+              >
+                <span
+                  className="article__info--delete"
+                  onClick={[Function]}
+                >
+                  popupArticleButtonDelete
+                </span>
+              </div>,
+            ],
+            "className": "article__meta",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+                "className": "article__info",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "div",
+            },
+            "",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  false,
+                  <span
+                    className="article__info--delete"
+                    onClick={[Function]}
+                  >
+                    popupArticleButtonDelete
+                  </span>,
+                ],
+                "className": "article__info",
+              },
+              "ref": null,
+              "rendered": Array [
+                false,
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "popupArticleButtonDelete",
+                    "className": "article__info--delete",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "popupArticleButtonDelete",
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

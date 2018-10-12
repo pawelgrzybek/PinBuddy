@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { postsDelete } from 'redux-popup/actions/posts';
 import './Article.css';
 
-class Article extends Component {
+export class Article extends Component {
   state={
     deleteActive: false,
     deleteConfirmed: false,
