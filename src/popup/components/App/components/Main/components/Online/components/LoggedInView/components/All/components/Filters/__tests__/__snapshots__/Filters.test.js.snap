@@ -1,0 +1,877 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filters /> should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Filters
+    privatePost={true}
+    publicPost={true}
+    unread={true}
+    untagged={true}
+    updateKeyword={[MockFunction]}
+    updatePrivatePost={[MockFunction]}
+    updatePublicPost={[MockFunction]}
+    updateUnread={[MockFunction]}
+    updateUntagged={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="filters__top"
+        >
+          <div
+            className="filters__input"
+          >
+            <ForwardRef
+              autoCapitalize={null}
+              autoComplete={null}
+              autoCorrect={null}
+              autoFocus={true}
+              id="filter"
+              invalidMessage={null}
+              label="popupFiltersSearchLabel"
+              onChange={[MockFunction]}
+              pattern={null}
+              placeholder="popupFiltersSearchPlaceholder"
+              spellCheck={null}
+              type="text"
+            />
+          </div>
+          <div
+            className="filters__button"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              secondary={false}
+              t="popupFiltersFilterButton"
+              title={null}
+              type="button"
+            />
+          </div>
+        </div>,
+        <div
+          className="filters__bottom"
+        >
+          <div
+            className="filters__option"
+          >
+            <Checkbox
+              checked={true}
+              id="privatePost"
+              label="popupFiltersCheckboxPrivate"
+              onChange={[MockFunction]}
+            />
+          </div>
+          <div
+            className="filters__option"
+          >
+            <Checkbox
+              checked={true}
+              id="publicPost"
+              label="popupFiltersCheckboxPublic"
+              onChange={[MockFunction]}
+            />
+          </div>
+          <div
+            className="filters__option"
+          >
+            <Checkbox
+              checked={true}
+              id="unread"
+              label="popupFiltersCheckboxUnread"
+              onChange={[MockFunction]}
+            />
+          </div>
+          <div
+            className="filters__option"
+          >
+            <Checkbox
+              checked={true}
+              id="untagged"
+              label="popupFiltersCheckboxUntagged"
+              onChange={[MockFunction]}
+            />
+          </div>
+        </div>,
+      ],
+      "className": "filters",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="filters__input"
+            >
+              <ForwardRef
+                autoCapitalize={null}
+                autoComplete={null}
+                autoCorrect={null}
+                autoFocus={true}
+                id="filter"
+                invalidMessage={null}
+                label="popupFiltersSearchLabel"
+                onChange={[MockFunction]}
+                pattern={null}
+                placeholder="popupFiltersSearchPlaceholder"
+                spellCheck={null}
+                type="text"
+              />
+            </div>,
+            <div
+              className="filters__button"
+            >
+              <Button
+                disabled={false}
+                onClick={[Function]}
+                secondary={false}
+                t="popupFiltersFilterButton"
+                title={null}
+                type="button"
+              />
+            </div>,
+          ],
+          "className": "filters__top",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ForwardRef
+                autoCapitalize={null}
+                autoComplete={null}
+                autoCorrect={null}
+                autoFocus={true}
+                id="filter"
+                invalidMessage={null}
+                label="popupFiltersSearchLabel"
+                onChange={[MockFunction]}
+                pattern={null}
+                placeholder="popupFiltersSearchPlaceholder"
+                spellCheck={null}
+                type="text"
+              />,
+              "className": "filters__input",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "autoCapitalize": null,
+                "autoComplete": null,
+                "autoCorrect": null,
+                "autoFocus": true,
+                "id": "filter",
+                "invalidMessage": null,
+                "label": "popupFiltersSearchLabel",
+                "onChange": [MockFunction],
+                "pattern": null,
+                "placeholder": "popupFiltersSearchPlaceholder",
+                "spellCheck": null,
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "autoCapitalize": null,
+                  "autoComplete": null,
+                  "autoCorrect": null,
+                  "autoFocus": null,
+                  "invalidMessage": null,
+                  "pattern": null,
+                  "spellCheck": null,
+                  "type": "text",
+                },
+                "propTypes": Object {
+                  "autoCapitalize": [Function],
+                  "autoComplete": [Function],
+                  "autoCorrect": [Function],
+                  "autoFocus": [Function],
+                  "id": [Function],
+                  "invalidMessage": [Function],
+                  "label": [Function],
+                  "onChange": [Function],
+                  "pattern": [Function],
+                  "spellCheck": [Function],
+                  "type": [Function],
+                },
+                "render": [Function],
+              },
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Button
+                disabled={false}
+                onClick={[Function]}
+                secondary={false}
+                t="popupFiltersFilterButton"
+                title={null}
+                type="button"
+              />,
+              "className": "filters__button",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "disabled": false,
+                "onClick": [Function],
+                "secondary": false,
+                "t": "popupFiltersFilterButton",
+                "title": null,
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="filters__option"
+            >
+              <Checkbox
+                checked={true}
+                id="privatePost"
+                label="popupFiltersCheckboxPrivate"
+                onChange={[MockFunction]}
+              />
+            </div>,
+            <div
+              className="filters__option"
+            >
+              <Checkbox
+                checked={true}
+                id="publicPost"
+                label="popupFiltersCheckboxPublic"
+                onChange={[MockFunction]}
+              />
+            </div>,
+            <div
+              className="filters__option"
+            >
+              <Checkbox
+                checked={true}
+                id="unread"
+                label="popupFiltersCheckboxUnread"
+                onChange={[MockFunction]}
+              />
+            </div>,
+            <div
+              className="filters__option"
+            >
+              <Checkbox
+                checked={true}
+                id="untagged"
+                label="popupFiltersCheckboxUntagged"
+                onChange={[MockFunction]}
+              />
+            </div>,
+          ],
+          "className": "filters__bottom",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Checkbox
+                checked={true}
+                id="privatePost"
+                label="popupFiltersCheckboxPrivate"
+                onChange={[MockFunction]}
+              />,
+              "className": "filters__option",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "checked": true,
+                "id": "privatePost",
+                "label": "popupFiltersCheckboxPrivate",
+                "onChange": [MockFunction],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Checkbox
+                checked={true}
+                id="publicPost"
+                label="popupFiltersCheckboxPublic"
+                onChange={[MockFunction]}
+              />,
+              "className": "filters__option",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "checked": true,
+                "id": "publicPost",
+                "label": "popupFiltersCheckboxPublic",
+                "onChange": [MockFunction],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Checkbox
+                checked={true}
+                id="unread"
+                label="popupFiltersCheckboxUnread"
+                onChange={[MockFunction]}
+              />,
+              "className": "filters__option",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "checked": true,
+                "id": "unread",
+                "label": "popupFiltersCheckboxUnread",
+                "onChange": [MockFunction],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Checkbox
+                checked={true}
+                id="untagged"
+                label="popupFiltersCheckboxUntagged"
+                onChange={[MockFunction]}
+              />,
+              "className": "filters__option",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "checked": true,
+                "id": "untagged",
+                "label": "popupFiltersCheckboxUntagged",
+                "onChange": [MockFunction],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="filters__top"
+          >
+            <div
+              className="filters__input"
+            >
+              <ForwardRef
+                autoCapitalize={null}
+                autoComplete={null}
+                autoCorrect={null}
+                autoFocus={true}
+                id="filter"
+                invalidMessage={null}
+                label="popupFiltersSearchLabel"
+                onChange={[MockFunction]}
+                pattern={null}
+                placeholder="popupFiltersSearchPlaceholder"
+                spellCheck={null}
+                type="text"
+              />
+            </div>
+            <div
+              className="filters__button"
+            >
+              <Button
+                disabled={false}
+                onClick={[Function]}
+                secondary={false}
+                t="popupFiltersFilterButton"
+                title={null}
+                type="button"
+              />
+            </div>
+          </div>,
+          <div
+            className="filters__bottom"
+          >
+            <div
+              className="filters__option"
+            >
+              <Checkbox
+                checked={true}
+                id="privatePost"
+                label="popupFiltersCheckboxPrivate"
+                onChange={[MockFunction]}
+              />
+            </div>
+            <div
+              className="filters__option"
+            >
+              <Checkbox
+                checked={true}
+                id="publicPost"
+                label="popupFiltersCheckboxPublic"
+                onChange={[MockFunction]}
+              />
+            </div>
+            <div
+              className="filters__option"
+            >
+              <Checkbox
+                checked={true}
+                id="unread"
+                label="popupFiltersCheckboxUnread"
+                onChange={[MockFunction]}
+              />
+            </div>
+            <div
+              className="filters__option"
+            >
+              <Checkbox
+                checked={true}
+                id="untagged"
+                label="popupFiltersCheckboxUntagged"
+                onChange={[MockFunction]}
+              />
+            </div>
+          </div>,
+        ],
+        "className": "filters",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="filters__input"
+              >
+                <ForwardRef
+                  autoCapitalize={null}
+                  autoComplete={null}
+                  autoCorrect={null}
+                  autoFocus={true}
+                  id="filter"
+                  invalidMessage={null}
+                  label="popupFiltersSearchLabel"
+                  onChange={[MockFunction]}
+                  pattern={null}
+                  placeholder="popupFiltersSearchPlaceholder"
+                  spellCheck={null}
+                  type="text"
+                />
+              </div>,
+              <div
+                className="filters__button"
+              >
+                <Button
+                  disabled={false}
+                  onClick={[Function]}
+                  secondary={false}
+                  t="popupFiltersFilterButton"
+                  title={null}
+                  type="button"
+                />
+              </div>,
+            ],
+            "className": "filters__top",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ForwardRef
+                  autoCapitalize={null}
+                  autoComplete={null}
+                  autoCorrect={null}
+                  autoFocus={true}
+                  id="filter"
+                  invalidMessage={null}
+                  label="popupFiltersSearchLabel"
+                  onChange={[MockFunction]}
+                  pattern={null}
+                  placeholder="popupFiltersSearchPlaceholder"
+                  spellCheck={null}
+                  type="text"
+                />,
+                "className": "filters__input",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "autoCapitalize": null,
+                  "autoComplete": null,
+                  "autoCorrect": null,
+                  "autoFocus": true,
+                  "id": "filter",
+                  "invalidMessage": null,
+                  "label": "popupFiltersSearchLabel",
+                  "onChange": [MockFunction],
+                  "pattern": null,
+                  "placeholder": "popupFiltersSearchPlaceholder",
+                  "spellCheck": null,
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "autoCapitalize": null,
+                    "autoComplete": null,
+                    "autoCorrect": null,
+                    "autoFocus": null,
+                    "invalidMessage": null,
+                    "pattern": null,
+                    "spellCheck": null,
+                    "type": "text",
+                  },
+                  "propTypes": Object {
+                    "autoCapitalize": [Function],
+                    "autoComplete": [Function],
+                    "autoCorrect": [Function],
+                    "autoFocus": [Function],
+                    "id": [Function],
+                    "invalidMessage": [Function],
+                    "label": [Function],
+                    "onChange": [Function],
+                    "pattern": [Function],
+                    "spellCheck": [Function],
+                    "type": [Function],
+                  },
+                  "render": [Function],
+                },
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Button
+                  disabled={false}
+                  onClick={[Function]}
+                  secondary={false}
+                  t="popupFiltersFilterButton"
+                  title={null}
+                  type="button"
+                />,
+                "className": "filters__button",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "disabled": false,
+                  "onClick": [Function],
+                  "secondary": false,
+                  "t": "popupFiltersFilterButton",
+                  "title": null,
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="filters__option"
+              >
+                <Checkbox
+                  checked={true}
+                  id="privatePost"
+                  label="popupFiltersCheckboxPrivate"
+                  onChange={[MockFunction]}
+                />
+              </div>,
+              <div
+                className="filters__option"
+              >
+                <Checkbox
+                  checked={true}
+                  id="publicPost"
+                  label="popupFiltersCheckboxPublic"
+                  onChange={[MockFunction]}
+                />
+              </div>,
+              <div
+                className="filters__option"
+              >
+                <Checkbox
+                  checked={true}
+                  id="unread"
+                  label="popupFiltersCheckboxUnread"
+                  onChange={[MockFunction]}
+                />
+              </div>,
+              <div
+                className="filters__option"
+              >
+                <Checkbox
+                  checked={true}
+                  id="untagged"
+                  label="popupFiltersCheckboxUntagged"
+                  onChange={[MockFunction]}
+                />
+              </div>,
+            ],
+            "className": "filters__bottom",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Checkbox
+                  checked={true}
+                  id="privatePost"
+                  label="popupFiltersCheckboxPrivate"
+                  onChange={[MockFunction]}
+                />,
+                "className": "filters__option",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "checked": true,
+                  "id": "privatePost",
+                  "label": "popupFiltersCheckboxPrivate",
+                  "onChange": [MockFunction],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Checkbox
+                  checked={true}
+                  id="publicPost"
+                  label="popupFiltersCheckboxPublic"
+                  onChange={[MockFunction]}
+                />,
+                "className": "filters__option",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "checked": true,
+                  "id": "publicPost",
+                  "label": "popupFiltersCheckboxPublic",
+                  "onChange": [MockFunction],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Checkbox
+                  checked={true}
+                  id="unread"
+                  label="popupFiltersCheckboxUnread"
+                  onChange={[MockFunction]}
+                />,
+                "className": "filters__option",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "checked": true,
+                  "id": "unread",
+                  "label": "popupFiltersCheckboxUnread",
+                  "onChange": [MockFunction],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Checkbox
+                  checked={true}
+                  id="untagged"
+                  label="popupFiltersCheckboxUntagged"
+                  onChange={[MockFunction]}
+                />,
+                "className": "filters__option",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "checked": true,
+                  "id": "untagged",
+                  "label": "popupFiltersCheckboxUntagged",
+                  "onChange": [MockFunction],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
