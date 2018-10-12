@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { Title, Link } from 'theme';
 import './Logo.css';
 
-const Logo = props => {
+export const Logo = props => {
   const { username, online } = props;
   const shouldDisplayUsername = username && online;
   return (

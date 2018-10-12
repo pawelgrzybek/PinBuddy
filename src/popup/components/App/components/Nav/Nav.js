@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { updateView, getInitialView } from 'redux-popup/actions/view';
 import './Nav.css';
 
-class Nav extends Component {
+export class Nav extends Component {
   componentDidMount() {
     this.props.getInitialView();
     window.addEventListener('keydown', this.handleKeydown);

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Offline from './components/Offline';
 import Online from './components/Online';
 
-const Main = props => {
+export const Main = props => {
   return props.online ? <Online /> : <Offline />;
 };
 

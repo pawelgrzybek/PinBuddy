@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import LoggedInView from './components/LoggedInView';
 import LoggedOutView from './components/LoggedOutView';
 
-const Online = props => {
+export const Online = props => {
   const { username, token } = props;
   const userSignedIn = username && token;
 

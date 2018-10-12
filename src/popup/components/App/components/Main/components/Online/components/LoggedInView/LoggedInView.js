@@ -7,7 +7,7 @@ import Add from './components/Add';
 import Loading from './components/Loading';
 import Error from './components/Error';
 
-const LoggedInView = props => {
+export const LoggedInView = props => {
   const {
     loading,
     error,
