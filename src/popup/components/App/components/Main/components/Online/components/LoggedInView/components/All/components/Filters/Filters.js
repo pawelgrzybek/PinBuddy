@@ -9,12 +9,6 @@ class Filters extends Component {
     showFilters: false,
   }
 
-  refInput = React.createRef();
-
-  componentDidMount() {
-    this.refInput.current.focus();
-  }
-
   render() {
     const {
       privatePost,
@@ -37,7 +31,7 @@ class Filters extends Component {
               label={chrome.i18n.getMessage('popupFiltersSearchLabel')}
               placeholder={chrome.i18n.getMessage('popupFiltersSearchPlaceholder')}
               onChange={updateKeyword}
-              ref={this.refInput}
+              autoFocus
             />
           </div>
           <div className="filters__button">
