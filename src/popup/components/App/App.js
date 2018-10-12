@@ -8,7 +8,7 @@ import Nav from './components/Nav';
 import Main from './components/Main';
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   componentDidMount() {
     window.addEventListener('online', this.handleOnlineEvent);
     window.addEventListener('offline', this.handleOfflineEvent);
