@@ -7,7 +7,7 @@ import Filters from './components/Filters';
 import List from './components/List';
 import './All.css';
 
-class All extends Component {
+export class All extends Component {
   state = {
     keyword: '',
     privatePost: false,
