@@ -52,41 +52,49 @@
 .article__url--unread {
   color: var(--color-secondary);
 }
-
 .article__meta {
   font-size: .8rem;
   color: var(--color-gray);
-  display: flex;
 }
 
-.article__info {
-  margin-right: calc(var(--lh) / 3);
-}
-
-.article__info:last-child {
-  margin-right: 0;
-}
-
-.article__info--tags {
+.article__metatop {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.article__info--delete:hover,
-.article__info--cancel:hover {
+.article__metabottom {
+  display: flex;
+}
+
+.article__metainfo::before {
+  content: '|';
+  margin: 0 calc(var(--lh) / 4);
+}
+
+.article__metainfo:first-child::before {
+  display: none;
+}
+
+.article__metainfo--tags {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.article__cancel,
+.article__delete {
   cursor: pointer;
 }
 
-.article__info--cancel:hover {
+.article__cancel:hover {
   color: var(--color-primary);
 }
 
-.article__info--separator {
+.article__separator {
   margin: calc(var(--lh) / 4);
 }
 
-.article__info--delete:hover {
+.article__delete:hover {
   color: var(--color-error);
 }
-

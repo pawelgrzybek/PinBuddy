@@ -60,6 +60,24 @@ export class Article extends Component {
           {description}
         </a>
         <div className="article__meta">
+          <div className="article__metatop">{href}</div>
+          <div className="article__metabottom">
+            <div className="article__metainfo">{timeFormated}</div>
+            {tags ? <div className="article__metainfo article__metainfo--tags">{tagsFormated}</div> : ''}
+            <div className="article__metainfo">
+              {deleteActive && (
+              <>
+                <span className="article__cancel" onClick={this.handleCancelClick}>{chrome.i18n.getMessage('popupArticleButtonCancel')}</span>
+                <span className="article__separator">/</span>
+              </>
+              )}
+              {!deleteConfirmed && (
+                <span className="article__delete" onClick={this.handleDeleteClick}>{chrome.i18n.getMessage('popupArticleButtonDelete')}</span>
+              )}
+            </div>
+          </div>
+        </div>
+        {/* <div className="article__meta">
           <div className="article__info">{timeFormated}</div>
           {tags ? <div className="article__info article__info--tags">{tagsFormated}</div> : ''}
           <div className="article__info">
@@ -73,7 +91,7 @@ export class Article extends Component {
               <span className="article__info--delete" onClick={this.handleDeleteClick}>{chrome.i18n.getMessage('popupArticleButtonDelete')}</span>
             )}
           </div>
-        </div>
+        </div> */}
       </article>
     );
   }
