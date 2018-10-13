@@ -53,19 +53,6 @@ export const userLogInAction = userToken => {
                 }
               );
             });
-
-          fetch(`${API}tags/get?format=json&auth_token=${userToken}`)
-            .then(dataTags => dataTags.json())
-            .then(tags => {
-              const listOfTags = Object.keys(tags);
-
-              chrome.storage.local.set(
-                {
-                  tags: listOfTags,
-                  tagsFetched: now,
-                }
-              );
-            });
         }
         else {
           dispatch(userLoadingHideAction());
