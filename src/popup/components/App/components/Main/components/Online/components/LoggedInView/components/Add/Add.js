@@ -10,7 +10,10 @@ class Add extends Component {
   };
 
   componentDidMount() {
-    chrome.tabs.query({ active: true }, result => {
+    chrome.tabs.query({
+      active: true,
+      currentWindow: true,
+    }, result => {
       const { url } = result[0];
       const protocol = url.match(/^[^:]+/)[0];
       const validProtocolsList = ['http', 'https', 'javascript', 'mailto', 'ftp', 'file'];

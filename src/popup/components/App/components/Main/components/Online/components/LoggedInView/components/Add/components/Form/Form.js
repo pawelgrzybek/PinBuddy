@@ -20,7 +20,12 @@ export class Form extends Component {
 
   componentDidMount() {
 
-    chrome.tabs.query({ active: true }, result => {
+    chrome.tabs.query({
+      active: true,
+      currentWindow: true,
+    }, result => {
+
+      console.log(result);
 
       const { title, url } = result[0];
 

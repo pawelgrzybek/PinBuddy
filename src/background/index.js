@@ -36,7 +36,10 @@ chrome.tabs.onActivated.addListener(result => {
 chrome.runtime.onMessage.addListener(request => {
 
   if (request === 'check current') {
-    chrome.tabs.query({ active: true }, result => {
+    chrome.tabs.query({
+      active: true,
+      currentWindow: true,
+    }, result => {
       if (result) {
         chrome.tabs.get(result[0].id, listenForIconChange);
       }
