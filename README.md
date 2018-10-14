@@ -2,15 +2,7 @@
 
 # PinBuddy
 
-Browse your Pinboard bookmarks and add new ones with ease.
-
-!!! SOME GIF HERE !!!
-
-## How to use it
-
-1. Download from URL_TO_GOOGLE_WEB_STORE
-2. Add your Pinboard token in options page.
-3. You are all set.
+PinBuddy is a toolbar extension for the [Pinboard](http://pinboard.in) bookmarking service that lets you browse and add new bookmarks with ease. It is fully keyboard accessible and highlights previously bookmarked websites. It uses API token to make a servers calls and never asks you for your password.
 
 ## Keyboard shortcuts
 
