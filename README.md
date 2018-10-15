@@ -15,5 +15,6 @@ PinBuddy is a Google Chrome toolbar extension for the [Pinboard](http://pinboard
 ## Thanks to, thanks for…
 
 - Thanks to [Miłosz Kaniuk](https://www.behance.net/miloszkanibf79) for great logo and UI / UX recommendations
-- Thanks to [Gregory Assasie](https://twitter.com/gregory_jarvez) for development tips
-- Thanks to [Zuzanna Rupińska](https://www.instagram.com/zuzanna.rupinska/) for allowing me to build PinBuddy instead of watching boring Netflix series :-*
+- Thanks to [Gregory Assasie](https://twitter.com/gregory_jarvez) for dev tips
+- Thanks to [Zuzanna Rupińska](https://www.instagram.com/zuzanna.rupinska/) for brewing a coffee for me during development  :-*
+- Potentially you…
