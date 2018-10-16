@@ -1,0 +1,194 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Selaa Pinboard-kirjanmerkkejä ja lisää uusia helposti."
+  },
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Kysymykset ja ominaisuuspyynnöt: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek Twitterissä\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek GitHubissa\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "Todennusmerkki (Token) on lyhyt läpinäkyvä tunniste lomakkeessa \"käyttäjänimi:TOKEN\" jonka avulla PinBuddy voi tehdä API-pyynnöt pyytämättä koskaan salasanaasi. Löydät API-tunnuksesi täältä <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">asetussivu salasana-välilehden alla</a>."
+  },
+  "optionsLoginError": {
+    "message": "Virhe. Varmista, että käytät oikeaa osoitetta ja että internetyhteytesi on vakaa."
+  },
+  "optionsLoginFormLabel": {
+    "message": "API Todennusmerkki (Token)"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "käyttäjänimi:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Lähetä"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Katso virallista <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard-opasta</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard on henkilökohtainen arkisto asioista, joita löydät verkossa ja joita et halua unohtaa."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Exactly — \"online\". Varmistathan, että internet-yhteytesi on vakaa."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Hei! Olet kirjautuneena käyttäjänimellä $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Kirjaudu ulos"
+  },
+  "optionsDefaultView": {
+    "message": "Oletus-näkymä"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "kaikki"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "lisää sivu"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Private\" valintaruutu oletuksena (lisää url-näkymä)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"To read\" valintaruutu oletuksena (lisää url-näkymä)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Aktivoi järjestelmän ilmoitukset"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "näytä / piilota PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "mene kaikki-näkymään"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "mene lisää-näkymään"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "lisää kirjanmerkki (lisää-näkymä)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "avaa kirjanmerkki taustalla (kaikki-näkymä)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "poista kirjanmerkki (kaikki-näkymä)"
+  },
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Avaa Pinboard-profiilisi"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Selaa kaikkia"
+  },
+  "popupBrowseAllText": {
+    "message": "kaikki"
+  },
+  "popupAddURLTitle": {
+    "message": "Lisää Sivu"
+  },
+  "popupAddURLText": {
+    "message": "lisää sivu"
+  },
+  "popupErrorMessage": {
+    "message": "On tapahtunut virhe. Varmista, että osoite on oikea ja internet-yhteytesi sekä <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API status</a> on vakaa."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Siirry valinnat-sivulle"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Etsi"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Hakusana"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Suodattimet"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Yksityinen"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Julkinen"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Lukematon"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Merkitsemätön"
+  },
+  "popupArticleButtonCancel": {
+    "message": "peruuta"
+  },
+  "popupArticleButtonDelete": {
+    "message": "poista"
+  },
+  "popupAddTitleLabel": {
+    "message": "Otsikko"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Maksimissaan 255 merkkiä"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Kuvaus"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "Maksimissaan 65536 merkkiä"
+  },
+  "popupAddTagsLabel": {
+    "message": "Tunnisteet (välilyönnillä eroteltu)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "Maksimissaan 255 merkkiä"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "yksityinen"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "lue myöhemmin"
+  },
+  "popupAddBookmarkButton": {
+    "message": "lisää kirjanmerkki"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "yliaja kirjanmerkki"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "Todennusmerkki (Token) on lyhyt läpinäkyvä tunniste lomakkeessa \"käyttäjänimi:TOKEN\" jonka avulla PinBuddy voi tehdä API-pyynnöt pyytämättä koskaan salasanaasi. Löydät API-tunnuksesi täältä  <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">asetussivu salasana-välilehden alla</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Mene valinnat-sivulle kirjautuaksesi sisään"
+  },
+  "popupOfflineMessageOne": {
+    "message": "Katso virallista <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard-opasta</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard on henkilökohtainen arkisto asioista, joita löydät verkossa ja joita et halua unohtaa."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Exactly — \"online\". Varmistathan, että internet-yhteytesi on vakaa."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Hyväksytyt protokollat ovat <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> ja <code>file</code>. Valitettavasti et voi tallentaa tämän sivun osoitetta."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Hanki lisää tietoa Pinboard API-dokumentaatiosta"
+  },
+
+  "notificationSaveSucessful": {
+    "message": "Sivu tallennettu onnistuneesti"
+  },
+  "notificationDeleteSucessful": {
+    "message": "Sivu poistettu onnistuneeti"
+  }
+}
