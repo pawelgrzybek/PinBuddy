@@ -2,7 +2,7 @@
 
 # PinBuddy
 
-PinBuddy is a Google Chrome toolbar extension for the [Pinboard](http://pinboard.in) bookmarking service that lets you browse and add new bookmarks with ease. It is fully keyboard accessible and highlights previously bookmarked websites. It uses API token to make a servers calls and never asks you for your password.
+[PinBuddy is a Google Chrome toolbar extension](https://chrome.google.com/webstore/detail/pinbuddy/ppokjacfheflhaojmndcblibahmopkfl) for the [Pinboard](http://pinboard.in) bookmarking service that lets you browse and add new bookmarks with ease. It is fully keyboard accessible and highlights previously bookmarked websites. It uses API token to make a servers calls and never asks you for your password.
 
 ## Keyboard shortcuts
 
