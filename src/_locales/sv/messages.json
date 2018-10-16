@@ -1,0 +1,197 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Sök bland dina Pinboardbokmärken och lägg enkelt till nya."
+  },
+
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Problem & features: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek på Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek på GitHub\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "En autentiseringstoken används för att identifiera genom formatet \"användarnamn:TOKEN\" och som tillåter PinBuddy att göra API-anrop utan att fråga om ditt lösenord. Du kan hitta din API-token i <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">inställningar, under lösenordsfliken</a>."
+  },
+  "optionsLoginError": {
+    "message": "Fel har inträffat. Vänligen kontrollera att du använder rätt token och är ansluten till internet."
+  },
+  "optionsLoginFormLabel": {
+    "message": "API-token"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "användarnamn:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Skicka"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Besök den officiella <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard-guiden</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard är ett personligt arkiv för det du hittar online och inte vill glömma."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Just det — \"online\". Vänligen kontrollera att du är ansluten till internet."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Hej! Du är inloggad som $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Logga ut"
+  },
+  "optionsDefaultView": {
+    "message": "Standardvy"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "alla"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "lägg till sida"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Privat\" checkbox som standard (i lägg till sida)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"To read\" checkbox som standard (i lägg till sida)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Tillåt systemnotifikationer"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "visa / dölj PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "gå till lägg till vy"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "gå till lägg till vy"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "lägg till bokmärke (lägg till vy)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "visa bokmärke i bakgrunden (alla vyer)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "Ta bort bokmärke (alla vyer)"
+  },
+
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Visa din Pinboardprofil"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Visa alla"
+  },
+  "popupBrowseAllText": {
+    "message": "alla"
+  },
+  "popupAddURLTitle": {
+    "message": "Lägg till sida"
+  },
+  "popupAddURLText": {
+    "message": "lägg till sida"
+  },
+  "popupErrorMessage": {
+    "message": "Ett fel har inträffat. Vänligen kontrollera att din token är giltig, att du är ansluten till internet samt att <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboards API status</a> är stabil."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Gå till inställningar"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Sök"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Sökterm"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Filter"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Privat"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Publik"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Oläst"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Otaggat"
+  },
+  "popupArticleButtonCancel": {
+    "message": "avbryt"
+  },
+  "popupArticleButtonDelete": {
+    "message": "radera"
+  },
+  "popupAddTitleLabel": {
+    "message": "Titel"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Max 255 tecken"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Beskrivning"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "Max 65536 tecken"
+  },
+  "popupAddTagsLabel": {
+    "message": "Taggar (separeras med mellanslag)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "Max 255 tecken"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "privat"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "Läs senare"
+  },
+  "popupAddBookmarkButton": {
+    "message": "lägg till bokmärke"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "ersätt bokmärke"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "En autentiseringstoken används för att identifiera genom formatet \"användarnamn:TOKEN\" och som tillåter PinBuddy att göra API-anrop utan att fråga om ditt lösenord. Du kan hitta din API-token i <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">inställningar, under lösenordsfliken</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Gå till inställningar för att logga in"
+  },
+  "popupOfflineMessageOne": {
+    "message": "Besök den officiella <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard-guiden</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard är ett personligt arkiv för det du hittar online och inte vill glömma."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Just det — \"online\". Vänligen kontrollera att du är ansluten till internet."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Tillåtna protokoll är <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> och <code>file</code>. Det gick tyvärr inte att spara denna sidan."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Läs mer i Pinboards API-dokumentation"
+  },
+
+
+  "notificationSaveSucessful": {
+    "message": "Sidan har sparats"
+  },
+  "notificationDeleteSucessful": {
+    "message": "Sidan har raderats"
+  }
+}
