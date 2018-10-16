@@ -24,4 +24,6 @@
 - Thanks to [Bublik](https://github.com/Bigbublik) for the Russian translation
 - Thanks to [Frode Grimstad Bang](https://www.frodebang.com/) for the Norwegian translation
 - Thanks to [Kostas Liberopoulos](https://github.com/KostasLib) for the Greek translation
+- Thanks to [Igor Guastalla](https://github.com/guastallaigor) for the Brazilian translation
+- Thanks to [Oskari Holopainen](https://github.com/Ikaros1510) for the Finnish translation
 - Potentially you…
