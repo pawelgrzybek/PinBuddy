@@ -23,4 +23,5 @@
 - Thanks to [David Hölkeskamp](https://github.com/dhkamp) for the German translation
 - Thanks to [Bublik](https://github.com/Bigbublik) for the Russian translation
 - Thanks to [Frode Grimstad Bang](https://www.frodebang.com/) for the Norwegian translation
+- Thanks to [Kostas Liberopoulos](https://github.com/KostasLib) for the Greek translation
 - Potentially you…
