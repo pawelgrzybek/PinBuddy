@@ -1,0 +1,252 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Περιηγηθείτε στον Πίνακα με τους σελιδοδείκτες σας και προσθέστε νέους με ευκολία."
+    "message": "Browse your Pinboard bookmarks and add new ones with ease."
+  },
+
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Issues & feature requests: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on GitHub\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "Το authentication token είναι ένα ενδεικτικό εγκυρότητας της μορφής \"username:TOKEN\" που επιτρέπει στο PinBuddy να καλεί το API χωρίς να ζητά κάθε φορά τον κωδικό σας. Μπορείτε να δείτε το API token σας <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">στις ρυθμίσεις, κάτω από το πεδίο με τον κωδικό σας</a>."
+    "message": "An authentication token is a short opaque identifier in the form \"username:TOKEN\" that allows PinBuddy to make API calls without ever asking for your password. You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">settings page under the password tab</a>."
+  },
+  "optionsLoginError": {
+    "message": "Σφάλμα. Βεβαιωθείτε ότι χρησιμοποιείτε το σωστό ενδεικτικό (token) και ότι έχετε σταθερή σύνδεση στο διαδίκτυο."
+    "message": "Error. Please make sure that you use a correct token and that your internet connection is stable."
+  },
+  "optionsLoginFormLabel": {
+    "message": "API Token"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "username:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Υποβολή"
+    "message": "Submit"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Κάντε μία <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">σύντομη περιήγηση στον Πίνακά σας</a>."
+    "message": "Look at the official <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard tour</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Ο Πίνακάς σας είναι ένας προσωπικός φάκελος με πράγματα που βρίσκετε στο διαδίκτυο και δεν θέλετε να ξεχάσετε."
+    "message": "Pinboard is a personal archive for things you find online and don't want to forget."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Ακριβώς — \"online\". Βεβαιωθείτε ότι έχετε σταθερή σύνδεση στο διαδίκτυο."
+    "message": "Exactly — \"online\". Please make sure you have a stable internet connection."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Καλωσήρθατε. Συνδεθήκατε ως $name$.",
+    "message": "Hi. You are logged in as $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Δημήτρης"
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Αποσύνδεση"
+    "message": "Log out"
+  },
+  "optionsDefaultView": {
+    "message": "Βασική εμφάνιση"
+    "message": "Default view"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "όλα"
+    "message": "all"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "προσθέστε διεύθυνση url"
+    "message": "add url"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Ιδιωτικό\" ως προεπιλογή (add url view)"
+    "message": "\"Private\" checkbox by default (add url view)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"Μη διαβασμένο\" ως προεπιλογή (add url view)"
+    "message": "\"To read\" checkbox by default (add url view)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Ενεργοποίηση των ειδοποιήσεων"
+    "message": "Enable system notifications"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "Εμφάνιση / Απόκρυψη του PinBuddy"
+    "message": "show / hide PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "μετάβαση στην προβολή όλων"
+    "message": "go to all view"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "μετάβαση στην προσθήκη νέων"
+    "message": "go to add view"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "προσθήκη σελιδοδείκτη (προσθήκη)"
+    "message": "add bookmark (add view)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "άνοιγμα σελιδοδείκτη στο υπόβαθρο (προβολή όλων)"
+    "message": "open bookmark in background (all view)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "διαγραφή σελιδοδείκτη (προβολή όλων)"
+    "message": "delete bookmark (all view)"
+  },
+
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Άνοιγμα του προφίλ σας"
+    "message": "Open your Pinboard Profile"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Περιήγηση όλων"
+    "message": "Browse all"
+  },
+  "popupBrowseAllText": {
+    "message": "όλα"
+    "message": "all"
+  },
+  "popupAddURLTitle": {
+    "message": "Προσθήκη URL"
+    "message": "Add URL"
+  },
+  "popupAddURLText": {
+    "message": "προσθήκη url"
+    "message": "add url"
+  },
+  "popupErrorMessage": {
+    "message": "Σφάλμα. Βεβαιωθείτε ότι το ενδεικτικό σας (token) είναι έγκυρο, ότι έχετε σταθερή σύνδεση στο διαδίκτυο και ότι <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">η κατάσταση του Pinboard API</a> είναι σταθερή."
+    "message": "Error occurred. Please make sure that your token is valid, and that your internet connection and the <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API status</a> is stable."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Μετάβαση στις ρυθμίσεις"
+    "message": "Go to option page"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Αναζήτηση"
+    "message": "Search"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Αναζητήστε για κάτι"
+    "message": "Search term"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Φίλτρα"
+    "message": "Filters"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Ιδιωτικό"
+    "message": "Private"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Δημόσιο"
+    "message": "Public"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Μη διαβασμένο"
+    "message": "Unread"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Χωρίς ετικέτα"
+    "message": "Untagged"
+  },
+  "popupArticleButtonCancel": {
+    "message": "ακύρωση"
+    "message": "cancel"
+  },
+  "popupArticleButtonDelete": {
+    "message": "διαγραφή"
+    "message": "delete"
+  },
+  "popupAddTitleLabel": {
+    "message": "Τίτλος"
+    "message": "Title"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Έως 255 χαρακτήρες"
+    "message": "Max 255 characters"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Περιγραφή"
+    "message": "Description"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "Έως 65536 χαρακτήρες"
+    "message": "Max 65536 characters"
+  },
+  "popupAddTagsLabel": {
+    "message": "Tags (space separated)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "Έως 255 χαρακτήρες"
+    "message": "Max 255 characters"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "ιδιωτικό"
+    "message": "private"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "ανάγνωση αργότερα"
+    "message": "read later"
+  },
+  "popupAddBookmarkButton": {
+    "message": "προσθήκη σελιδοδείκτη"
+    "message": "add bookmark"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "αντικατάσταση σελιδοδείκτη"
+    "message": "override bookmark"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "An authentication token is a short opaque identifier in the form \"username:TOKEN\" that allows PinBuddy to make API calls without ever asking for your password. You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">settings page under the password tab</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Μεταβείτε στις ρυθμίσεις για να συνδεθείτε"
+    "message": "Go to option page to log in"
+  },
+  "popupOfflineMessageOne": {
+    "message": "Κάντε μία <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">σύντομη περιήγηση στον Πίνακά σας</a>."
+    "message": "Look at the official <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard tour</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Ο Πίνακάς σας είναι ένας προσωπικός φάκελος με πράγματα που βρίσκετε στο διαδίκτυο και δεν θέλετε να ξεχάσετε."
+    "message": "Pinboard is a personal archive for things you find online and don't want to forget."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Ακριβώς — \"online\". Βεβαιωθείτε ότι έχετε σταθερή σύνδεση στο διαδίκτυο."
+    "message": "Exactly — \"online\". Make sure you have a stable internet connection please."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Επιτρέπονται μόνο τα πρωτόκολλα <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> και <code>file</code>. Δυστυχώς δεν είναι δυνατή η αποθήκευση αυτής της διεύθυνσης URL."
+    "message": "Allowed protocols are <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> and <code>file</code>. Unfortunately you cannot save this URL."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Μάθετε περισσότερα στο εγχειρίδιο του Pinboard API"
+    "message": "Find out more in Pinboard API documentation"
+  },
+
+
+  "notificationSaveSucessful": {
+    "message": "Η διεύθυνση URL αποθηκεύτηκε με επιτυχία"
+    "message": "URL saved successfully"
+  },
+  "notificationDeleteSucessful": {
+    "message": "Η διεύθυνση URL διαγράφηκε"
+    "message": "URL deleted successfully"
+  }
+}
