@@ -74,21 +74,21 @@
     "message": "ir para toda a visão"
   },
   "optionsShortcutDescriptionGoToAdd": {
-    "message": "go to add view"
+    "message": "ir para adicionar visualização"
   },
   "optionsShortcutDescriptionAddBookmark": {
-    "message": "add bookmark (add view)"
+    "message": "adicionar aos favoritos (adicionar visualização)"
   },
   "optionsShortcutDescriptionOpenInBackground": {
-    "message": "open bookmark in background (all view)"
+    "message": "abrir favorito no fundo (visualização total)"
   },
   "optionsShortcutDescriptionDeleteBookmark": {
-    "message": "delete bookmark (all view)"
+    "message": "remover favorito (visualização total)"
   },
 
 
   "popupOpenYourPinboardProfile": {
-    "message": "Open your Pinboard Profile"
+    "message": "Abrir seu perfil Pinboard"
   },
   "popupBrowseAllTitle": {
     "message": "explorar por todos"
@@ -103,7 +103,8 @@
     "message": "add url"
   },
   "popupErrorMessage": {
-    "message": "Error occurred. Please make sure that your token is valid, and that your internet connection and the <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API status</a> is stable."
+    "message": "Ocorreu um erro. Por favor, certifique-se de que você está utilizando um token correto e de que sua conexão com a internet está estável, e que <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">o status da API Pinboard</a> está estável."
+
   },
   "popupErrorButtonMessage": {
     "message": "Ir para a página de opções"
@@ -127,7 +128,7 @@
     "message": "Não lido"
   },
   "popupFiltersCheckboxUntagged": {
-    "message": "Untagged"
+    "message": "Não marcado"
   },
   "popupArticleButtonCancel": {
     "message": "cancelar"
@@ -139,7 +140,7 @@
     "message": "Título"
   },
   "popupAddTitleInvalidMessage": {
-    "message": "Max 255 characters"
+    "message": "Máximo de 255 caracteres"
   },
   "popupAddDescriptionLabel": {
     "message": "Descrição"
@@ -148,7 +149,7 @@
     "message": "Máximo de 65536 caracteres"
   },
   "popupAddTagsLabel": {
-    "message": "Tags (space separated)"
+    "message": "Tags (separadas por espaço)"
   },
   "popupAddTagsInvalidMessage": {
     "message": "Máximo de 255 caracteres"
@@ -166,13 +167,13 @@
     "message": "sobrescrever favorito"
   },
   "popupLoggedOutViewMessage": {
-    "message": "An authentication token is a short opaque identifier in the form \"username:TOKEN\" that allows PinBuddy to make API calls without ever asking for your password. You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">settings page under the password tab</a>."
+    "message": "Um token de autenticação é um identificador pequeno e opaco no formulário \"username:TOKEN\" que permite a PinBuddy realizar requisições para a API sem a necessidade de solicitar sua senha. Você pode encontrar um token para a API na <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">página de configurações na aba de senhas</a>."
   },
   "popupLoggedOutViewButtonMessage": {
     "message": "Para efetuar login, vá para a página de opções"
   },
   "popupOfflineMessageOne": {
-    "message": "Veja no oficial <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">tour Pinboard</a>."
+    "message": "Veja no oficial <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">guia Pinboard</a>."
   },
   "popupOfflineMessageQuote": {
     "message": "Pinboard é um arquivo pessoal para conteúdos que você encontra online, e não quer esquecê-los."
