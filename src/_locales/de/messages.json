@@ -17,7 +17,7 @@
     "message": "Ein Authentifizierungstoken ist ein kurzer formatierter Text in der Form \"username:TOKEN\". Dieser Token wird von PinBuddy verwendet um Anfragen abschicken zu können, ohne jedes mal nach dem Passwort zu fragen. Sie finden Ihren persönlichen Token <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">in den Einstellungen unterhalb des Passwort Reiters</a>."
   },
   "optionsLoginError": {
-    "message": "Es ist ein Fehler aufgetreten. Bitte prüfen Sie ob der eingegebene Token korrekt, sowie ob Ihre Internetverbindung stabil ist.",
+    "message": "Es ist ein Fehler aufgetreten. Bitte prüfen Sie ob der eingegebene Token korrekt, sowie ob Ihre Internetverbindung stabil ist."
   },
   "optionsLoginFormLabel": {
     "message": "API Token"
