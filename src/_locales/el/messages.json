@@ -1,0 +1,197 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Περιηγηθείτε στον Πίνακα με τους σελιδοδείκτες σας και προσθέστε νέους με ευκολία."
+  },
+
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Issues & feature requests: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on GitHub\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "Το authentication token είναι ένα ενδεικτικό εγκυρότητας της μορφής \"username:TOKEN\" που επιτρέπει στο PinBuddy να καλεί το API χωρίς να ζητά κάθε φορά τον κωδικό σας. Μπορείτε να δείτε το API token σας <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">στις ρυθμίσεις, κάτω από το πεδίο με τον κωδικό σας</a>."
+  },
+  "optionsLoginError": {
+    "message": "Σφάλμα. Βεβαιωθείτε ότι χρησιμοποιείτε το σωστό ενδεικτικό (token) και ότι έχετε σταθερή σύνδεση στο διαδίκτυο."
+  },
+  "optionsLoginFormLabel": {
+    "message": "API Token"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "username:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Υποβολή"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Κάντε μία <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">σύντομη περιήγηση στον Πίνακά σας</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Ο Πίνακάς σας είναι ένας προσωπικός φάκελος με πράγματα που βρίσκετε στο διαδίκτυο και δεν θέλετε να ξεχάσετε."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Ακριβώς — \"online\". Βεβαιωθείτε ότι έχετε σταθερή σύνδεση στο διαδίκτυο."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Καλωσήρθατε. Συνδεθήκατε ως $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Αποσύνδεση"
+  },
+  "optionsDefaultView": {
+    "message": "Βασική εμφάνιση"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "όλα"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "προσθήκη διεύθυνσης url"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Ιδιωτικό\" ως προεπιλογή"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"Μη διαβασμένο\" ως προεπιλογή"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Ενεργοποίηση των ειδοποιήσεων"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "Εμφάνιση / Απόκρυψη του PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "μετάβαση στην προβολή όλων"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "μετάβαση στην προσθήκη νέων"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "προσθήκη σελιδοδείκτη"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "άνοιγμα σελιδοδείκτη στο υπόβαθρο"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "διαγραφή σελιδοδείκτη"
+  },
+
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Άνοιγμα του προφίλ σας"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Περιήγηση σε όλα"
+  },
+  "popupBrowseAllText": {
+    "message": "όλα"
+  },
+  "popupAddURLTitle": {
+    "message": "Προσθήκη διεύθυνσης url"
+  },
+  "popupAddURLText": {
+    "message": "προσθήκη διεύθυνσης url"
+  },
+  "popupErrorMessage": {
+    "message": "Σφάλμα. Βεβαιωθείτε ότι το ενδεικτικό σας (token) είναι έγκυρο, ότι έχετε σταθερή σύνδεση στο διαδίκτυο και ότι <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">η κατάσταση του Pinboard API</a> είναι σταθερή."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Μετάβαση στις ρυθμίσεις"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Αναζήτηση"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Όρος για αναζήτηση"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Φίλτρα"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Ιδιωτικά"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Δημόσια"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Μη Διαβασμένα"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Χωρίς Ετικέτα"
+  },
+  "popupArticleButtonCancel": {
+    "message": "ακύρωση"
+  },
+  "popupArticleButtonDelete": {
+    "message": "διαγραφή"
+  },
+  "popupAddTitleLabel": {
+    "message": "Τίτλος"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Έως 255 χαρακτήρες"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Περιγραφή"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "Έως 65536 χαρακτήρες"
+  },
+  "popupAddTagsLabel": {
+    "message": "Ετικέτες (διαχωρίστε με κενό)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "Έως 255 χαρακτήρες"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "ιδιωτικό"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "ανάγνωση αργότερα"
+  },
+  "popupAddBookmarkButton": {
+    "message": "προσθήκη σελιδοδείκτη"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "αντικατάσταση σελιδοδείκτη"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "Το authentication token είναι ένα ενδεικτικό εγκυρότητας της μορφής \"username:TOKEN\" που επιτρέπει στο PinBuddy να καλεί το API χωρίς να ζητά κάθε φορά τον κωδικό σας. Μπορείτε να δείτε το API token σας <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">στις ρυθμίσεις, κάτω από το πεδίο με τον κωδικό σας</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Μεταβείτε στις ρυθμίσεις για να συνδεθείτε"
+  },
+  "popupOfflineMessageOne": {
+    "message": "Κάντε μία <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">σύντομη περιήγηση στον Πίνακά σας</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Ο Πίνακάς σας είναι ένας προσωπικός φάκελος με πράγματα που βρίσκετε στο διαδίκτυο και δεν θέλετε να ξεχάσετε."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Ακριβώς — \"online\". Βεβαιωθείτε ότι έχετε σταθερή σύνδεση στο διαδίκτυο."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Επιτρέπονται μόνο τα πρωτόκολλα <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> και <code>file</code>. Δυστυχώς δεν είναι δυνατή η αποθήκευση αυτής της διεύθυνσης URL."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Μάθετε περισσότερα στο εγχειρίδιο του Pinboard API"
+  },
+
+
+  "notificationSaveSucessful": {
+    "message": "Η διεύθυνση URL αποθηκεύτηκε με επιτυχία"
+  },
+  "notificationDeleteSucessful": {
+    "message": "Η διεύθυνση URL διαγράφηκε με επιτυχία"
+  }
+}
