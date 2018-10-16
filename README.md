@@ -17,5 +17,5 @@
 - Thanks to [Miłosz Kaniuk](https://www.behance.net/miloszkanibf79) for great logo and UI / UX recommendations
 - Thanks to [Gregory Assasie](https://twitter.com/gregory_jarvez) for dev tips
 - Thanks to [Zuzanna Rupińska](https://www.instagram.com/zuzanna.rupinska/) for brewing a coffee for me during development  :-*
-- Thanks to [Lionel Foucambert](https://github.com/LionelFW) for the French translation
+- Thanks to Lionel Foucambert for the French translation
 - Potentially you…
