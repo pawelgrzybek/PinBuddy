@@ -19,4 +19,5 @@
 - Thanks to [Zuzanna Rupińska](https://www.instagram.com/zuzanna.rupinska/) for brewing a coffee for me during development  :-*
 - Thanks to [Lionel Foucambert](https://github.com/LionelFW) for the French translation
 - Thanks to [Christian](https://github.com/chmartinez) for the Spanish translation
+- Thanks to [Fredrika](https://github.com/femtioelva) for the Swedish translation
 - Potentially you…
