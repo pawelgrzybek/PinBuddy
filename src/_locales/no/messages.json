@@ -103,7 +103,7 @@
     "message": "legg til url"
   },
   "popupErrorMessage": {
-    "Noe gikk galt. Vennligst sørg for at tokenet ditt er korrekt og at internettilkoblingen din er stabil. Og at <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API-et</a> er oppe og går."
+    "message": "Noe gikk galt. Vennligst sørg for at tokenet ditt er korrekt og at internettilkoblingen din er stabil. Og at <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API-et</a> er oppe og går."
   },
   "popupErrorButtonMessage": {
     "message": "Gå til side for innstillinger"
