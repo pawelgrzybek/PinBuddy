@@ -1,0 +1,198 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Explorez vos marque-pages Pinboard, et ajoutez-en de nouveau facilement."
+  },
+
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Problèmes et demandes de fonctionnalités: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek sur Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek sur GitHub\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "Un jeton d'authentification est un identifiant court et opaque, sous la forme \"nom d'utilisateur:JETON\", qui permet à PinBuddy to d'appeler l'API sans jamais avoir besoin de vous demander votre mote de passe. Vous pouvez trouver le jeton d'API sur <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">la page Réglages, dans l'onglet Mot de passe</a>."
+  },
+  "optionsLoginError": {
+    "message": "Erreur. Veuillez vous assurer que vous utilisez un jeton correct et que votre connexion internet est stable"
+    
+  },
+  "optionsLoginFormLabel": {
+    "message": "Jeton API"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "nom d'utilisateur:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Envoyer"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Consultez<a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\"> la présentation de Pinboard</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard est une archive personelle pour les choses que vous trouvez en ligne, et que vous ne voulez pas oublier"
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Exactement — \"en ligne\". Veuillez vous assurer que votre connexion internet est stable."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Bonjour. Vous êtes connecté en tant que $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Se déconnecter"
+  },
+  "optionsDefaultView": {
+    "message": "Vue par défaut"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "tout"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "ajouter url"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Privé\", case cochée par défaut (vue ajouter url)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"To read\", case cochée par défaut (vue ajouter url)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Activer les notifications systèmes"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "montrer / cacher PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "aller à la vue globale"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "aller à la vue d'ajout"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "ajouter marque-page (vue d'ajout)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "ouvrir le marque-page en arrière plan (vue globale)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "supprimer marque-page (vue globale)"
+  },
+
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Ouvrir votre Profil Piboard"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Explorer"
+  },
+  "popupBrowseAllText": {
+    "message": "tout"
+  },
+  "popupAddURLTitle": {
+    "message": "Ajouter URL"
+  },
+  "popupAddURLText": {
+    "message": "ajouter url"
+  },
+  "popupErrorMessage": {
+    "message": "Une erreur s'est produite. Veuillez vous assurer que votre jeton, votre connexion internet et que<a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">le statut de l'API Pinboard</a> soient stables."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Aller à la page options"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Rechercher"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Rechercher terme"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Filtres"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Privé"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Public"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Non lu"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Non taggé"
+  },
+  "popupArticleButtonCancel": {
+    "message": "annuler"
+  },
+  "popupArticleButtonDelete": {
+    "message": "supprimer"
+  },
+  "popupAddTitleLabel": {
+    "message": "Titre"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Max 255 caractères"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Description"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "Max 65536 caractères"
+  },
+  "popupAddTagsLabel": {
+    "message": "Tags (séparés par des espaces)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "Max 255 caractères"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "privé"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "à lire plus tard"
+  },
+  "popupAddBookmarkButton": {
+    "message": "ajouter marque-page"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "écraser marque-page"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "Un jeton d'authentification est un identifiant court et opaque, sous la forme \"nom d'utilisateur:JETON\", qui permet à PinBuddy to d'appeler l'API sans jamais avoir besoin de vous demander votre mote de passe. Vous pouvez trouver le jeton d'API sur <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">la page Réglages, dans l'onglet Mot de passe</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Allez à la page option pour vous connecter"
+  },
+  "popupOfflineMessageOne": {
+    "message": "Consultez<a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\"> la présentation de Pinboard</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard est une archive personelle pour les choses que vous trouvez en ligne, et que vous ne voulez pas oublier"
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Exactement — \"en ligne\". Veuillez vous assurer que votre connexion internet est stable."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Les protocoles autorisés sont <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> et <code>file</code>. Malheureusement vous ne pouvez pas sauvegarder cet url."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Pour en savoir plus, consultez la documentation d'API de Pinboard"
+  },
+
+
+  "notificationSaveSucessful": {
+    "message": "URL sauvegardé avec succès"
+  },
+  "notificationDeleteSucessful": {
+    "message": "URL supprimé avec succès"
+  }
+}
