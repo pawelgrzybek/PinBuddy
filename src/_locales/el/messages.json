@@ -50,7 +50,6 @@
     "placeholders": {
       "name": {
         "content": "$1",
-        "example": "Δημήτρης"
         "example": "Pawel"
       }
     }
@@ -68,15 +67,15 @@
     "message": "all"
   },
   "optionsDefaultViewAddText": {
-    "message": "προσθέστε διεύθυνση url"
+    "message": "προσθήκη διεύθυνσης url"
     "message": "add url"
   },
   "optionsPrivateCheckboxByDefault": {
-    "message": "\"Ιδιωτικό\" ως προεπιλογή (add url view)"
+    "message": "\"Ιδιωτικό\" ως προεπιλογή"
     "message": "\"Private\" checkbox by default (add url view)"
   },
   "optionsToReadChecboxByDefault": {
-    "message": "\"Μη διαβασμένο\" ως προεπιλογή (add url view)"
+    "message": "\"Μη διαβασμένο\" ως προεπιλογή"
     "message": "\"To read\" checkbox by default (add url view)"
   },
   "optionsEnableSystemNotifications": {
@@ -96,15 +95,15 @@
     "message": "go to add view"
   },
   "optionsShortcutDescriptionAddBookmark": {
-    "message": "προσθήκη σελιδοδείκτη (προσθήκη)"
+    "message": "προσθήκη σελιδοδείκτη"
     "message": "add bookmark (add view)"
   },
   "optionsShortcutDescriptionOpenInBackground": {
-    "message": "άνοιγμα σελιδοδείκτη στο υπόβαθρο (προβολή όλων)"
+    "message": "άνοιγμα σελιδοδείκτη στο υπόβαθρο"
     "message": "open bookmark in background (all view)"
   },
   "optionsShortcutDescriptionDeleteBookmark": {
-    "message": "διαγραφή σελιδοδείκτη (προβολή όλων)"
+    "message": "διαγραφή σελιδοδείκτη"
     "message": "delete bookmark (all view)"
   },
 
@@ -114,7 +113,7 @@
     "message": "Open your Pinboard Profile"
   },
   "popupBrowseAllTitle": {
-    "message": "Περιήγηση όλων"
+    "message": "Περιήγηση σε όλα"
     "message": "Browse all"
   },
   "popupBrowseAllText": {
@@ -122,11 +121,11 @@
     "message": "all"
   },
   "popupAddURLTitle": {
-    "message": "Προσθήκη URL"
+    "message": "Προσθήκη διεύθυνσης url"
     "message": "Add URL"
   },
   "popupAddURLText": {
-    "message": "προσθήκη url"
+    "message": "προσθήκη διεύθυνσης url"
     "message": "add url"
   },
   "popupErrorMessage": {
@@ -142,7 +141,7 @@
     "message": "Search"
   },
   "popupFiltersSearchPlaceholder": {
-    "message": "Αναζητήστε για κάτι"
+    "message": "Αναζητήστε κάτι"
     "message": "Search term"
   },
   "popupFiltersFilterButton": {
@@ -150,19 +149,19 @@
     "message": "Filters"
   },
   "popupFiltersCheckboxPrivate": {
-    "message": "Ιδιωτικό"
+    "message": "Ιδιωτικά"
     "message": "Private"
   },
   "popupFiltersCheckboxPublic": {
-    "message": "Δημόσιο"
+    "message": "Δημόσια"
     "message": "Public"
   },
   "popupFiltersCheckboxUnread": {
-    "message": "Μη διαβασμένο"
+    "message": "Μη Διαβασμένα"
     "message": "Unread"
   },
   "popupFiltersCheckboxUntagged": {
-    "message": "Χωρίς ετικέτα"
+    "message": "Χωρίς Ετικέτα"
     "message": "Untagged"
   },
   "popupArticleButtonCancel": {
@@ -190,6 +189,7 @@
     "message": "Max 65536 characters"
   },
   "popupAddTagsLabel": {
+    "message": "Ετικέτες (διαχωρίστε με κενό)"
     "message": "Tags (space separated)"
   },
   "popupAddTagsInvalidMessage": {
@@ -213,6 +213,7 @@
     "message": "override bookmark"
   },
   "popupLoggedOutViewMessage": {
+    "message": "Το authentication token είναι ένα ενδεικτικό εγκυρότητας της μορφής \"username:TOKEN\" που επιτρέπει στο PinBuddy να καλεί το API χωρίς να ζητά κάθε φορά τον κωδικό σας. Μπορείτε να δείτε το API token σας <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">στις ρυθμίσεις, κάτω από το πεδίο με τον κωδικό σας</a>."
     "message": "An authentication token is a short opaque identifier in the form \"username:TOKEN\" that allows PinBuddy to make API calls without ever asking for your password. You can find your API token on a <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">settings page under the password tab</a>."
   },
   "popupLoggedOutViewButtonMessage": {
@@ -246,7 +247,7 @@
     "message": "URL saved successfully"
   },
   "notificationDeleteSucessful": {
-    "message": "Η διεύθυνση URL διαγράφηκε"
+    "message": "Η διεύθυνση URL διαγράφηκε με επιτυχία"
     "message": "URL deleted successfully"
   }
 }
