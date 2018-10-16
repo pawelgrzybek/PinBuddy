@@ -21,4 +21,5 @@
 - Thanks to [Christian](https://github.com/chmartinez) for the Spanish translation
 - Thanks to [Fredrika](https://github.com/femtioelva) for the Swedish translation
 - Thanks to [David Hölkeskamp](https://github.com/dhkamp) for the German translation
+- Thanks to [Bublik](https://github.com/Bigbublik) for the Russian translation
 - Potentially you…
