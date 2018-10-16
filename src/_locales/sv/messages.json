@@ -14,7 +14,7 @@
     "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Problem & features: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek på Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek på GitHub\">GitHub</a>."
   },
   "optionsLoginManual": {
-    "message": "En autentiseringstoken används för att identifiera genom formatet \"användarnamn:TOKEN\" och som tillåter PinBuddy att göra API-anrop utan att fråga om ditt lösenord. Du kan hitta din API-token i <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">inställningar, under lösenordsfliken</a>."
+    "message": "En autentiseringstoken används för att identifiera genom formatet \"användarnamn:TOKEN\" och ger PinBuddy tillåtelse att göra API-anrop utan att fråga om ditt lösenord. Du kan hitta din API-token i <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">inställningar, under lösenordsfliken</a>."
   },
   "optionsLoginError": {
     "message": "Fel har inträffat. Vänligen kontrollera att du använder rätt token och är ansluten till internet."
@@ -71,7 +71,7 @@
     "message": "visa / dölj PinBuddy"
   },
   "optionsShortcutDescriptionGoToAll": {
-    "message": "gå till lägg till vy"
+    "message": "gå till alla-vyn"
   },
   "optionsShortcutDescriptionGoToAdd": {
     "message": "gå till lägg till vy"
@@ -166,7 +166,7 @@
     "message": "ersätt bokmärke"
   },
   "popupLoggedOutViewMessage": {
-    "message": "En autentiseringstoken används för att identifiera genom formatet \"användarnamn:TOKEN\" och som tillåter PinBuddy att göra API-anrop utan att fråga om ditt lösenord. Du kan hitta din API-token i <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">inställningar, under lösenordsfliken</a>."
+    "message": "En autentiseringstoken används för att identifiera genom formatet \"användarnamn:TOKEN\" och tillåter PinBuddy att göra API-anrop utan att fråga om ditt lösenord. Du kan hitta din API-token i <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">inställningar, under lösenordsfliken</a>."
   },
   "popupLoggedOutViewButtonMessage": {
     "message": "Gå till inställningar för att logga in"
