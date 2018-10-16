@@ -20,4 +20,5 @@
 - Thanks to [Lionel Foucambert](https://github.com/LionelFW) for the French translation
 - Thanks to [Christian](https://github.com/chmartinez) for the Spanish translation
 - Thanks to [Fredrika](https://github.com/femtioelva) for the Swedish translation
+- Thanks to [David Hölkeskamp](https://github.com/dhkamp) for the German translation
 - Potentially you…
