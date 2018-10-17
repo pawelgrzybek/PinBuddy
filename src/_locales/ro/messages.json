@@ -1,0 +1,197 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Vezi si adauga semne de carte Pinboard cu usurinta."
+  },
+
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Probleme & cereri de noi functionalitati: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on GitHub\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "Un token de autorizare este un identificator in format \"username:TOKEN\" care permite extensiei Chorme PinBuddy sa accesseze API-ul fara a-ti cere parola. Token-ul personal API token il poti gasi in <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">pagina de satari, sub campul pentru parola</a>."
+  },
+  "optionsLoginError": {
+    "message": "Eroare. Te rog verifica conexiune la Internet."
+  },
+  "optionsLoginFormLabel": {
+    "message": "Token pentru API"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "username:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Continua"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Viziteaza <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">turul oficial Pinboard</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard este o arhiva personala a obiectelor gasite online, pe care nu vrei sa le uiti."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Exact — \"online\". Te rog verifica conexiune la Internet."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Salut. Esti conectat cu utilizatorul $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Deconectare"
+  },
+  "optionsDefaultView": {
+    "message": "Perspectiva standard"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "toate"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "adauga url"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Private\" checkbox by default (add url view)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"To read\" checkbox by default (add url view)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Activeaza notificatiile de sistem"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "afiseaza / ascunde PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "navigheaza la perspectiva toate"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "navigheaza la perspectiva adauga"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "adauga semn de carte (perspectiva adauga)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "deschide semnul de carte in fundal (perspectiva toate)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "sterge semnul de carte (perspectiva toate)"
+  },
+
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Viziteaza profilul tau Pinboard"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Browse all"
+  },
+  "popupBrowseAllText": {
+    "message": "toate"
+  },
+  "popupAddURLTitle": {
+    "message": "Adauga URL"
+  },
+  "popupAddURLText": {
+    "message": "adauga url"
+  },
+  "popupErrorMessage": {
+    "message": "O eroare s-a produs. Te rog verifica conexiunea la Internet, validitatea token-ului tau API si ca <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">API-ul Pinboard</a> este functional."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Navigheaza la pagina da optiuni"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Cauta"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Termen de cautat"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Filtre"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Privat"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Public"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Necitit"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Fara tag"
+  },
+  "popupArticleButtonCancel": {
+    "message": "cancel"
+  },
+  "popupArticleButtonDelete": {
+    "message": "sterge"
+  },
+  "popupAddTitleLabel": {
+    "message": "Titlu"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Max 255 caractere"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Descriere"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "Max 65536 caractere"
+  },
+  "popupAddTagsLabel": {
+    "message": "Tags (separate de space)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "Max 255 caractere"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "privat"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "citeste mai tarziu"
+  },
+  "popupAddBookmarkButton": {
+    "message": "adauga semne de carte"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "override bookmark"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "AUn token de autorizare este un identificator in format \"username:TOKEN\" care permite extensiei Chorme PinBuddy sa accesseze API-ul fara a-ti cere parola. Token-ul personal API token il poti gasi in <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">pagina de satari, sub campul pentru parola</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Navigheaza la pagina de optiuni pentru a te autentifica."
+  },
+  "popupOfflineMessageOne": {
+    "message": "Viziteaza <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">turul Pinboard</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard este o arhiva personala a obiectelor gasite online, pe care nu vrei sa le uiti."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Exact — \"online\". Te rog verifica conexiune la Internet."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Protocole permise sunt <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> si <code>file</code>. URL-ul introdus nu poate fi salvat din pacate."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Pentru mai multe detalii vezi documentatia API Pinboard"
+  },
+
+
+  "notificationSaveSucessful": {
+    "message": "URL-ul a fost salvat."
+  },
+  "notificationDeleteSucessful": {
+    "message": "URL-ul a fost sters."
+  }
+}
