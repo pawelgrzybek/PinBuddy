@@ -26,4 +26,5 @@
 - Thanks to [Kostas Liberopoulos](https://github.com/KostasLib) for the Greek translation
 - Thanks to [Igor Guastalla](https://github.com/guastallaigor) for the Brazilian translation
 - Thanks to [Oskari Holopainen](https://github.com/Ikaros1510) for the Finnish translation
+- Thanks to [Cristian Bell](https://github.com/cristianbell) for the Romanian translation
 - Potentially you…
