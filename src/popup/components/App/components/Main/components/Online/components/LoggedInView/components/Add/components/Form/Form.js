@@ -25,8 +25,6 @@ export class Form extends Component {
       currentWindow: true,
     }, result => {
 
-      console.log(result);
-
       const { title, url } = result[0];
 
       chrome.storage.local.get(['posts'], result => {
@@ -56,13 +54,15 @@ export class Form extends Component {
             url,
           });
 
-          chrome.tabs.executeScript({ code: 'window.getSelection().toString()' }, selection => {
-            if (selection) {
-              this.setState({
-                description: selection[0],
-              });
-            }
-          });
+          if (!url.includes('chrome.google.com')) {
+            chrome.tabs.executeScript({ code: 'window.getSelection().toString()' }, selection => {
+              if (selection) {
+                this.setState({
+                  description: selection[0],
+                });
+              }
+            });
+          }
 
           chrome.storage.sync.get(['privateCheckboxByDefault', 'toReadChecboxByDefault'], result => {
             this.setState({
