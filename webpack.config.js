@@ -41,6 +41,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin([
       'dist',
+      'pinbuddy*.zip',
     ]),
     new HtmlWebpackPlugin({
       filename: 'popup/popup.html',

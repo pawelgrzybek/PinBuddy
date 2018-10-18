@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack --watch --mode=development",
-    "build": "webpack --mode=production",
+    "build": "webpack --mode=production && zip -r \"$(date +\"pinbuddy_%Y_%m_%d_%I_%M_%S\").zip\" dist",
     "test": "jest",
     "test:watch": "jest --watch"
   },
