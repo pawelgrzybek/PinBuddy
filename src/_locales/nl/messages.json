@@ -1,0 +1,197 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Browse door je Pinboard bladwijzers en voeg gemakkelijk nieuwe toe."
+  },
+
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Problemen & nieuwe functionaliteit: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek op Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek op GitHub\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "Een authenticatietoken is een kort en duidelijk stuk tekst in de vorm \"gebruikersnaam:TOKEN\" waarmee PinBuddy API calls kan maken zonder ooit je wachtwoord te hoeven weten. U kunt uw authenticatietoken vinden onder de <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">instellingen in het wachtwoorden tabblad</a>."
+  },
+  "optionsLoginError": {
+    "message": "Probleem. Zorg er alstublieft voor dat u een correct authenticatietoken gebruikt en een stabiele internetverbinding hebt."
+  },
+  "optionsLoginFormLabel": {
+    "message": "Authenticatietoken"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "gebruikersnaam:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Verzend"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Bekijk de officiële <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard tour</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard is uw persoonlijke archief voor alles wat u online vindt en niet vergeten wilt."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Precies — \"online\". Zorg alstublieft voor een stabiele internetverbinding."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Hallo. U ben ingelogd als $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Uitloggen"
+  },
+  "optionsDefaultView": {
+    "message": "Standaard weergave"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "alles"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "url toevoegen"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Privé\" checkbox als standaard (voeg url weergave toe)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"Leesbaar\" checkbox als standaard (voeg url weergave toe)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Zet systeemmeldingen aan"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "toon / verberg PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "ga naar volledige weergave"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "ga naar toevoegweergave"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "voeg bladwijzer to (toevoegweergave)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "open bladwijzer in achtergrond (volledige weergave)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "verwijder bladwijzer (volledige weergave)"
+  },
+
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Open uw Pinboard Profiel"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Browse alles"
+  },
+  "popupBrowseAllText": {
+    "message": "alles"
+  },
+  "popupAddURLTitle": {
+    "message": "URL toevoegen"
+  },
+  "popupAddURLText": {
+    "message": "url toevoegen"
+  },
+  "popupErrorMessage": {
+    "message": "Probleem. Zorg er alstublieft voor dat u een correct authenticatietoken gebruikt, een stabiele internetverbinding hebt en de <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API status</a> stabiel is."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Ga naar opties weergave"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Zoeken"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Zoek naar woord"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Filters"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Privé"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Openbaar"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Ongelezen"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Ongelabeld"
+  },
+  "popupArticleButtonCancel": {
+    "message": "annuleren"
+  },
+  "popupArticleButtonDelete": {
+    "message": "verwijderen"
+  },
+  "popupAddTitleLabel": {
+    "message": "Titel"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Max 255 tekens"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Omschrijving"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "Max 65536 tekens"
+  },
+  "popupAddTagsLabel": {
+    "message": "Labels (door spaties gescheiden)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "Max 255 tekens"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "privé"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "lees later"
+  },
+  "popupAddBookmarkButton": {
+    "message": "voeg bladwijzer toe"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "bladwijzer overschrijven"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "Een authenticatietoken is een kort en duidelijk stuk tekst in de vorm \"gebruikersnaam:TOKEN\" waarmee PinBuddy API calls kan maken zonder ooit je wachtwoord te hoeven weten. U kunt uw authenticatietoken vinden onder de <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">instellingen in het wachtwoorden tabblad</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Ga naar de opties weergave om in te loggen"
+  },
+  "popupOfflineMessageOne": {
+    "message": "Bekijk de officiële <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard tour</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard is uw persoonlijke archief voor alles wat u online vindt en niet vergeten wilt."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Precies — \"online\". Zorg alstublieft voor een stabiele internetverbinding."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Toegestane protocollen zijn <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> en <code>file</code>. U kunt deze URL dus jammer genoeg niet opslaan."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Meer informatie beschikbaar in de Pinboard API documentatie"
+  },
+
+
+  "notificationSaveSucessful": {
+    "message": "URL succesvol opgeslagen"
+  },
+  "notificationDeleteSucessful": {
+    "message": "URL succesvol verwijderd"
+  }
+}
