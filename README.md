@@ -27,4 +27,6 @@
 - Thanks to [Igor Guastalla](https://github.com/guastallaigor) for the Brazilian translation
 - Thanks to [Oskari Holopainen](https://github.com/Ikaros1510) for the Finnish translation
 - Thanks to [Cristian Bell](https://github.com/cristianbell) for the Romanian translation
+- Thanks to [Xavier Marquès](https://github.com/wolframtheta) for the Catalan translation
+- Thanks to [Tom Veldman](https://github.com/progBorg) for the Dutch translation
 - Potentially you…
