@@ -29,4 +29,5 @@
 - Thanks to [Cristian Bell](https://github.com/cristianbell) for the Romanian translation
 - Thanks to [Xavier Marquès](https://github.com/wolframtheta) and [oriolhub](https://github.com/oriolhub) for the Catalan translation
 - Thanks to [Tom Veldman](https://github.com/progBorg) for the Dutch translation
+- Thanks to [Ana Gilda Rodrigues](https://github.com/AnaGilda) for the Portuguese translation
 - Potentially you…
