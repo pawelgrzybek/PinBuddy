@@ -1,0 +1,194 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Переглядайте закладки Pinboard і з легкістю додавайте нові."
+  },
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Проблеми та нові функції: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek у Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek на GitHub\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "Авторизаційний токен це короткий прозорий ідентифікатор у формі \"username:TOKEN\" це дозволяє PinBuddy здійснювати виклики API, не запитуючи пароль. Ви можете знайти свій API токен на <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">сторінці налаштувань під вкладкою з паролем</a>."
+  },
+  "optionsLoginError": {
+    "message": "Помилка. Будь ласка, переконайтесь, що ви використовуєте правильний токен і що ваше інтернет-з'єднання стабильне."
+  },
+  "optionsLoginFormLabel": {
+    "message": "API Токен"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "username:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Відправити"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Подивіться на офіціальний <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">тур по Pinboard</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard це персональний архів для речей, які ви знаходите в інтернеті і не хочете забути."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Саме — \"online\". Будь ласка, переконайтесь, що ви маєте стабильне з'єднання з інтернетом."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Привіт. Ви увійшли як $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Вийти"
+  },
+  "optionsDefaultView": {
+    "message": "Стандартний вид"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "всі"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "додати url"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Приватні\" чекбокс за умовчанням (додати перегляд url)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"К чтению\" чекбокс за умовчанням (додати перегляд url)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Увімкнути системні повідомлення"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "показати / скрити PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "перейти до всіх"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "перейти до меню додати"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "додати закладку (додати вид)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "відкрити закладку у фоні (всі)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "видалити закладку (всі)"
+  },
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Відкрити ваш Pinboard профіль"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Переглянути все"
+  },
+  "popupBrowseAllText": {
+    "message": "все"
+  },
+  "popupAddURLTitle": {
+    "message": "Додати URL"
+  },
+  "popupAddURLText": {
+    "message": "додати url"
+  },
+  "popupErrorMessage": {
+    "message": "Виникла помилка. Будь ласка перевірте, що ваш токен валідний, і що підключення до інтернету і <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API статус</a> стабільні."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Перейти на сторінку налаштувань"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Пошук"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Умова пошуку"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Фільтри"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Приватні"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Публічні"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Непрочитані"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Без тегів"
+  },
+  "popupArticleButtonCancel": {
+    "message": "відміна"
+  },
+  "popupArticleButtonDelete": {
+    "message": "видалити"
+  },
+  "popupAddTitleLabel": {
+    "message": "Заголовок"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Максимум 255 символів"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Опис"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "Максимум 65536 символів"
+  },
+  "popupAddTagsLabel": {
+    "message": "Теги (розділені пробілом)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "Максимум 255 символов"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "приватні"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "прочитати пізніше"
+  },
+  "popupAddBookmarkButton": {
+    "message": "додати закладку"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "перезаписати закладку"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "Авторизаційний токен це короткий прозорий ідентифікатор у формі \"username:TOKEN\" це дозволяє PinBuddy здійснювати визови API, не запитуючи пароль. Ви можете знайти свій API токен на <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">сторінці налаштувань під вкладкою з паролем</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Перейдіть на сторінку налаштувань для входу"
+  },
+  "popupOfflineMessageOne": {
+    "message": "Подивіться на офіціальний <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">тур по Pinboard</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard це персональний архів для речей, які ви знаходите в інтернеті і не хочете забути."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Саме — \"online\". Будь ласка, переконайтесь, що ви маєте стабильне з'єднання з інтернетом."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Дозволені протоколи <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> and <code>file</code>. На жаль, ви не можете зберегти цей URL."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Дізнайтеся більше в документації Pinboard API"
+  },
+
+  "notificationSaveSucessful": {
+    "message": "URL-адресу збережено успішно"
+  },
+  "notificationDeleteSucessful": {
+    "message": "URL-адресу видалено успішно"
+  }
+}
