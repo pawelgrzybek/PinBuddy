@@ -6,7 +6,6 @@
     "message": "Sök bland dina Pinboardbokmärken och lägg enkelt till nya."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -85,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "Ta bort bokmärke (alla vyer)"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Visa din Pinboardprofil"
@@ -186,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Läs mer i Pinboards API-dokumentation"
   },
-
 
   "notificationSaveSucessful": {
     "message": "Sidan har sparats"

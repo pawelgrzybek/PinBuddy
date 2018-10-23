@@ -6,7 +6,6 @@
     "message": "Legg til og bla gjennom Pinboard-bokmerkene dine på en lettvint måte."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -85,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "slett bokmerke (alle visning)"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Åpne Pinboard-profilen din"
@@ -186,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Finn ut mer i API-dokumentasjonen til Pinboard"
   },
-
 
   "notificationSaveSucessful": {
     "message": "URL ble lagret"

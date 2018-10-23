@@ -6,7 +6,6 @@
     "message": "Navega a través dels teus marcadors Pinboard i afegeix-los amb facilitat."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -85,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "borrar marcador (vista global)"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Obrir perfil de Pinboard"
@@ -186,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Trobar més a la documentació de la API de Pinboard"
   },
-
 
   "notificationSaveSucessful": {
     "message": "URL guardada correctament"

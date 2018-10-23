@@ -6,7 +6,6 @@
     "message": "Vezi si adauga semne de carte Pinboard cu usurinta."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -85,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "sterge semnul de carte (perspectiva toate)"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Viziteaza profilul tau Pinboard"
@@ -186,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Pentru mai multe detalii vezi documentatia API Pinboard"
   },
-
 
   "notificationSaveSucessful": {
     "message": "URL-ul a fost salvat."

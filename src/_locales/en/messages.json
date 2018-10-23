@@ -6,7 +6,6 @@
     "message": "Browse your Pinboard bookmarks and add new ones with ease."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -85,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "delete bookmark (all view)"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Open your Pinboard Profile"
@@ -186,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Find out more in Pinboard API documentation"
   },
-
 
   "notificationSaveSucessful": {
     "message": "URL saved successfully"

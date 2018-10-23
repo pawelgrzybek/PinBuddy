@@ -6,7 +6,6 @@
     "message": "Просматривайте закладки Pinboard и с легкостью добавляйте новые."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -85,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "удалить закладку (все)"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Открыть ваш Pinboard профайл"
@@ -186,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Узнайте больше в документации Pinboard API"
   },
-
 
   "notificationSaveSucessful": {
     "message": "URL-адрес успешно сохранен "

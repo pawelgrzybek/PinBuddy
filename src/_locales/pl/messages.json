@@ -6,7 +6,6 @@
     "message": "Przelądaj oraz dodawaj nowe linki do swojego konto na Pinboard."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -85,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "usuń URL (zakładka wszystkie)"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Otwórz swój profil na Pinboard"
@@ -186,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Dowiedź się więcej na oficjalnej dokumentacji Pinboard"
   },
-
 
   "notificationSaveSucessful": {
     "message": "URL pomyślnie zachowany"

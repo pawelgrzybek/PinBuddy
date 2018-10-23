@@ -6,7 +6,6 @@
     "message": "Περιηγηθείτε στον Πίνακα με τους σελιδοδείκτες σας και προσθέστε νέους με ευκολία."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -85,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "διαγραφή σελιδοδείκτη"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Άνοιγμα του προφίλ σας"
@@ -186,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Μάθετε περισσότερα στο εγχειρίδιο του Pinboard API"
   },
-
 
   "notificationSaveSucessful": {
     "message": "Η διεύθυνση URL αποθηκεύτηκε με επιτυχία"

@@ -6,7 +6,6 @@
     "message": "Browse door je Pinboard bladwijzers en voeg gemakkelijk nieuwe toe."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -85,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "verwijder bladwijzer (volledige weergave)"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Open uw Pinboard Profiel"
@@ -186,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Meer informatie beschikbaar in de Pinboard API documentatie"
   },
-
 
   "notificationSaveSucessful": {
     "message": "URL succesvol opgeslagen"

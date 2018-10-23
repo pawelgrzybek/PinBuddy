@@ -6,7 +6,6 @@
     "message": "Explore seus favoritos do Pinboard e adicione novos com facilidade."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -86,7 +85,6 @@
     "message": "remover favorito (visualização total)"
   },
 
-
   "popupOpenYourPinboardProfile": {
     "message": "Abrir seu perfil Pinboard"
   },
@@ -104,7 +102,6 @@
   },
   "popupErrorMessage": {
     "message": "Ocorreu um erro. Por favor, certifique-se de que você está utilizando um token correto e de que sua conexão com a internet está estável, e que <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">o status da API Pinboard</a> está estável."
-
   },
   "popupErrorButtonMessage": {
     "message": "Ir para a página de opções"
@@ -187,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Descubra mais na documentação da API Pinboard"
   },
-
 
   "notificationSaveSucessful": {
     "message": "URL salva com sucesso"

@@ -6,7 +6,6 @@
     "message": "Durchsuchen Sie Ihre Pinboard Lesezeichen und verwalten Sie diese mit Leichtigkeit."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -85,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "Lesezeichen entfernen (\"Alle Lesezeichen\" Ansicht)"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Pinboard Profil öffnen"
@@ -186,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Weitere Informationen in der Pinboard API Dokumentation"
   },
-
 
   "notificationSaveSucessful": {
     "message": "URL erfolgreich gespeichert"

@@ -6,7 +6,6 @@
     "message": "Explorez vos marque-pages Pinboard, et ajoutez-en de nouveau facilement."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -18,7 +17,6 @@
   },
   "optionsLoginError": {
     "message": "Erreur. Veuillez vous assurer que vous utilisez un jeton correct et que votre connexion internet est stable"
-    
   },
   "optionsLoginFormLabel": {
     "message": "Jeton API"
@@ -86,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "supprimer marque-page (vue globale)"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Ouvrir votre Profil Piboard"
@@ -187,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Pour en savoir plus, consultez la documentation d'API de Pinboard"
   },
-
 
   "notificationSaveSucessful": {
     "message": "URL sauvegardé avec succès"

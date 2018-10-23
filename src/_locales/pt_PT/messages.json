@@ -6,7 +6,6 @@
     "message": "Explore os seus marcadores do Pinboard e adicione novos facilmente."
   },
 
-
   "optionsTitle": {
     "message": "PinBuddy"
   },
@@ -85,7 +84,6 @@
   "optionsShortcutDescriptionDeleteBookmark": {
     "message": "apagar marcador (visualização completa)"
   },
-
 
   "popupOpenYourPinboardProfile": {
     "message": "Abrir o seu perfil do Pinboard"
@@ -186,7 +184,6 @@
   "popupInvalidProtocolButton": {
     "message": "Descubra mais na documentação da API do Pinboard"
   },
-
 
   "notificationSaveSucessful": {
     "message": "URL guardado com sucesso"
