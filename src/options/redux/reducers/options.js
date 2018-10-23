@@ -1,15 +1,15 @@
 const initialState = {
-  defaultView: 'all',
+  defaultView: "all",
   privateCheckboxByDefault: false,
   toReadChecboxByDefault: false,
-  enableSystemNotifications: false,
+  enableSystemNotifications: false
 };
 
 const reducerOptions = (state = initialState, action) => {
-  if (action.type === 'UPDATE_OPTION') {
+  if (action.type === "UPDATE_OPTION") {
     return {
       ...state,
-      ...action.option,
+      ...action.option
     };
   }
 

@@ -1,53 +1,41 @@
 const initialState = {
-  username: '',
+  username: "",
   loading: false,
-  error: false,
+  error: false
 };
 
 const reducerAuth = (state = initialState, action) => {
-  if (action.type === 'ADD_USERNAME') {
+  if (action.type === "ADD_USERNAME") {
     return {
       ...state,
-      username: action.username,
+      username: action.username
     };
-  }
-
-  else if (action.type === 'GET_USERNAME') {
+  } else if (action.type === "GET_USERNAME") {
     return {
       ...state,
-      ...action.username,
+      ...action.username
     };
-  }
-
-  else if (action.type === 'LOADING_SHOW') {
+  } else if (action.type === "LOADING_SHOW") {
     return {
       ...state,
-      loading: true,
+      loading: true
     };
-  }
-
-  else if (action.type === 'LOADING_HIDE') {
+  } else if (action.type === "LOADING_HIDE") {
     return {
       ...state,
-      loading: false,
+      loading: false
     };
-  }
-
-  else if (action.type === 'ERROR_SHOW') {
+  } else if (action.type === "ERROR_SHOW") {
     return {
       ...state,
-      error: true,
+      error: true
     };
-  }
-
-  else if (action.type === 'ERROR_HIDE') {
+  } else if (action.type === "ERROR_HIDE") {
     return {
       ...state,
-      error: false,
+      error: false
     };
-  }
-
-  else if (action.type === 'LOG_OUT') {
+  } else if (action.type === "LOG_OUT") {
     return initialState;
   }
 

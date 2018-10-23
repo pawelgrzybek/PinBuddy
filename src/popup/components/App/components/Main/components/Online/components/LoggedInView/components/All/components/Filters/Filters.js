@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-import { Input, Button, Checkbox } from 'theme';
-import './Filters.css';
+import { Input, Button, Checkbox } from "theme";
+import "./Filters.css";
 
 class Filters extends Component {
   state = {
-    showFilters: false,
-  }
+    showFilters: false
+  };
 
   render() {
     const {
@@ -19,7 +19,7 @@ class Filters extends Component {
       updatePrivatePost,
       updatePublicPost,
       updateUnread,
-      updateUntagged,
+      updateUntagged
     } = this.props;
 
     return (
@@ -28,24 +28,32 @@ class Filters extends Component {
           <div className="filters__input">
             <Input
               id="filter"
-              label={chrome.i18n.getMessage('popupFiltersSearchLabel')}
-              placeholder={chrome.i18n.getMessage('popupFiltersSearchPlaceholder')}
+              label={chrome.i18n.getMessage("popupFiltersSearchLabel")}
+              placeholder={chrome.i18n.getMessage(
+                "popupFiltersSearchPlaceholder"
+              )}
               onChange={updateKeyword}
               autoFocus
             />
           </div>
           <div className="filters__button">
             <Button
-              t={chrome.i18n.getMessage('popupFiltersFilterButton')}
+              t={chrome.i18n.getMessage("popupFiltersFilterButton")}
               onClick={this.toggleFilters}
             />
           </div>
         </div>
-        <div className={this.state.showFilters ? 'filters__bottom filters__bottom--active' : 'filters__bottom'}>
+        <div
+          className={
+            this.state.showFilters
+              ? "filters__bottom filters__bottom--active"
+              : "filters__bottom"
+          }
+        >
           <div className="filters__option">
             <Checkbox
               id="privatePost"
-              label={chrome.i18n.getMessage('popupFiltersCheckboxPrivate')}
+              label={chrome.i18n.getMessage("popupFiltersCheckboxPrivate")}
               checked={privatePost}
               onChange={updatePrivatePost}
             />
@@ -53,7 +61,7 @@ class Filters extends Component {
           <div className="filters__option">
             <Checkbox
               id="publicPost"
-              label={chrome.i18n.getMessage('popupFiltersCheckboxPublic')}
+              label={chrome.i18n.getMessage("popupFiltersCheckboxPublic")}
               checked={publicPost}
               onChange={updatePublicPost}
             />
@@ -61,7 +69,7 @@ class Filters extends Component {
           <div className="filters__option">
             <Checkbox
               id="unread"
-              label={chrome.i18n.getMessage('popupFiltersCheckboxUnread')}
+              label={chrome.i18n.getMessage("popupFiltersCheckboxUnread")}
               checked={unread}
               onChange={updateUnread}
             />
@@ -69,13 +77,12 @@ class Filters extends Component {
           <div className="filters__option">
             <Checkbox
               id="untagged"
-              label={chrome.i18n.getMessage('popupFiltersCheckboxUntagged')}
+              label={chrome.i18n.getMessage("popupFiltersCheckboxUntagged")}
               checked={untagged}
               onChange={updateUntagged}
             />
           </div>
         </div>
-
       </div>
     );
   }
@@ -83,10 +90,10 @@ class Filters extends Component {
   toggleFilters = () => {
     this.setState(state => {
       return {
-        showFilters: !state.showFilters,
+        showFilters: !state.showFilters
       };
     });
-  }
+  };
 }
 
 Filters.propTypes = {
@@ -98,8 +105,7 @@ Filters.propTypes = {
   updatePrivatePost: PropTypes.func.isRequired,
   updatePublicPost: PropTypes.func.isRequired,
   updateUnread: PropTypes.func.isRequired,
-  updateUntagged: PropTypes.func.isRequired,
+  updateUntagged: PropTypes.func.isRequired
 };
 
 export default Filters;
-

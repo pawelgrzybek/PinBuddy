@@ -2,11 +2,13 @@
 const listenForIconChange = tab => {
   const { url, active } = tab;
   if (url && active) {
-    chrome.storage.local.get(['posts'], posts => {
+    chrome.storage.local.get(["posts"], posts => {
       if (posts.posts) {
         const postExists = !!posts.posts.find(post => post.href === url);
         chrome.browserAction.setIcon({
-          path: postExists ? '/icons/icon-active-128.png' : '/icons/icon-128.png',
+          path: postExists
+            ? "/icons/icon-active-128.png"
+            : "/icons/icon-128.png"
           // path: {
           //   16: postExists ? '/icons/icon-active-16.png' : '/icons/icon-16.png',
           //   48: postExists ? '/icons/icon-active-48.png' : '/icons/icon-48.png',
@@ -34,16 +36,17 @@ chrome.tabs.onActivated.addListener(result => {
 
 // listen to messages from other parts of an extension
 chrome.runtime.onMessage.addListener(request => {
-
-  if (request === 'check current') {
-    chrome.tabs.query({
-      active: true,
-      currentWindow: true,
-    }, result => {
-      if (result) {
-        chrome.tabs.get(result[0].id, listenForIconChange);
+  if (request === "check current") {
+    chrome.tabs.query(
+      {
+        active: true,
+        currentWindow: true
+      },
+      result => {
+        if (result) {
+          chrome.tabs.get(result[0].id, listenForIconChange);
+        }
       }
-    });
+    );
   }
-
 });

@@ -1,13 +1,9 @@
 const reducerOffline = (state = true, action) => {
-  if (action.type === 'CHECK_ONLINE') {
+  if (action.type === "CHECK_ONLINE") {
     return action.online;
-  }
-
-  else if (action.type === 'WENT_ONLINE') {
+  } else if (action.type === "WENT_ONLINE") {
     return true;
-  }
-
-  else if (action.type === 'WENT_OFFLINE') {
+  } else if (action.type === "WENT_OFFLINE") {
     return false;
   }
 

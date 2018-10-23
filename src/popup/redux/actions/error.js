@@ -1,11 +1,11 @@
 export const errorShowAction = () => {
   return {
-    type: 'ERROR_SHOW',
+    type: "ERROR_SHOW"
   };
 };
 
 export const errorHideAction = () => {
   return {
-    type: 'ERROR_HIDE',
+    type: "ERROR_HIDE"
   };
 };

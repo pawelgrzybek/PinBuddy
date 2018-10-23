@@ -1,22 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './Error.css';
+import "./Error.css";
 
 const Error = ({ innerHTML, t }) => {
-
-  return innerHTML ?
-    <p className="error" dangerouslySetInnerHTML={{ __html: t }} /> :
-    <p className="error">{t}</p>;
+  return innerHTML ? (
+    <p className="error" dangerouslySetInnerHTML={{ __html: t }} />
+  ) : (
+    <p className="error">{t}</p>
+  );
 };
 
 Error.propTypes = {
   t: PropTypes.string.isRequired,
-  innerHTML: PropTypes.bool.isRequired,
+  innerHTML: PropTypes.bool.isRequired
 };
 
 Error.defaultProps = {
-  innerHTML: false,
+  innerHTML: false
 };
 
 export default Error;

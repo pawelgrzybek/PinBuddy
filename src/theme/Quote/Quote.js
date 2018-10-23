@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './Quote.css';
+import "./Quote.css";
 
 const Quote = ({ t }) => <blockquote className="quote">{t}</blockquote>;
 
 Quote.propTypes = {
-  t: PropTypes.string.isRequired,
+  t: PropTypes.string.isRequired
 };
 
 export default Quote;

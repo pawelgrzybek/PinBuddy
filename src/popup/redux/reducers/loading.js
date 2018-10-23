@@ -1,9 +1,9 @@
 const reducerLoading = (state = false, action) => {
-  if (action.type === 'LOADING_SHOW') {
+  if (action.type === "LOADING_SHOW") {
     return true;
   }
 
-  if (action.type === 'LOADING_HIDE') {
+  if (action.type === "LOADING_HIDE") {
     return false;
   }
 

@@ -1,26 +1,20 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React from "react";
+import { shallow } from "enzyme";
 
-import { Nav } from '../Nav';
+import { Nav } from "../Nav";
 
-describe('<Nav />', () => {
-
+describe("<Nav />", () => {
   const defaultProps = {
-    username: 'pinbuddy',
+    username: "pinbuddy",
     online: true,
-    view: 'all',
+    view: "all",
     error: false,
     updateView: jest.fn(),
-    getInitialView: jest.fn(),
+    getInitialView: jest.fn()
   };
 
-  it('should render correctly', () => {
-    const tree = shallow(
-      <Nav
-        {...defaultProps}
-      />
-    );
+  it("should render correctly", () => {
+    const tree = shallow(<Nav {...defaultProps} />);
     expect(tree).toMatchSnapshot();
   });
-
 });

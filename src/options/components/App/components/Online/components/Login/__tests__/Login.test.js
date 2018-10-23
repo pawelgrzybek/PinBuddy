@@ -1,23 +1,17 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React from "react";
+import { shallow } from "enzyme";
 
-import { Login } from '../Login';
+import { Login } from "../Login";
 
-describe('<Login />', () => {
-
+describe("<Login />", () => {
   const defaultProps = {
     loading: false,
     error: false,
-    userLogIn: jest.fn(),
+    userLogIn: jest.fn()
   };
 
-  it('should render correctly', () => {
-    const tree = shallow(
-      <Login
-        {...defaultProps}
-      />
-    );
+  it("should render correctly", () => {
+    const tree = shallow(<Login {...defaultProps} />);
     expect(tree).toMatchSnapshot();
   });
-
 });

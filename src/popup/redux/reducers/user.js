@@ -1,13 +1,13 @@
 const initialState = {
-  username: '',
-  token: '',
+  username: "",
+  token: ""
 };
 
 const reducerAuth = (state = initialState, action) => {
-  if (action.type === 'GET_USER_INFO') {
+  if (action.type === "GET_USER_INFO") {
     return {
       ...state,
-      ...action.userInfo,
+      ...action.userInfo
     };
   }
 

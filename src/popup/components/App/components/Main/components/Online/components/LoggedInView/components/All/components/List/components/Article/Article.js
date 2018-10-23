@@ -1,54 +1,47 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
-import { postsDelete } from 'redux-popup/actions/posts';
-import './Article.css';
+import { postsDelete } from "redux-popup/actions/posts";
+import "./Article.css";
 
 export class Article extends Component {
-  state={
+  state = {
     deleteActive: false,
     deleteConfirmed: false,
-    focused: false,
-  }
+    focused: false
+  };
 
   linkRef = React.createRef();
 
-
   componentDidMount() {
-    addEventListener('keydown', this.handleKeyDownEvent);
+    addEventListener("keydown", this.handleKeyDownEvent);
   }
 
   componentWillUnmount() {
-    removeEventListener('keydown', this.handleKeyDownEvent);
+    removeEventListener("keydown", this.handleKeyDownEvent);
   }
 
   render() {
-    const {
-      privatePost,
-      unread,
-      href,
-      description,
-      time,
-      tags,
-    } = this.props;
+    const { privatePost, unread, href, description, time, tags } = this.props;
 
-    const timeFormated = time.substring(0, 10).replace(/-/g, '.');
-    const tagsFormated = tags.split(' ').map(tag => `#${tag}`).join(' ');
+    const timeFormated = time.substring(0, 10).replace(/-/g, ".");
+    const tagsFormated = tags
+      .split(" ")
+      .map(tag => `#${tag}`)
+      .join(" ");
     const { deleteActive, deleteConfirmed } = this.state;
 
     return (
-      <article className={`article ${privatePost ? 'article--private' : ''}`}>
-        {
-          deleteConfirmed && (
-            <div className="article__loading">
-              <div className="article__loading-icon" />
-            </div>
-          )
-        }
+      <article className={`article ${privatePost ? "article--private" : ""}`}>
+        {deleteConfirmed && (
+          <div className="article__loading">
+            <div className="article__loading-icon" />
+          </div>
+        )}
         <a
-          tabIndex={deleteConfirmed ? '-1' : '0'}
-          className={`article__url ${unread ? 'article__url--unread' : ''}`}
+          tabIndex={deleteConfirmed ? "-1" : "0"}
+          className={`article__url ${unread ? "article__url--unread" : ""}`}
           href={decodeURIComponent(href)}
           title={description}
           rel="noopener noreferrer"
@@ -63,16 +56,32 @@ export class Article extends Component {
           <div className="article__metatop">{href}</div>
           <div className="article__metabottom">
             <div className="article__metainfo">{timeFormated}</div>
-            {tags ? <div className="article__metainfo article__metainfo--tags">{tagsFormated}</div> : ''}
+            {tags ? (
+              <div className="article__metainfo article__metainfo--tags">
+                {tagsFormated}
+              </div>
+            ) : (
+              ""
+            )}
             <div className="article__metainfo">
               {deleteActive && (
-              <>
-                <span className="article__cancel" onClick={this.handleCancelClick}>{chrome.i18n.getMessage('popupArticleButtonCancel')}</span>
-                <span className="article__separator">/</span>
-              </>
+                <>
+                  <span
+                    className="article__cancel"
+                    onClick={this.handleCancelClick}
+                  >
+                    {chrome.i18n.getMessage("popupArticleButtonCancel")}
+                  </span>
+                  <span className="article__separator">/</span>
+                </>
               )}
               {!deleteConfirmed && (
-                <span className="article__delete" onClick={this.handleDeleteClick}>{chrome.i18n.getMessage('popupArticleButtonDelete')}</span>
+                <span
+                  className="article__delete"
+                  onClick={this.handleDeleteClick}
+                >
+                  {chrome.i18n.getMessage("popupArticleButtonDelete")}
+                </span>
               )}
             </div>
           </div>
@@ -100,57 +109,62 @@ export class Article extends Component {
     const { href, description, extended, postsDelete } = this.props;
     if (this.state.deleteActive) {
       this.setState({
-        deleteConfirmed: true,
+        deleteConfirmed: true
       });
       postsDelete(href, description, extended);
     }
 
     this.setState(state => {
       return {
-        deleteActive: !state.deleteActive,
+        deleteActive: !state.deleteActive
       };
     });
-  }
+  };
 
   handleCancelClick = () => {
     this.setState(state => {
       return {
-        deleteActive: !state.deleteActive,
+        deleteActive: !state.deleteActive
       };
     });
-  }
+  };
 
   handleOnFocusLink = () => {
     this.setState({
-      focused: true,
+      focused: true
     });
-  }
+  };
 
   handleOnBlursLink = () => {
     this.setState({
-      focused: false,
+      focused: false
     });
-  }
+  };
 
   handleKeyDownEvent = e => {
     const { href, description, extended, postsDelete } = this.props;
 
     if ((e.ctrlKey || e.metaKey) && e.keyCode === 8 && this.state.focused) {
       this.linkRef.current.blur();
-      this.setState(state => ({
-        deleteActive: true,
-        deleteConfirmed: true,
-      }), () => postsDelete(href, description, extended));
-    }
-    else if (e.keyCode === 13 && (e.ctrlKey || e.metaKey) && this.state.focused) {
+      this.setState(
+        state => ({
+          deleteActive: true,
+          deleteConfirmed: true
+        }),
+        () => postsDelete(href, description, extended)
+      );
+    } else if (
+      e.keyCode === 13 &&
+      (e.ctrlKey || e.metaKey) &&
+      this.state.focused
+    ) {
       e.preventDefault();
       chrome.tabs.create({
         url: this.props.href,
-        active: false,
+        active: false
       });
     }
-  }
-
+  };
 }
 
 Article.propTypes = {
@@ -161,11 +175,15 @@ Article.propTypes = {
   extended: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
-  postsDelete: PropTypes.func.isRequired,
+  postsDelete: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = dispatch => ({
-  postsDelete: (href, title, description) => dispatch(postsDelete(href, title, description)),
+  postsDelete: (href, title, description) =>
+    dispatch(postsDelete(href, title, description))
 });
 
-export default connect(null, mapDispatchToProps)(Article);
+export default connect(
+  null,
+  mapDispatchToProps
+)(Article);

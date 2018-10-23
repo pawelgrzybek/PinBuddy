@@ -1,24 +1,23 @@
-const API = 'https://api.pinboard.in/v1/';
+const API = "https://api.pinboard.in/v1/";
 
 export const userLoadingShowAction = () => ({
-  type: 'LOADING_SHOW',
+  type: "LOADING_SHOW"
 });
 
 export const userLoadingHideAction = () => ({
-  type: 'LOADING_HIDE',
+  type: "LOADING_HIDE"
 });
 
 export const userErrorShowAction = () => ({
-  type: 'ERROR_SHOW',
+  type: "ERROR_SHOW"
 });
 
 export const userErrorHideAction = () => ({
-  type: 'ERROR_HIDE',
+  type: "ERROR_HIDE"
 });
 
 export const userLogInAction = userToken => {
   return dispatch => {
-
     dispatch(userLoadingShowAction());
     dispatch(userErrorHideAction());
 
@@ -26,16 +25,16 @@ export const userLogInAction = userToken => {
       .then(data => data.json())
       .then(dataJSON => {
         if (dataJSON.result) {
-          const [username, token] = userToken.split(':');
+          const [username, token] = userToken.split(":");
           chrome.storage.local.set(
             {
               username,
-              token,
+              token
             },
             () => {
               dispatch(userLoadingHideAction());
               dispatch({
-                type: 'ADD_USERNAME',
+                type: "ADD_USERNAME",
                 username
               });
             }
@@ -46,15 +45,12 @@ export const userLogInAction = userToken => {
           fetch(`${API}posts/all?format=json&auth_token=${userToken}`)
             .then(dataPosts => dataPosts.json())
             .then(posts => {
-              chrome.storage.local.set(
-                {
-                  posts,
-                  postsFetched: now,
-                }
-              );
+              chrome.storage.local.set({
+                posts,
+                postsFetched: now
+              });
             });
-        }
-        else {
+        } else {
           dispatch(userLoadingHideAction());
           dispatch(userErrorShowAction());
         }
@@ -68,11 +64,11 @@ export const userLogInAction = userToken => {
 
 export const userFetchFromChromeStorageAction = () => {
   return dispatch => {
-    chrome.storage.local.get(['username'], username => {
+    chrome.storage.local.get(["username"], username => {
       if (username.username) {
         dispatch({
-          type: 'GET_USERNAME',
-          username,
+          type: "GET_USERNAME",
+          username
         });
       }
     });
@@ -81,6 +77,6 @@ export const userFetchFromChromeStorageAction = () => {
 
 export const userLogOutAction = () => {
   return dispatch => {
-    chrome.storage.local.clear(() => dispatch({ type: 'LOG_OUT' }));
+    chrome.storage.local.clear(() => dispatch({ type: "LOG_OUT" }));
   };
 };

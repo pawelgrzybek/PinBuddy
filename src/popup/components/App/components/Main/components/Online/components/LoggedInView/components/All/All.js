@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
-import { postsGet } from 'redux-popup/actions/posts';
-import Filters from './components/Filters';
-import List from './components/List';
-import './All.css';
+import { postsGet } from "redux-popup/actions/posts";
+import Filters from "./components/Filters";
+import List from "./components/List";
+import "./All.css";
 
 export class All extends Component {
   state = {
-    keyword: '',
+    keyword: "",
     privatePost: false,
     publicPost: false,
     untagged: false,
-    unread: false,
-  }
+    unread: false
+  };
 
   componentDidMount() {
     if (!this.props.posts.length) {
@@ -23,24 +23,23 @@ export class All extends Component {
   }
 
   render() {
-    return !!this.props.posts.length && (
-      <div className="all">
-        <Filters
-          privatePost={this.state.privatePost}
-          publicPost={this.state.publicPost}
-          unread={this.state.unread}
-          untagged={this.state.untagged}
-          updateKeyword={this.updateKeyword}
-          updatePrivatePost={this.updatePrivatePost}
-          updatePublicPost={this.updatePublicPost}
-          updateUnread={this.updateUnread}
-          updateUntagged={this.updateUntagged}
-        />
-        <List
-          posts={this.props.posts}
-          filters={this.state}
-        />
-      </div>
+    return (
+      !!this.props.posts.length && (
+        <div className="all">
+          <Filters
+            privatePost={this.state.privatePost}
+            publicPost={this.state.publicPost}
+            unread={this.state.unread}
+            untagged={this.state.untagged}
+            updateKeyword={this.updateKeyword}
+            updatePrivatePost={this.updatePrivatePost}
+            updatePublicPost={this.updatePublicPost}
+            updateUnread={this.updateUnread}
+            updateUntagged={this.updateUntagged}
+          />
+          <List posts={this.props.posts} filters={this.state} />
+        </div>
+      )
     );
   }
 
@@ -48,58 +47,61 @@ export class All extends Component {
     this.setState(state => {
       return {
         privatePost: !state.privatePost,
-        publicPost: false,
+        publicPost: false
       };
     });
-  }
+  };
 
   updatePublicPost = () => {
     this.setState(state => {
       return {
         publicPost: !state.publicPost,
-        privatePost: false,
+        privatePost: false
       };
     });
-  }
+  };
 
   updateUnread = () => {
     this.setState(state => {
       return {
-        unread: !state.unread,
+        unread: !state.unread
       };
     });
-  }
+  };
 
   updateUntagged = () => {
     this.setState(state => {
       return {
-        untagged: !state.untagged,
+        untagged: !state.untagged
       };
     });
-  }
+  };
 
   updateKeyword = e => {
     this.setState({
-      keyword: e.target.value,
+      keyword: e.target.value
     });
-  }
+  };
 }
 
 All.propTypes = {
   posts: PropTypes.array.isRequired,
-  postsGet: PropTypes.func.isRequired,
+  postsGet: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    posts: state.posts,
+    posts: state.posts
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    postsGet: () => dispatch(postsGet()),
+    postsGet: () => dispatch(postsGet())
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(All);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(All);

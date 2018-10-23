@@ -1,28 +1,22 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React from "react";
+import { shallow } from "enzyme";
 
-import List from '../List';
+import List from "../List";
 
-describe('<List />', () => {
-
+describe("<List />", () => {
   const defaultProps = {
     posts: [],
     filters: {
-      keyword: '',
+      keyword: "",
       unread: true,
       untagged: true,
       privatePost: true,
-      publicPost: true,
-    },
+      publicPost: true
+    }
   };
 
-  it('should render correctly', () => {
-    const tree = shallow(
-      <List
-        {...defaultProps}
-      />
-    );
+  it("should render correctly", () => {
+    const tree = shallow(<List {...defaultProps} />);
     expect(tree).toMatchSnapshot();
   });
-
 });

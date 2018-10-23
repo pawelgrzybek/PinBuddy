@@ -1,30 +1,24 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React from "react";
+import { shallow } from "enzyme";
 
-import { Options } from '../Options';
+import { Options } from "../Options";
 
-describe('<Options />', () => {
-
+describe("<Options />", () => {
   const defaultProps = {
-    username: 'pinbuddy',
+    username: "pinbuddy",
     options: {
-      defaultView: 'all',
+      defaultView: "all",
       privateCheckboxByDefault: false,
       toReadChecboxByDefault: false,
-      enableSystemNotifications: false,
+      enableSystemNotifications: false
     },
     userLogOut: jest.fn(),
     fetchOptions: jest.fn(),
-    optionsUpdate: jest.fn(),
+    optionsUpdate: jest.fn()
   };
 
-  it('should render correctly', () => {
-    const tree = shallow(
-      <Options
-        {...defaultProps}
-      />
-    );
+  it("should render correctly", () => {
+    const tree = shallow(<Options {...defaultProps} />);
     expect(tree).toMatchSnapshot();
   });
-
 });

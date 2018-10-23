@@ -1,22 +1,16 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React from "react";
+import { shallow } from "enzyme";
 
-import { Logo } from '../Logo';
+import { Logo } from "../Logo";
 
-describe('<Logo />', () => {
-
+describe("<Logo />", () => {
   const defaultProps = {
-    username: 'pibuddy',
-    online: true,
+    username: "pibuddy",
+    online: true
   };
 
-  it('should render correctly', () => {
-    const tree = shallow(
-      <Logo
-        {...defaultProps}
-      />
-    );
+  it("should render correctly", () => {
+    const tree = shallow(<Logo {...defaultProps} />);
     expect(tree).toMatchSnapshot();
   });
-
 });

@@ -1,20 +1,23 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
-import { userLogOutAction } from 'redux-options/actions/user';
-import { optionsUpdateAction, fetchOptionsAction } from 'redux-options/actions/options';
-import { Paragraph, Button, Checkbox, Select } from 'theme';
+import { userLogOutAction } from "redux-options/actions/user";
+import {
+  optionsUpdateAction,
+  fetchOptionsAction
+} from "redux-options/actions/options";
+import { Paragraph, Button, Checkbox, Select } from "theme";
 
 const defaultViewOptions = [
   {
-    value: 'all',
-    text: chrome.i18n.getMessage('optionsDefaultViewAllText'),
+    value: "all",
+    text: chrome.i18n.getMessage("optionsDefaultViewAllText")
   },
   {
-    value: 'add',
-    text: chrome.i18n.getMessage('optionsDefaultViewAddText'),
-  },
+    value: "add",
+    text: chrome.i18n.getMessage("optionsDefaultViewAddText")
+  }
 ];
 
 export class Options extends Component {
@@ -28,13 +31,16 @@ export class Options extends Component {
       defaultView,
       privateCheckboxByDefault,
       toReadChecboxByDefault,
-      enableSystemNotifications,
+      enableSystemNotifications
     } = this.props.options;
     return (
       <>
-        <Paragraph innerHTML t={chrome.i18n.getMessage('optionsWelcomeMessage', [username])} />
+        <Paragraph
+          innerHTML
+          t={chrome.i18n.getMessage("optionsWelcomeMessage", [username])}
+        />
         <Button
-          t={chrome.i18n.getMessage('optionsLogOut')}
+          t={chrome.i18n.getMessage("optionsLogOut")}
           onClick={this.onCickLogOutButton}
         />
 
@@ -42,7 +48,7 @@ export class Options extends Component {
 
         <Select
           id="defaultView"
-          label={chrome.i18n.getMessage('optionsDefaultView')}
+          label={chrome.i18n.getMessage("optionsDefaultView")}
           onChange={this.handleSelectChange}
           options={defaultViewOptions}
           selected={defaultView}
@@ -50,21 +56,21 @@ export class Options extends Component {
 
         <Checkbox
           id="privateCheckboxByDefault"
-          label={chrome.i18n.getMessage('optionsPrivateCheckboxByDefault')}
+          label={chrome.i18n.getMessage("optionsPrivateCheckboxByDefault")}
           onChange={this.handleCheckboxChange}
           checked={privateCheckboxByDefault}
         />
 
         <Checkbox
           id="toReadChecboxByDefault"
-          label={chrome.i18n.getMessage('optionsToReadChecboxByDefault')}
+          label={chrome.i18n.getMessage("optionsToReadChecboxByDefault")}
           onChange={this.handleCheckboxChange}
           checked={toReadChecboxByDefault}
         />
 
         <Checkbox
           id="enableSystemNotifications"
-          label={chrome.i18n.getMessage('optionsEnableSystemNotifications')}
+          label={chrome.i18n.getMessage("optionsEnableSystemNotifications")}
           onChange={this.handleCheckboxChange}
           checked={enableSystemNotifications}
         />
@@ -72,12 +78,48 @@ export class Options extends Component {
         <hr />
 
         <ul>
-          <li><code>{navigator.platform === 'MacIntel' ? '⌥ + p' : 'Alt + p'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionToggle') }</li>
-          <li><code>{navigator.platform === 'MacIntel' ? '⌥ + 1' : 'Alt + 1'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionGoToAll') }</li>
-          <li><code>{navigator.platform === 'MacIntel' ? '⌥ + 2' : 'Alt + 2'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionGoToAdd') }</li>
-          <li><code>{navigator.platform === 'MacIntel' ? '⌘ + Enter' : 'Ctrl + Enter'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionAddBookmark') }</li>
-          <li><code>{navigator.platform === 'MacIntel' ? '⌘ + Enter' : 'Ctrl + Enter'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionOpenInBackground') }</li>
-          <li><code>{navigator.platform === 'MacIntel' ? '⌘ + Backspace' : 'Ctrl + Backspace'}</code> - { chrome.i18n.getMessage('optionsShortcutDescriptionDeleteBookmark') }</li>
+          <li>
+            <code>
+              {navigator.platform === "MacIntel" ? "⌥ + p" : "Alt + p"}
+            </code>{" "}
+            - {chrome.i18n.getMessage("optionsShortcutDescriptionToggle")}
+          </li>
+          <li>
+            <code>
+              {navigator.platform === "MacIntel" ? "⌥ + 1" : "Alt + 1"}
+            </code>{" "}
+            - {chrome.i18n.getMessage("optionsShortcutDescriptionGoToAll")}
+          </li>
+          <li>
+            <code>
+              {navigator.platform === "MacIntel" ? "⌥ + 2" : "Alt + 2"}
+            </code>{" "}
+            - {chrome.i18n.getMessage("optionsShortcutDescriptionGoToAdd")}
+          </li>
+          <li>
+            <code>
+              {navigator.platform === "MacIntel" ? "⌘ + Enter" : "Ctrl + Enter"}
+            </code>{" "}
+            - {chrome.i18n.getMessage("optionsShortcutDescriptionAddBookmark")}
+          </li>
+          <li>
+            <code>
+              {navigator.platform === "MacIntel" ? "⌘ + Enter" : "Ctrl + Enter"}
+            </code>{" "}
+            -{" "}
+            {chrome.i18n.getMessage(
+              "optionsShortcutDescriptionOpenInBackground"
+            )}
+          </li>
+          <li>
+            <code>
+              {navigator.platform === "MacIntel"
+                ? "⌘ + Backspace"
+                : "Ctrl + Backspace"}
+            </code>{" "}
+            -{" "}
+            {chrome.i18n.getMessage("optionsShortcutDescriptionDeleteBookmark")}
+          </li>
         </ul>
       </>
     );
@@ -85,22 +127,21 @@ export class Options extends Component {
 
   onCickLogOutButton = () => {
     this.props.userLogOut();
-  }
+  };
 
   handleSelectChange = e => {
     const { id, selectedIndex } = e.target;
     this.props.optionsUpdate({
-      [id]: defaultViewOptions[selectedIndex].value,
+      [id]: defaultViewOptions[selectedIndex].value
     });
-  }
+  };
 
   handleCheckboxChange = e => {
     const { id, checked } = e.target;
     this.props.optionsUpdate({
-      [id]: checked,
+      [id]: checked
     });
-  }
-
+  };
 }
 
 Options.propTypes = {
@@ -109,17 +150,17 @@ Options.propTypes = {
     defaultView: PropTypes.string.isRequired,
     privateCheckboxByDefault: PropTypes.bool.isRequired,
     toReadChecboxByDefault: PropTypes.bool.isRequired,
-    enableSystemNotifications: PropTypes.bool.isRequired,
+    enableSystemNotifications: PropTypes.bool.isRequired
   }).isRequired,
   userLogOut: PropTypes.func.isRequired,
   fetchOptions: PropTypes.func.isRequired,
-  optionsUpdate: PropTypes.func.isRequired,
+  optionsUpdate: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state, ownProps) => {
   return {
     username: state.user.username,
-    options: state.options,
+    options: state.options
   };
 };
 
@@ -127,8 +168,11 @@ const mapDispatchToProps = dispatch => {
   return {
     userLogOut: () => dispatch(userLogOutAction()),
     fetchOptions: () => dispatch(fetchOptionsAction()),
-    optionsUpdate: option => dispatch(optionsUpdateAction(option)),
+    optionsUpdate: option => dispatch(optionsUpdateAction(option))
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Options);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Options);

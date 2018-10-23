@@ -1,20 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './Select.css';
+import "./Select.css";
 
-const Select = ({
-  id,
-  label,
-  onChange,
-  options,
-  selected,
-}) => (
+const Select = ({ id, label, onChange, options, selected }) => (
   <div className="select">
-    <label
-      className="select__label"
-      htmlFor={id}
-    >
+    <label className="select__label" htmlFor={id}>
       {label}
     </label>
     <select
@@ -37,7 +28,7 @@ Select.propTypes = {
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   options: PropTypes.array.isRequired,
-  selected: PropTypes.string.isRequired,
+  selected: PropTypes.string.isRequired
 };
 
 export default Select;

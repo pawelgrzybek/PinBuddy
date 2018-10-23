@@ -1,20 +1,15 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React from "react";
+import { shallow } from "enzyme";
 
-import { Form } from '../Form';
+import { Form } from "../Form";
 
-describe('<Form />', () => {
+describe("<Form />", () => {
   const defaultProps = {
-    postsAdd: jest.fn(),
+    postsAdd: jest.fn()
   };
 
-  it('should render correctly', () => {
-    const tree = shallow(
-      <Form
-        {...defaultProps}
-      />
-    );
+  it("should render correctly", () => {
+    const tree = shallow(<Form {...defaultProps} />);
     expect(tree).toMatchSnapshot();
   });
-
 });

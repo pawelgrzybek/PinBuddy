@@ -1,10 +1,9 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React from "react";
+import { shallow } from "enzyme";
 
-import Filters from '../Filters';
+import Filters from "../Filters";
 
-describe('<Filters />', () => {
-
+describe("<Filters />", () => {
   const defaultProps = {
     privatePost: true,
     publicPost: true,
@@ -14,16 +13,11 @@ describe('<Filters />', () => {
     updatePrivatePost: jest.fn(),
     updatePublicPost: jest.fn(),
     updateUnread: jest.fn(),
-    updateUntagged: jest.fn(),
+    updateUntagged: jest.fn()
   };
 
-  it('should render correctly', () => {
-    const tree = shallow(
-      <Filters
-        {...defaultProps}
-      />
-    );
+  it("should render correctly", () => {
+    const tree = shallow(<Filters {...defaultProps} />);
     expect(tree).toMatchSnapshot();
   });
-
 });

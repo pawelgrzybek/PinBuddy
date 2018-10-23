@@ -1,6 +1,6 @@
-import React from 'react';
-import { Paragraph } from 'theme';
-import './Loading.css';
+import React from "react";
+import { Paragraph } from "theme";
+import "./Loading.css";
 
 const Loading = props => (
   <div className="loading">

@@ -1,14 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './Link.css';
+import "./Link.css";
 
 const Link = ({ t, url, title, blank }) => (
   <a
     href={url}
     title={title}
-    target={blank ? '_blank' : '_self'}
-    rel={blank ? 'noopener noreferrer' : ''}
+    target={blank ? "_blank" : "_self"}
+    rel={blank ? "noopener noreferrer" : ""}
     className="link"
   >
     {t}
@@ -19,11 +19,11 @@ Link.propTypes = {
   t: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  blank: PropTypes.bool,
+  blank: PropTypes.bool
 };
 
 Link.defaultProps = {
-  blank: false,
+  blank: false
 };
 
 export default Link;

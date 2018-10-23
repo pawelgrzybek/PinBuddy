@@ -1,23 +1,17 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React from "react";
+import { shallow } from "enzyme";
 
-import { LoggedInView } from '../LoggedInView';
+import { LoggedInView } from "../LoggedInView";
 
-describe('<LoggedInView />', () => {
-
+describe("<LoggedInView />", () => {
   const defaultProps = {
     loading: false,
     error: false,
-    view: 'all',
+    view: "all"
   };
 
-  it('should render correctly', () => {
-    const tree = shallow(
-      <LoggedInView
-        {...defaultProps}
-      />
-    );
+  it("should render correctly", () => {
+    const tree = shallow(<LoggedInView {...defaultProps} />);
     expect(tree).toMatchSnapshot();
   });
-
 });
