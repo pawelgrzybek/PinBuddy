@@ -30,4 +30,5 @@
 - Thanks to [Xavier Marquès](https://github.com/wolframtheta) and [oriolhub](https://github.com/oriolhub) for the Catalan translation
 - Thanks to [Tom Veldman](https://github.com/progBorg) for the Dutch translation
 - Thanks to [Ana Gilda Rodrigues](https://github.com/AnaGilda) for the Portuguese translation
+- Thanks to [Nikita Rudenko](https://github.com/nick-rudenko) for the Ukrainian translation
 - Potentially you…
