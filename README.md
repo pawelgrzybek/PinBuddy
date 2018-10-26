@@ -16,7 +16,7 @@
 
 - Thanks to [Miłosz Kaniuk](https://www.behance.net/miloszkanibf79) for great logo and UI / UX recommendations
 - Thanks to [Gregory Assasie](https://twitter.com/gregory_jarvez) for dev tips
-- Thanks to [Zuzanna Rupińska](https://www.instagram.com/zuzanna.rupinska/) for brewing a coffee for me during development  :-*
+- Thanks to [Zuzanna Rupińska](https://www.instagram.com/zuzanna.rupinska/) for brewing a coffee for me during development :-\*
 - Thanks to [Lionel Foucambert](https://github.com/LionelFW) for the French translation
 - Thanks to [Christian](https://github.com/chmartinez) for the Spanish translation
 - Thanks to [Fredrika](https://github.com/femtioelva) for the Swedish translation
@@ -31,4 +31,5 @@
 - Thanks to [Tom Veldman](https://github.com/progBorg) for the Dutch translation
 - Thanks to [Ana Gilda Rodrigues](https://github.com/AnaGilda) for the Portuguese translation
 - Thanks to [Nikita Rudenko](https://github.com/nick-rudenko) for the Ukrainian translation
+- Thanks to [Yotam Salmon](https://github.com/yotam180) for the Hebrew translation
 - Potentially you…
