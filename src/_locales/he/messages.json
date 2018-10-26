@@ -1,0 +1,194 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "נהל את כרטיסיות Pinboard שלך והוסף חדשות בקלות"
+  },
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "כל הזכויות שמורות © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. לבעיות, מענות ובקשות: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek בטוויטר\">טוויטר</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek בגיטהאב\">גיטהאב</a>."
+  },
+  "optionsLoginManual": {
+    "message": "מפתח התחברות הוא מזהה קצר מהצורה \"username:TOKEN\" המאפשר ל-PinBuddy לשלוח בקשות API מבלי לבקש הרשאות כל פעם מחדש. תוכל למצוא את מפתח ההתחברות שלך כאן: <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">דף ההגדרות תחת הכרטיסייה 'סיסמה'</a>."
+  },
+  "optionsLoginError": {
+    "message": "שגיאה. אנא וודא שאתה משתמש במפתח ההתחברות הנכון ושחיבור האינטרנט שלך יציב."
+  },
+  "optionsLoginFormLabel": {
+    "message": "מפתח API"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "שם משתמש:מפתח"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "שלח"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "גלה עוד ב<a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">סיור Pinboard</a> הרשמי."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard הוא ארכיון אישי בעבור דברים שמצאת באינטרנט ולא תרצה לשכוח."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "בדיוק — \"מחובר\". אנא בדוק שיש לך חיבור אינטרנט יציב."
+  },
+  "optionsWelcomeMessage": {
+    "message": "היי. אתה מחובר כ$name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "דני"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "יציאה"
+  },
+  "optionsDefaultView": {
+    "message": "ברירת מחדל"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "הכל"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "הוסף קישור"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "סימון \"אישי\" כברירת מחדל (בהוספת קישור)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "סימון \"לקריאה\" כברירת מחדל (בהוספת קישור)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "הפעל התראות מערכת"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "הראה או הסתר את PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "לתצוגה הכללית"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "להוספת תצוגה חדשה"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "הוסף כרטיסייה (הוסף תצוגה)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "פתח כרטיסייה ברקע (תצוגה כללית)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "מחק כרטיסייה (תצוגה כללית)"
+  },
+
+  "popupOpenYourPinboardProfile": {
+    "message": "פתח את פרופיל הPinboard שלך"
+  },
+  "popupBrowseAllTitle": {
+    "message": "ראה הכל"
+  },
+  "popupBrowseAllText": {
+    "message": "הכל"
+  },
+  "popupAddURLTitle": {
+    "message": "הוסף קישור"
+  },
+  "popupAddURLText": {
+    "message": "הוסף קישור"
+  },
+  "popupErrorMessage": {
+    "message": "שגיאה. אנא בדוק שמפתח ההתחברות שלך תקין, ושחיבור האינטרנט שלך ו<a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">סטטוס הPinboard API</a> שלך יציבים."
+  },
+  "popupErrorButtonMessage": {
+    "message": "לדף האפשרויות"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "חיפוש"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "חיפוש מושג"
+  },
+  "popupFiltersFilterButton": {
+    "message": "פילטרים"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "פרטי"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "ציבורי"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "לא נקרא"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "ללא תג"
+  },
+  "popupArticleButtonCancel": {
+    "message": "ביטול"
+  },
+  "popupArticleButtonDelete": {
+    "message": "מחיקה"
+  },
+  "popupAddTitleLabel": {
+    "message": "כותרת"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "לכל היותר 255 תווים"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "תיאור"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "לכל היותר 65536 תווים"
+  },
+  "popupAddTagsLabel": {
+    "message": "תגים (הפרד באמצעות רווח)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "לכל היותר 255 תווים"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "פרטי"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "קרא מאוחר יותר"
+  },
+  "popupAddBookmarkButton": {
+    "message": "הוסף כרטיסייה"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "דריסת כרטיסייה"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "מפתח התחברות הוא מזהה קצר מהצורה \"username:TOKEN\" המאפשר ל-PinBuddy לשלוח בקשות API מבלי לבקש הרשאות כל פעם מחדש. תוכל למצוא את מפתח ההתחברות שלך כאן: <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">דף ההגדרות תחת הכרטיסייה 'סיסמה'</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "עבור לדף האפשרויות להתחברות"
+  },
+  "popupOfflineMessageOne": {
+    "message": "גלה את <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">סיור Pinboard</a> הרשמי."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard הוא ארכיון אישי בעבור דברים שמצאת באינטרנט ולא תרצה לשכוח."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "בדיוק — \"מחובר\". אנא בדוק שחיבור האינטרנט שלך יציב."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "פרוטוקולים מורשים: <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> and <code>file</code>. לצערנו, לא תוכל לשמור את הקישור הזה."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "קרא עוד במסמכים של Pinboard API"
+  },
+
+  "notificationSaveSucessful": {
+    "message": "הקישור נשמר בהצלחה"
+  },
+  "notificationDeleteSucessful": {
+    "message": "הקישור נמחק בהצלחה"
+  }
+}
