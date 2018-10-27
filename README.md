@@ -32,4 +32,5 @@
 - Thanks to [Ana Gilda Rodrigues](https://github.com/AnaGilda) for the Portuguese translation
 - Thanks to [Nikita Rudenko](https://github.com/nick-rudenko) for the Ukrainian translation
 - Thanks to [Yotam Salmon](https://github.com/yotam180) for the Hebrew translation
+- Thanks to [murat emir cabaroğlu](https://github.com/mrTmr12) for the Turkish translation
 - Potentially you…
