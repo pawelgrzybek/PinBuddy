@@ -1,0 +1,194 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Jelajahi bookmark Pinboard Anda dan tambahkan yang baru dengan mudah."
+  },
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Hak Cipta © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Masalah & permintaan fitur: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek on Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek di GitHub\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "Token otentikasi adalah pengenal buram singkat dalam bentuk \"username:TOKEN\" yang memungkinkan PinBuddy membuat panggilan API tanpa pernah meminta kata sandi Anda. Anda dapat menemukan token API pada <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">halaman pengaturan di bawah tab kata sandi</a>."
+  },
+  "optionsLoginError": {
+    "message": "Error. Pastikan Anda menggunakan token yang benar dan koneksi internet Anda stabil."
+  },
+  "optionsLoginFormLabel": {
+    "message": "API Token"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "username:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Kirim"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Lihat <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">tur Pinboard</a> resmi."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard adalah arsip pribadi untuk hal-hal yang Anda temukan online dan tidak ingin lupa."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Tepat — \"online\". Pastikan Anda memiliki koneksi internet yang stabil."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Hai. Anda masuk sebagai $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Keluar"
+  },
+  "optionsDefaultView": {
+    "message": "Tampilan Default"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "semua"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "tambah url"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Pribadi\" kotak centang secara default (tambahkan tampilan url)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"Untuk membaca\" kotak centang secara default (tambahkan tampilan url)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Aktifkan notifikasi sistem"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "tampilkan / sembunyikan PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "pergi ke semua tampilan"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "pergi ke tambahkan tampilan"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "tambah bookmark (tambahkan tampilan)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "buka bookmark di latar belakang (semua tampilan)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "hapus bookmark (semua tampilan)"
+  },
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Buka Profil Pinboard Anda"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Jelajahi semua"
+  },
+  "popupBrowseAllText": {
+    "message": "semua"
+  },
+  "popupAddURLTitle": {
+    "message": "Tambahkan URL"
+  },
+  "popupAddURLText": {
+    "message": "tambahkan url"
+  },
+  "popupErrorMessage": {
+    "message": "Terjadi kesalahan. Harap pastikan bahwa token Anda valid, dan pastikan koneksi internet Anda dan <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API status</a> stabil."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Pergi ke halaman opsi"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Cari"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Istilah pencarian"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Filter"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Pribadi"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Publik"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Belum dibaca"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Untagged"
+  },
+  "popupArticleButtonCancel": {
+    "message": "batal"
+  },
+  "popupArticleButtonDelete": {
+    "message": "hapus"
+  },
+  "popupAddTitleLabel": {
+    "message": "Judul"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Maks. 255 karakter"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Deskripsi"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "Maks. 65536 karakter"
+  },
+  "popupAddTagsLabel": {
+    "message": "Tag (dipisahkan dengan spasi)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "Maks 255 karakter"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "pribadi"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "baca nanti"
+  },
+  "popupAddBookmarkButton": {
+    "message": "tambahkan bookmark"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "timpa bookmark"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "Token otentikasi adalah pengenal buram singkat dalam bentuk \"username:TOKEN\" yang memungkinkan PinBuddy membuat panggilan API tanpa pernah meminta kata sandi Anda. Anda dapat menemukan token API pada <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">halaman pengaturan di bawah tab kata sandi </a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Pergi ke halaman opsi untuk masuk"
+  },
+  "popupOfflineMessageOne": {
+    "message": "Lihat <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">tur Pinboard</a> resmi."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard adalah arsip pribadi untuk hal-hal yang Anda temukan online dan tidak ingin lupa."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Tepat — \"online\". Pastikan Anda memiliki koneksi internet yang stabil, silakan."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Protokol yang diizinkan adalah <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> dan <code>file</code>. Sayangnya Anda tidak dapat menyimpan URL ini."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Cari tahu lebih lanjut di Dokumentasi API Pinboard"
+  },
+
+  "notificationSaveSucessful": {
+    "message": "URL berhasil disimpan"
+  },
+  "notificationDeleteSucessful": {
+    "message": "URL berhasil dihapus"
+  }
+}
