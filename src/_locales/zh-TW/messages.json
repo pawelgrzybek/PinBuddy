@@ -1,0 +1,194 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "透過 Pinboard 輕鬆瀏覽並新增書籤。"
+  },
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a> 問題 & 功能 請求: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek у Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek на GitHub\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "認證 token 是個簡短的識別碼，格式為\"username:TOKEN\" 能讓 PinBuddy 發送 API 請求而不需要向您詢問您的密碼。 您可以在 <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">密碼分頁下方的設定頁面</a> 找到您的 API Token。"
+  },
+  "optionsLoginError": {
+    "message": "發生錯誤，請確認您使用正確的 token 並且有穩定的網路連線。"
+  },
+  "optionsLoginFormLabel": {
+    "message": "API Token"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "username:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "送出"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "查看官方<a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard 指南</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard 是個人化的封存工具，您可以用來保存您在網路上找到且不想遺忘的資訊"
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "確實 — \"連線\". 請確認您有穩定的網路連線"
+  },
+  "optionsWelcomeMessage": {
+    "message": "嗨. 您目前以 $name$ 登入",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "登出"
+  },
+  "optionsDefaultView": {
+    "message": "預設外觀"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "全部"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "新增 url"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"非公開\" 預設 checkbox (新增 url view)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"準備閱讀\" 預設 checkbox (新增 url view)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "啟用系統通知"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "顯示 / 隱藏 PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "前往全部頁面"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "前往新增頁面"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "新增書籤"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "在背景開啟書籤"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "刪除書籤"
+  },
+
+  "popupOpenYourPinboardProfile": {
+    "message": "開啟您的 Pinboard 檔案"
+  },
+  "popupBrowseAllTitle": {
+    "message": "瀏覽全部"
+  },
+  "popupBrowseAllText": {
+    "message": "全部"
+  },
+  "popupAddURLTitle": {
+    "message": "新增 URL 標題"
+  },
+  "popupAddURLText": {
+    "message": "新增 url 文字"
+  },
+  "popupErrorMessage": {
+    "message": "發生錯誤. 請確認您的 token 是有效的，且網路連接與<a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API 狀態</a>是穩定的"
+  },
+  "popupErrorButtonMessage": {
+    "message": "進入設定頁面"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "搜尋"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "搜尋關鍵字"
+  },
+  "popupFiltersFilterButton": {
+    "message": "過濾"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "不公開"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "公開"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "未讀"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "未標籤"
+  },
+  "popupArticleButtonCancel": {
+    "message": "取消"
+  },
+  "popupArticleButtonDelete": {
+    "message": "刪除"
+  },
+  "popupAddTitleLabel": {
+    "message": "標題"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "最多 255 字元"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "說明"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "最多 65536 字元"
+  },
+  "popupAddTagsLabel": {
+    "message": "標籤 (以空白分隔)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "最多 255 字元"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "不公開"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "稍後閱讀"
+  },
+  "popupAddBookmarkButton": {
+    "message": "新增書籤"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "覆蓋書籤"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "認證 token 是個簡短的識別碼，格式為\"username:TOKEN\" 能讓 PinBuddy 發送 API 請求而不需要向您詢問您的密碼。 您可以在 <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">密碼分頁下方的設定頁面</a> 找到您的 API Token。"
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "前往設定頁面來登入"
+  },
+  "popupOfflineMessageOne": {
+    "message": "查看官方 <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard 指南</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard 是個人化的封存工具，您可以用來保存您在網路上找到的不想遺忘的資訊"
+  },
+  "popupOfflineMessageTwo": {
+    "message": "確實 — \"連線\". 請確認您有穩定的網路連線"
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "允許使用的協定有<code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> and <code>file</code>. 抱歉您無法儲存此 URL."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "在 Pinboard API 文件中查看更多"
+  },
+
+  "notificationSaveSucessful": {
+    "message": "URL 成功儲存"
+  },
+  "notificationDeleteSucessful": {
+    "message": "URL 成功刪除"
+  }
+}
