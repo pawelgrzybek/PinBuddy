@@ -34,4 +34,5 @@
 - Thanks to [Yotam Salmon](https://github.com/yotam180) for the Hebrew translation
 - Thanks to [murat emir cabaroğlu](https://github.com/mrTmr12) for the Turkish translation
 - Thanks to [Jovan Ferryal E. F.](https://wecreative.co.id/) for the Indonesian translation
+- Thanks to [Aleš Jiránek](https://github.com/AlesJiranek) for the Czech translation
 - Potentially you…
