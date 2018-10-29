@@ -1,0 +1,194 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Procházejte vaše Pinboard záložky a snado přidávajte nové."
+  },
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Chyby & požadavky na funkcionalitu: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek na Twitteru\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek na GitHubu\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "Přihlašovací token je krátký identifikátor ve formátu \"uzivatelske-jmeno:TOKEN\" které umožňje PinBuddy volat API bez zadávání vašeho hesla. Váš osobní API token můžete nalézt na <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">stránce nastavení pod záložkou hesla</a>."
+  },
+  "optionsLoginError": {
+    "message": "Chyba. Ujistěte se prosím že je váš token správný a vaše připojení k internetu aktivní."
+  },
+  "optionsLoginFormLabel": {
+    "message": "API Token"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "uzivatelske-jmeno:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Odeslat"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Podívejte se na oficiální <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard nápovědu</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard je osobní archiv pro věci které najdete online a nechcete je zapomenout."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Přesně — \"online\". Ujistěte se prosím, že je vaše připojení k internetu aktivní."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Ahoj. Jste přihlášen jako $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pavel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Odhlásit se"
+  },
+  "optionsDefaultView": {
+    "message": "Základní zobrazení"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "vše"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "přidat url"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Soukromý\" zaškrtnout defaultně (obrazovka pro přidání url)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"Ke čtení\" zaškrtnout defaultně (obrazovka pro přidání url)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Povolit systémové notifikace"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "zobrazit / skrýt PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "obrazovka pro zobrazení všeho"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "přijít na obrazovku přidávání"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "přidat záložku (obrazovka pro přidání)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "otevřít záložku na pozadí (obrazovka pro zobraznení všeho)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "smazání záložky (obrazovka pro zobraznení všeho)"
+  },
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Otevřít váš Pinboard Profil"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Procházet vše"
+  },
+  "popupBrowseAllText": {
+    "message": "vše"
+  },
+  "popupAddURLTitle": {
+    "message": "Přidat URL"
+  },
+  "popupAddURLText": {
+    "message": "přidat url"
+  },
+  "popupErrorMessage": {
+    "message": "Vyskytla se chyba. jistěte se prosím že je váš token správný a vaše připojení k <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API</a> je stabilní."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Přejít na stránku nastavení"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Hledat"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Hledat výraz"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Filtry"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Soukromý"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Veřejný"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Nepřečtené"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Neotagované"
+  },
+  "popupArticleButtonCancel": {
+    "message": "zrušit"
+  },
+  "popupArticleButtonDelete": {
+    "message": "smazat"
+  },
+  "popupAddTitleLabel": {
+    "message": "Název"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Maximálně 255 znaků"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Popis"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "Maximálně 65536 znaků"
+  },
+  "popupAddTagsLabel": {
+    "message": "Tagy (oddělené mezerami)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "Maximálně 255 znaků"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "soukromý"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "číst později"
+  },
+  "popupAddBookmarkButton": {
+    "message": "přidat záložku"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "přepsat záložku"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "Přihlašovací token je krátký identifikátor ve formátu \"uzivatelske-jmeno:TOKEN\" které umožňje PinBuddy volat API bez zadávání vašeho hesla. Váš osobní API token můžete nalézt na <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">stránce nastavení pod záložkou hesla</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Přejít na stránku nastavení pro přihlášení"
+  },
+  "popupOfflineMessageOne": {
+    "message": "Podívejte se na oficiální <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard nápovědu</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard je osobní archiv pro věci které najdete online a nechcete je zapomenout."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Přesně — \"online\". Ujistěte se prosím, že je vaše připojení k internetu aktivní."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Povolené protokoly jsou <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> a <code>file</code>. Bohužel si nemůžete uložit toto URL."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Nalezněte více v Pinboard API dokumentaci"
+  },
+
+  "notificationSaveSucessful": {
+    "message": "URL úspěšně uložena"
+  },
+  "notificationDeleteSucessful": {
+    "message": "URL úspěšně smazána"
+  }
+}
