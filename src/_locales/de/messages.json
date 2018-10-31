@@ -16,7 +16,7 @@
     "message": "Ein Authentifizierungstoken ist ein kurzer formatierter Text in der Form \"username:TOKEN\". Dieser Token wird von PinBuddy verwendet um Anfragen abschicken zu können, ohne jedes mal nach dem Passwort zu fragen. Sie finden Ihren persönlichen Token <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">in den Einstellungen unterhalb des Passwort Reiters</a>."
   },
   "optionsLoginError": {
-    "message": "Es ist ein Fehler aufgetreten. Bitte prüfen Sie ob der eingegebene Token korrekt, sowie ob Ihre Internetverbindung stabil ist."
+    "message": "Es ist ein Fehler aufgetreten. Bitte überprüfen Sie ob der eingegebene Token korrekt, sowie ob Ihre Internetverbindung stabil ist."
   },
   "optionsLoginFormLabel": {
     "message": "API Token"
@@ -31,13 +31,13 @@
     "message": "Offizielle <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard Tour</a> besuchen."
   },
   "optionsOfflineMessageQuote": {
-    "message": "Pinboard ist ein persönliches Archiv für all die Dinge die Sie online finden, und nicht vergessen wollen."
+    "message": "Pinboard ist ein persönliches Archiv für alle Dinge die Sie online finden, und nicht vergessen wollen."
   },
   "optionsOfflineMessageTwo": {
     "message": "Exakt — \"online\".Bitte stellen Sie sicher, dass Sie eine stabile Internetverbindung haben."
   },
   "optionsWelcomeMessage": {
-    "message": "Hallo. Sie sind als $name$ eingeloggt.",
+    "message": "Hallo. Sie sind als $name$ angemeldet.",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -46,7 +46,7 @@
     }
   },
   "optionsLogOut": {
-    "message": "Ausloggen"
+    "message": "Abmelden"
   },
   "optionsDefaultView": {
     "message": "Standardansicht"
@@ -101,7 +101,7 @@
     "message": "URL hinzufügen"
   },
   "popupErrorMessage": {
-    "message": "Es ist ein Fehler aufgetreten. Bitte prüfen Sie ob der eingegebene Token korrekt ist, Ihre Internetverbindung stabil ist und die <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API</a> erreichbar ist."
+    "message": "Es ist ein Fehler aufgetreten. Bitte überprüfen Sie ob der eingegebene Token korrekt ist, Ihre Internetverbindung stabil ist und die <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API</a> erreichbar ist."
   },
   "popupErrorButtonMessage": {
     "message": "Einstellungsseite öffnen"
@@ -167,7 +167,7 @@
     "message": "Ein Authentifizierungstoken ist ein kurzer formatierter Text in der Form \"username:TOKEN\". Dieser Token wird von PinBuddy verwendet um Anfragen abschicken zu können, ohne jedes mal nach dem Passwort zu fragen. Sie finden Ihren persönlichen Token <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">in den Einstellungen unterhalb des Passwort Reiters</a>."
   },
   "popupLoggedOutViewButtonMessage": {
-    "message": "Einstellungssseite zum Einloggen öffnen"
+    "message": "Einstellungssseite zum Anmelden öffnen"
   },
   "popupOfflineMessageOne": {
     "message": "Offizielle <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard Tour</a> besuchen."
