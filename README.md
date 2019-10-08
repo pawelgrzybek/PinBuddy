@@ -36,4 +36,6 @@
 - Thanks to [Jovan Ferryal E. F.](https://wecreative.co.id/) for the Indonesian translation
 - Thanks to [Aleš Jiránek](https://github.com/AlesJiranek) for the Czech translation
 - Thanks to [Po Chun, Lu](https://github.com/Sirius207) for the traditional Chinese translation
+- Thanks to [giovannipessiva](https://github.com/giovannipessiva) for the Italian translation
+
 - Potentially you…
