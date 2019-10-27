@@ -1,0 +1,194 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Tilføj og gennemsøg nemt dine Pinboard-bogmærker."
+  },
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Feil, og forslag til nye funksjoner: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek på Twitter\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek på GitHub\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "En godkendelsestoken er en kort uigennemsigtig identifikator i formatet “brugernavn:TOKEN” som lar PinBuddy gjøre API-kall uten å spørre etter passordet ditt. Du finner API-tokenet på <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">side Indstillinger under fanen passord</a>."
+  },
+  "optionsLoginError": {
+    "message": "Der gik noget galt. Sørg for, at dit token er korrekt, og at din internetforbindelse er stabil."
+  },
+  "optionsLoginFormLabel": {
+    "message": "API-token"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "brugernavn:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Indsende"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Se den officielle <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard-introduktion</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard er et personligt arkiv over ting, du finder online, som du ikke vil glemme."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Præcis - “tilsluttet”. Sørg for, at du har en stabil internetforbindelse."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Hej. Du er logget ind som $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Log ud"
+  },
+  "optionsDefaultView": {
+    "message": "Standardvisning"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "alle"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "tilføj URL"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "“Privat” afkrydsningsfelt som standard (tilføj URL-visning)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "”Skal læses” afkrydsningsfelt som standard (tilføj URL-visning)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Tænd for systemadvarsler"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "vis / skjul PinBuddy"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "gå til oversigt"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "gå til tilføje visning"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "tilføj bogmærke (tilføj visning)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "åbent bogmærke i baggrunden (alle visninger)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "slet bogmærke (alle visninger)"
+  },
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Åbn din Pinboard-profil"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Gennemse alle"
+  },
+  "popupBrowseAllText": {
+    "message": "alle"
+  },
+  "popupAddURLTitle": {
+    "message": "tilføj URL"
+  },
+  "popupAddURLText": {
+    "message": "tilføj url"
+  },
+  "popupErrorMessage": {
+    "message": "Der gik noget galt. Sørg for, at dit token er korrekt, og at din internetforbindelse er stabil. Og at <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API-et</a> er oppe og køre."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Gå til indstillingssiden"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Søg"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Søgeord"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Filtre"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Privat"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Delt"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Ulæst"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Ikke markeret"
+  },
+  "popupArticleButtonCancel": {
+    "message": "afbryd"
+  },
+  "popupArticleButtonDelete": {
+    "message": "slet"
+  },
+  "popupAddTitleLabel": {
+    "message": "Tittel"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Maks 255 tegn"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Beskrivelse"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "Maks 65536 tegn"
+  },
+  "popupAddTagsLabel": {
+    "message": "Merkelapper (skilles med mellomrom)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "Max 255 tegn"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "privat"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "læs senere"
+  },
+  "popupAddBookmarkButton": {
+    "message": "tilføj bokmerke"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "tilsidesætte bogmærket"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "En autentificeringstoken er en kort uigennemsigtig identifikation i “brugernavn:TOKEN” -formatet, der giver PinBuddy mulighed for at foretage API-opkald uden at bede om din adgangskode. Du kan finde API-tokenet på <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\"> indstillingssiden under fanen passord</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Gå til indstillingssiden for at logge ind"
+  },
+  "popupOfflineMessageOne": {
+    "message": "Se den officielle <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard-introduktion</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard er et personligt arkiv over ting, du finder online, som du ikke vil glemme."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Præcis - “tilsluttet”. Sørg for, at du har en stabil internetforbindelse."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "Tilladte protokoller er <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> og <code>file</code>. Beklager, du kan ikke gemme denne URL."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Find ud af mere i Pinboard API-dokumentationen"
+  },
+
+  "notificationSaveSucessful": {
+    "message": "URL gemt"
+  },
+  "notificationDeleteSucessful": {
+    "message": "URL blev slettet"
+  }
+}
