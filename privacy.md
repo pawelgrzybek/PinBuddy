@@ -51,4 +51,4 @@ extension's Chrome Web Store listing.
 
 ## Contact
 
-Questions about this policy can be sent to **grzybecki@gmail.com**.
+Questions about this policy can be sent to **mail@pawelgrzybek.com**.
