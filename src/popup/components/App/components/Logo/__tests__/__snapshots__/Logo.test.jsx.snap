@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Logo /> > should not render when online is falsy 1`] = `ShallowWrapper {}`;
+
+exports[`<Logo /> > should not render when username is falsy 1`] = `ShallowWrapper {}`;
+
+exports[`<Logo /> > should render correctly 1`] = `ShallowWrapper {}`;

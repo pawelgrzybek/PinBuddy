@@ -5,7 +5,7 @@ const listenForIconChange = tab => {
     chrome.storage.local.get(["posts"], posts => {
       if (posts.posts) {
         const postExists = !!posts.posts.find(post => post.href === url);
-        chrome.browserAction.setIcon({
+        chrome.action.setIcon({
           path: postExists
             ? "/icons/icon-active-128.png"
             : "/icons/icon-128.png"
