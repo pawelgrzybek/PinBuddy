@@ -1,0 +1,194 @@
+{
+  "extensionName": {
+    "message": "PinBuddy"
+  },
+  "extensionDescription": {
+    "message": "Pinboard yer imlerinize göz atın ve yenilerini kolaylık  ekleyin."
+  },
+
+  "optionsTitle": {
+    "message": "PinBuddy"
+  },
+  "optionsFooter": {
+    "message": "Copyright © 2018 <a href=\"https://pawelgrzybek.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Pawel Grzybek\">Pawel Grzybek</a>. Sorunlar & öne çıkan istekler: <a href=\"https://twitter.com/pawelgrzybek\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Twitter'da Pawel Grzybek\">Twitter</a>, <a href=\"https://github.com/pawelgrzybek/pinbuddy/issues\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"GitHub'da Pawel Grzybek\">GitHub</a>."
+  },
+  "optionsLoginManual": {
+    "message": "Kimlik doğrulama token'ı şeffaf bir kimlik tanıyıcıdır  \"username:TOKEN\" ve PinBuddy'nin sizden parolanızı istemeden API kullanmasına izin verir. API token'ınıza <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">parola boşluğunun altında yer alan Ayarlar sayfasından ulaşabilirsiniz</a>."
+  },
+  "optionsLoginError": {
+    "message": "Hata. Lütfen doğru token'ı kullandığınızdan ve internet bağlantınızın stabil olduğundan emin olun."
+  },
+  "optionsLoginFormLabel": {
+    "message": "API Token"
+  },
+  "optionsLoginFormPlaceholder": {
+    "message": "kullanıcı adı:TOKEN"
+  },
+  "optionsLoginFormSubmit": {
+    "message": "Gönder"
+  },
+  "optionsOfflineMessageOne": {
+    "message": "Göz atın: <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard Turu</a>."
+  },
+  "optionsOfflineMessageQuote": {
+    "message": "Pinboard, internette bulduğunuz ve kaybetmek istemediğiniz içerikler için kişisel bir arşivdir."
+  },
+  "optionsOfflineMessageTwo": {
+    "message": "Exactly — \"online\". Lütfen stabil bir internet bağlantınız olduğundan emin olun."
+  },
+  "optionsWelcomeMessage": {
+    "message": "Merhaba. $name$ olarak giriş yaptınız.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Pawel"
+      }
+    }
+  },
+  "optionsLogOut": {
+    "message": "Çıkış yap"
+  },
+  "optionsDefaultView": {
+    "message": "Varsayılan görünüm"
+  },
+  "optionsDefaultViewAllText": {
+    "message": "hepsi"
+  },
+  "optionsDefaultViewAddText": {
+    "message": "url ekle"
+  },
+  "optionsPrivateCheckboxByDefault": {
+    "message": "\"Gizli\" varsayılan onay kutusu (url görünümü ekle)"
+  },
+  "optionsToReadChecboxByDefault": {
+    "message": "\"Okunacak\" varsayılan onay kutusu (url görünümü ekle)"
+  },
+  "optionsEnableSystemNotifications": {
+    "message": "Sistem bildirimlerini açık tut"
+  },
+  "optionsShortcutDescriptionToggle": {
+    "message": "PinBuddy'i göster / gizle"
+  },
+  "optionsShortcutDescriptionGoToAll": {
+    "message": "hepsini göster'e git"
+  },
+  "optionsShortcutDescriptionGoToAdd": {
+    "message": "hepsini ekle'ye git"
+  },
+  "optionsShortcutDescriptionAddBookmark": {
+    "message": "yer imi ekle (hepsini ekle)"
+  },
+  "optionsShortcutDescriptionOpenInBackground": {
+    "message": "yer imini arka planda aç (hepsini göster)"
+  },
+  "optionsShortcutDescriptionDeleteBookmark": {
+    "message": "yer imini sil (hepsini göster)"
+  },
+
+  "popupOpenYourPinboardProfile": {
+    "message": "Pinboard profilini görüntüleyin"
+  },
+  "popupBrowseAllTitle": {
+    "message": "Hepsine göz atın"
+  },
+  "popupBrowseAllText": {
+    "message": "hepsi"
+  },
+  "popupAddURLTitle": {
+    "message": "URL ekleyin"
+  },
+  "popupAddURLText": {
+    "message": "url ekle"
+  },
+  "popupErrorMessage": {
+    "message": "Hata oluştu. Lütfen token'ınızın geçerli olduğundan, internet bağlantınızın ve <a href=\"https://twitter.com/Pinboard\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard API durumunuzun</a> stabil olduğundan emin olun."
+  },
+  "popupErrorButtonMessage": {
+    "message": "Seçenekler sayfasına git"
+  },
+  "popupFiltersSearchLabel": {
+    "message": "Ara"
+  },
+  "popupFiltersSearchPlaceholder": {
+    "message": "Dönem ara"
+  },
+  "popupFiltersFilterButton": {
+    "message": "Filtreler"
+  },
+  "popupFiltersCheckboxPrivate": {
+    "message": "Gizli"
+  },
+  "popupFiltersCheckboxPublic": {
+    "message": "Herkese açık"
+  },
+  "popupFiltersCheckboxUnread": {
+    "message": "Okunmamış"
+  },
+  "popupFiltersCheckboxUntagged": {
+    "message": "Etiketlenmemiş"
+  },
+  "popupArticleButtonCancel": {
+    "message": "iptal et"
+  },
+  "popupArticleButtonDelete": {
+    "message": "sil"
+  },
+  "popupAddTitleLabel": {
+    "message": "Başlık"
+  },
+  "popupAddTitleInvalidMessage": {
+    "message": "Maksimum 255 karakter"
+  },
+  "popupAddDescriptionLabel": {
+    "message": "Tanım"
+  },
+  "popupAddDescriptionInvalidMessage": {
+    "message": "maksimum 65536 karakter"
+  },
+  "popupAddTagsLabel": {
+    "message": "etiketler (boşluk bırakıldı)"
+  },
+  "popupAddTagsInvalidMessage": {
+    "message": "maksimum 255 karakter"
+  },
+  "popupAddPrivateCheckboxLabel": {
+    "message": "gizli"
+  },
+  "popupAddReadLaterCheckboxLabel": {
+    "message": "daha sonra oku"
+  },
+  "popupAddBookmarkButton": {
+    "message": "yer imlerine ekle"
+  },
+  "popupReAddBookmarkButton": {
+    "message": "geçersiz yer imi"
+  },
+  "popupLoggedOutViewMessage": {
+    "message": "Kimlik doğrulama token'ı şeffaf bir kimlik tanıyıcıdır \"username:TOKEN\" ve PinBuddy'nin sizden parolanızı istemeden API kullanmasına izin verir. API token'ınıza <a href=\"https://pinboard.in/settings/password\" target=\"_blank\" rel=\"noopener noreferrer\">parola boşluğunun altında yer alan Ayarlar sayfasından ulaşabilirsiniz</a>."
+  },
+  "popupLoggedOutViewButtonMessage": {
+    "message": "Oturum açmak için seçenekler sayfasına gidin"
+  },
+  "popupOfflineMessageOne": {
+    "message": "Göz atın: <a href=\"http://pinboard.in/tour/\" target=\"_blank\" rel=\"noopener noreferrer\">Pinboard Turu</a>."
+  },
+  "popupOfflineMessageQuote": {
+    "message": "Pinboard, internette bulduğunuz ve kaybetmek istemediğiniz içerikler için kişisel bir arşivdir."
+  },
+  "popupOfflineMessageTwo": {
+    "message": "Kesinlikle — \"online\". Lütfen stabil bir internet bağlantınız olduğundan emin olun."
+  },
+  "popupInvalidProtocolParagraph": {
+    "message": "İzin verilmiş protokoller <code>http</code>, <code>https</code>, <code>javascript</code>, <code>mailto</code>, <code>ftp</code> ve <code>file</code>. Maalesef bu URL'i kaydedemezsiniz."
+  },
+  "popupInvalidProtocolButton": {
+    "message": "Pinboard API dökümantasyonu hakkında daha fazlasını keşfet"
+  },
+
+  "notificationSaveSucessful": {
+    "message": "URL başarıyla kaydedildi"
+  },
+  "notificationDeleteSucessful": {
+    "message": "URL başarıyla silindi"
+  }
+}
